@@ -50,7 +50,7 @@ function Home({
   return (
     <main className={"landing"}>
       <header className={"landing-top"}>
-        <span className={"wordmark"}>{"Back Track"}</span>
+        <span className={"wordmark"}>{"back track"}</span>
         <nav className={"landing-nav"}>
           {readListeningSource() && (
             <button className={"text-btn"} onClick={onAll}>

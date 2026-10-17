@@ -4,7 +4,7 @@ The production build and 21 automated checks passed before handoff. A successful
 
 ## Browser verification completed
 
-- Home screen displays the typeface, artwork, and 12 starter rows.
+- Home screen displays its layout, typeface, artwork, and 12 starter rows with Back Track branding and a blue theme.
 - Local search and Enter selection opened Gold Digger's complete graph.
 - Gold Digger playback reached the active Pause state with advancing progress; pause, stop, and paired listening worked. Next record changed playback and the detail panel to Ray Charles.
 - Graph zoom, fit, and expansion added the gospel branch.
@@ -32,3 +32,9 @@ Responsive breakpoints and styles were reviewed statically. No physical mobile d
 ## External-service boundary
 
 Public providers can rate limit, return incomplete sample relationships, remove music previews, or deny access to private/deleted playlists. The local app must report these conditions rather than invent a result or claim a successful import. A local server cannot guarantee permanent third-party availability.
+
+## Back Track branding and blue theme
+
+The interface uses Back Track branding. The UI uses icy-blue surfaces, navy text, and cobalt gradients, including graphs, charts, player, controls, and panels. All 847 layout, typography, and motion declarations were compared with the previous stylesheet and remained identical. Category-label text contrast is at least 4.98:1. The curated dataset and artwork remain intact.
+
+After the rename, all 21 automated checks and the production build passed again. The running app at port 5173 was checked in the browser: homepage branding and gradients, Gold Digger graph and detail panel, and the originality report with its unchanged 40/24/36 breakdown. The API health endpoint reports `back-track`, and the new blue favicon returns HTTP 200.

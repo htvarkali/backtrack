@@ -30,7 +30,7 @@ function createSongRows(e, t, n, r) {
         artist: u.artist,
         year: u.year,
         art: u.art,
-        ancestry: [...d.gen.keys()].filter((f) => f !== a).map((f) => i(f, d.gen)),
+        ancestors: [...d.gen.keys()].filter((f) => f !== a).map((f) => i(f, d.gen)),
         direct: (e.samplesOf.get(a) ?? []).map((f) => i(f.to, d.gen)),
         oldest: d.oldest.id === a ? undefined : d.oldest,
         open: () => t(a),
@@ -52,7 +52,7 @@ function createSongRows(e, t, n, r) {
           artist: a.artist,
           year: a.year,
           art: a.art,
-          ancestry: [],
+          ancestors: [],
           direct: [],
           open: f,
           digging: true,
@@ -125,7 +125,7 @@ function layoutStrip(e, t, n) {
   let i = r,
     s = STRIP_ROOT_RADIUS,
     l = r;
-  const o = [...e.ancestry]
+  const o = [...e.ancestors]
     .sort((a, u) => u.song.year - a.song.year)
     .map((a) => {
       const u = a.song.art ? STRIP_RECORD_RADIUS : STRIP_DOT_RADIUS,

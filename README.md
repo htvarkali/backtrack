@@ -1,6 +1,6 @@
-# Back Track
+# back track — local
 
-Back Track is a music ancestry explorer: search a song and explore its samples, genres, and musical traditions.
+Back Track is a local music ancestry explorer: search a song and explore its samples, genres, and musical traditions.
 
 ## Run
 
@@ -26,10 +26,10 @@ Optional settings are listed in `.env.example`. Copy it to `.env` if needed; the
 
 ## Included
 
-- Home screen, typography, colors, and starter song timelines.
+- Layout, typography, and starter song timelines with Back Track branding and a blue palette.
 - Full curated dataset: 179 songs, 119 sample connections, 45 genres, 43 traditions, and 154 historical influences.
 - Search across the local crate and the live music catalog.
-- Interactive ancestry graphs with pan, zoom, fit, deeper ancestry, and record details.
+- Interactive ancestry graphs with pan, zoom, fit, earlier influences, and record details.
 - Song, genre, and tradition listening previews, queue controls, and side-by-side sample listening.
 - Originality reports with composition, lineage painting, timeline, rhythm and melody lines, and sample relatives.
 - Public Spotify playlist/album and ListenBrainz listening-history import.

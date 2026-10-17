@@ -1,3 +1,4 @@
+import { FALLBACK_FAMILY_COLOR } from "../styles/palette.js";
 import { genreNodeId } from "../data/graph.js";
 
 function ancestorGenerations(e, t) {
@@ -58,7 +59,8 @@ function analyzeAncestry(e, t) {
     const f = l.shift();
     s.push(f);
     for (const p of e.samplesOf.get(f) ?? [])
-      r.has(p.to) && (i.set(p.to, i.get(p.to) - 1), i.get(p.to) === 0 && l.push(p.to));
+      r.has(p.to) &&
+        (i.set(p.to, i.get(p.to) - 1), i.get(p.to) === 0 && l.push(p.to));
   }
   const o = new Map([[t, 1]]),
     a = new Map(),
@@ -100,7 +102,7 @@ function compositionByFamily(e, t, n = false) {
       u = e.familyById.get((a == null ? undefined : a.family) ?? "") ?? {
         id: "other",
         label: "Other",
-        color: "#999",
+        color: FALLBACK_FAMILY_COLOR,
       };
     r.has(u.id) ||
       r.set(u.id, {
@@ -169,7 +171,9 @@ function dominantLineage(e, t, n) {
       (a) => n.includes(a.type) && !s.has(a.to),
     );
     if (!l.length) break;
-    l.sort((a, u) => (t.flow.get(edgeId(u)) ?? 0) - (t.flow.get(edgeId(a)) ?? 0));
+    l.sort(
+      (a, u) => (t.flow.get(edgeId(u)) ?? 0) - (t.flow.get(edgeId(a)) ?? 0),
+    );
     const o = l[0];
     r.push(o);
     s.add(o.to);

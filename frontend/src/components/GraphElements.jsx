@@ -2,12 +2,9 @@ import React from "react";
 import { usePlayer, usePlayerSelector } from "../services/player.js";
 import { songSubtitle } from "../data/graph.js";
 
-function sepiaMatrix(e) {
-  const t = [0.393, 0.769, 0.189, 0.349, 0.686, 0.168, 0.272, 0.534, 0.131],
-    n = [1, 0, 0, 0, 1, 0, 0, 0, 1],
-    r = t.map((i, s) => n[s] * (1 - e) + i * e);
-  return `${r[0]} ${r[1]} ${r[2]} 0 0 ${r[3]} ${r[4]} ${r[5]} 0 0 ${r[6]} ${r[7]} ${r[8]} 0 0 0 0 0 1 0`;
-}
+// Keep the original album artwork colors; the UI no longer applies a sepia wash.
+const ARTWORK_COLOR_MATRIX = "1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0";
+
 function recordEra(e) {
   return e >= 2005 ? 0 : e >= 1990 ? 1 : e >= 1975 ? 2 : e >= 1962 ? 3 : 4;
 }
@@ -68,7 +65,8 @@ const SAMPLE_LABELS = {
         tabIndex={0}
         aria-label={`${song.title} by ${song.artist}, ${song.year}`}
         onKeyDown={(N) => {
-          (N.key === "Enter" || N.key === " ") && (onClick == null || onClick(song.id));
+          (N.key === "Enter" || N.key === " ") &&
+            (onClick == null || onClick(song.id));
         }}
       >
         <g
@@ -153,7 +151,10 @@ const SAMPLE_LABELS = {
             </>
           )}
           {badge && (
-            <g className={"badge"} transform={`translate(${g * 0.72}, ${-g * 0.72})`}>
+            <g
+              className={"badge"}
+              transform={`translate(${g * 0.72}, ${-g * 0.72})`}
+            >
               <circle r={13} className={"badge-dot"} />
               <text dy={"0.35em"} textAnchor={"middle"}>
                 {badge}
@@ -241,7 +242,10 @@ function PlaybackRing({ id: id, r: t, color: color }) {
   );
 }
 const cubicBezier = (e, t, n, r, i) =>
-  (1 - i) ** 3 * e + 3 * (1 - i) ** 2 * i * t + 3 * (1 - i) * i * i * n + i ** 3 * r;
+  (1 - i) ** 3 * e +
+  3 * (1 - i) ** 2 * i * t +
+  3 * (1 - i) * i * i * n +
+  i ** 3 * r;
 function verticalEdgePath(e, t, n = 0.32) {
   const r = e.y + e.r + 5,
     i = t.y - t.r - 5,
@@ -310,7 +314,13 @@ function RootEdge({
     };
   return (
     <g className={`root ${w ? "influence" : ""} ${className}`}>
-      <path d={m} pathLength={1} className={"root-line"} strokeWidth={width} style={N} />
+      <path
+        d={m}
+        pathLength={1}
+        className={"root-line"}
+        strokeWidth={width}
+        style={N}
+      />
       {g && (
         <path
           d={m}
@@ -320,7 +330,12 @@ function RootEdge({
           style={N}
         />
       )}
-      <path d={m} className={"root-hit"} onMouseEnter={onEnter} onMouseLeave={onLeave} />
+      <path
+        d={m}
+        className={"root-hit"}
+        onMouseEnter={onEnter}
+        onMouseLeave={onLeave}
+      />
       {showPill && (
         <EdgeLabel
           a={e}
@@ -376,6 +391,6 @@ export {
   RootEdge,
   SAMPLE_DESCRIPTIONS,
   SAMPLE_LABELS,
-  sepiaMatrix,
+  ARTWORK_COLOR_MATRIX,
   verticalEdgePath,
 };

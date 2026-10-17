@@ -9,6 +9,6 @@ React and D3 use npm dependencies. Remote music research calls use the local bac
 - src/utils: graph traversal, inheritance math, layout
 - src/hooks: listening and responsive inspector state
 - src/data: graph loading and indexes
-- src/styles: application stylesheet
+- src/styles: blue theme, presentation palette, and layout styles
 
 Run the commands in the repository root README.

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "An interactive music ancestry explorer with local and public catalog discovery.",
+  "description": "Back track, an interactive music ancestry explorer.",
   "engines": { "node": ">=22" },
   "scripts": {
     "dev": "node scripts/dev.mjs",

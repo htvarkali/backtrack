@@ -71,7 +71,7 @@ function Library({
     <main className={"landing library"}>
       <header className={"landing-top"}>
         <button className={"wordmark mark-btn"} onClick={onHome}>
-          {"Back Track"}
+          {"back track"}
         </button>
         <nav className={"landing-nav"}>
           <ListeningSource />
@@ -79,7 +79,7 @@ function Library({
       </header>
       <section className={"hero"}>
         <h1 className={"hero-line small"}>
-          {l ? "your songs, dug up." : "every root at once."}
+          {l ? "your songs, dug up." : "every track at once."}
         </h1>
         <p className={"hero-sub"}>
           {l

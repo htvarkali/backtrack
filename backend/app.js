@@ -115,7 +115,7 @@ export async function createApp(options = {}) {
     const malformedJson = error instanceof SyntaxError && error.type === 'entity.parse.failed';
     const tooLarge = error.type === 'entity.too.large';
     const status = malformedJson ? 400 : tooLarge ? 413 : error.status || 500;
-    if (status >= 500 && !(error instanceof AppError)) console.error('Back Track API:', error);
+    if (status >= 500 && !(error instanceof AppError)) console.error('Back track API:', error);
     response.status(status).json({ error: malformedJson ? 'The request contains invalid JSON.' : tooLarge ? 'The request is too large.' :
       error instanceof AppError ? error.message : 'The local server could not save or load this request. Please try again.',
       code: malformedJson ? 'INVALID_JSON' : tooLarge ? 'REQUEST_TOO_LARGE' : error.code || 'SERVER_ERROR' });

@@ -1,7 +1,12 @@
+import { FAMILY_COLORS, FALLBACK_FAMILY_COLOR } from "../styles/palette.js";
 import { fetchContributions, mergeContributions } from "./contributions.js";
 
 const genreNodeId = (e) => `genre:${e}`;
 function hydrateGraph(e) {
+  const families = e.families.map((family) => ({
+    ...family,
+    color: FAMILY_COLORS[family.id] ?? FALLBACK_FAMILY_COLOR,
+  }));
   const t = new Map(e.songs.map((f) => [f.id, f])),
     n = new Map(),
     r = new Map();
@@ -105,9 +110,10 @@ function hydrateGraph(e) {
   }
   return {
     ...e,
+    families,
     byId: t,
     genreById: new Map(e.genres.map((f) => [f.id, f])),
-    familyById: new Map(e.families.map((f) => [f.id, f])),
+    familyById: new Map(families.map((f) => [f.id, f])),
     samplesOf: n,
     sampledBy: r,
     deep: i,
@@ -135,7 +141,7 @@ function songFamily(e, t) {
     (n && e.familyById.get(n)) || {
       id: "other",
       label: "Other",
-      color: "#9c8470",
+      color: FALLBACK_FAMILY_COLOR,
     }
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { select } from "d3-selection";
 import { zoom, zoomIdentity, zoomTransform } from "d3-zoom";
 import "d3-transition";
-import { sepiaMatrix } from "./GraphElements.jsx";
+import { ARTWORK_COLOR_MATRIX } from "./GraphElements.jsx";
 import { formatEra } from "../utils/layout.js";
 
 function GraphCanvas({
@@ -75,7 +75,10 @@ function GraphCanvas({
         Math.min(maxScale, U / Math.max(1, $ - M), X / Math.max(1, B - T)),
       ),
       j = C + U / 2 + (g.w < 700 ? 12 : 30) - ((M + $) / 2) * G,
-      O = (B - T) * G > X ? topInset + 10 - T * G : topInset + X / 2 - ((T + B) / 2) * G,
+      O =
+        (B - T) * G > X
+          ? topInset + 10 - T * G
+          : topInset + X / 2 - ((T + B) / 2) * G,
       L = zoomIdentity.translate(j, O).scale(G);
     select(d.current).transition().duration(900).call(f.current.transform, L);
   };
@@ -83,7 +86,10 @@ function GraphCanvas({
   const h = (M) => {
       const $ = (g.w - rightInset) / 2,
         T = g.h / 2;
-      select(d.current).transition().duration(250).call(f.current.scaleBy, M, [$, T]);
+      select(d.current)
+        .transition()
+        .duration(250)
+        .call(f.current.scaleBy, M, [$, T]);
     },
     y = React.useRef(N);
   y.current = N;
@@ -91,7 +97,8 @@ function GraphCanvas({
   v.current = h;
   React.useEffect(() => {
     const M = ($) => {
-      if ($.target.closest("input, textarea, [contenteditable]") || $.altKey) return;
+      if ($.target.closest("input, textarea, [contenteditable]") || $.altKey)
+        return;
       const B = select(d.current),
         C = zoomTransform(d.current).k,
         U = (X, G) =>
@@ -150,7 +157,11 @@ function GraphCanvas({
         >
           {"+"}
         </button>
-        <button onClick={() => h(1 / 1.4)} aria-label={"zoom out"} title={"zoom out (-)"}>
+        <button
+          onClick={() => h(1 / 1.4)}
+          aria-label={"zoom out"}
+          title={"zoom out (-)"}
+        >
           {"−"}
         </button>
         <button onClick={N} title={"fit the tree (0)"}>
@@ -181,14 +192,14 @@ function GraphCanvas({
             <stop offset={"100%"} stopColor={"var(--root-new)"} />
           </radialGradient>
           <radialGradient id={"sunCore"}>
-            <stop offset={"0%"} stopColor={"#8a5d3b"} />
-            <stop offset={"45%"} stopColor={"#b48a62"} />
-            <stop offset={"75%"} stopColor={"rgba(180,138,98,0.35)"} />
-            <stop offset={"100%"} stopColor={"rgba(180,138,98,0)"} />
+            <stop offset={"0%"} stopColor={"#2563eb"} />
+            <stop offset={"45%"} stopColor={"#75baff"} />
+            <stop offset={"75%"} stopColor={"rgba(117,186,255,0.35)"} />
+            <stop offset={"100%"} stopColor={"rgba(117,186,255,0)"} />
           </radialGradient>
           {[0, 1, 2, 3, 4].map((M) => (
             <filter id={`age-${M}`} key={M}>
-              <feColorMatrix type={"matrix"} values={sepiaMatrix(M / 4)} />
+              <feColorMatrix type={"matrix"} values={ARTWORK_COLOR_MATRIX} />
             </filter>
           ))}
           <filter id={"grain"} x={"0"} y={"0"} width={"100%"} height={"100%"}>
@@ -207,7 +218,11 @@ function GraphCanvas({
         <g transform={p.toString()} className={k ? "is-polar" : ""}>
           {k && (
             <g className={"rings"}>
-              <circle r={k.r0 * 1.9} fill={"url(#sunCore)"} className={"core-sun"} />
+              <circle
+                r={k.r0 * 1.9}
+                fill={"url(#sunCore)"}
+                className={"core-sun"}
+              />
               {k.rings.map((M, $) => (
                 <circle
                   r={M.r}

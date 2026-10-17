@@ -291,7 +291,7 @@ function App() {
         true
       );
     }, []),
-    digAncestry = React.useCallback(async (F, Y, q = false) => {
+    discoverAncestry = React.useCallback(async (F, Y, q = false) => {
       const K = graphRef.current;
       if (!K || lookupRef.current[F]) return;
       const J = Y ?? K.byId.get(F);
@@ -346,17 +346,17 @@ function App() {
       async (F) => {
         for (const Y of F) {
           const q = ensureExternalSong(Y);
-          q && (await digAncestry(q.id, q, true));
+          q && (await discoverAncestry(q.id, q, true));
         }
       },
-      [ensureExternalSong, digAncestry],
+      [ensureExternalSong, discoverAncestry],
     );
   React.useEffect(() => {
-    route.name === "song" && digAncestry(route.id);
-  }, [route, digAncestry]);
+    route.name === "song" && discoverAncestry(route.id);
+  }, [route, discoverAncestry]);
   React.useEffect(() => {
-    selectedSongId && digAncestry(selectedSongId);
-  }, [selectedSongId, digAncestry]);
+    selectedSongId && discoverAncestry(selectedSongId);
+  }, [selectedSongId, discoverAncestry]);
   const expanded = React.useMemo(
       () =>
         !graph || route.name !== "song"
@@ -442,9 +442,9 @@ function App() {
           <button
             className={"mark"}
             onClick={() => navigate("/")}
-            aria-label={"Back Track, home"}
+            aria-label={"back track, home"}
           >
-            {"Back Track"}
+            {"back track"}
           </button>
           <Search
             g={graph}
@@ -473,7 +473,7 @@ function App() {
             {route.name === "dna" && (
               <>
                 <button className={"act"} onClick={() => openSong(route.id)}>
-                  {"See the ancestry"}
+                  {"Back track"}
                 </button>
                 <button className={"act"} onClick={() => navigate("/all")}>
                   {"Your library"}
@@ -518,7 +518,7 @@ function App() {
             digState.expanded.size > 0 && (
               <div className={"dig"}>
                 <button className={"text-btn"} onClick={collapseAncestry}>
-                  {"fill the ancestry back in"}
+                  {"reset back track"}
                 </button>
               </div>
             )}
@@ -556,7 +556,7 @@ function App() {
                 : () => setPanelOpen(false)
           }
           pickLabel={
-            viewingAnotherSong && !queueSongId ? "Grow its ancestry" : undefined
+            viewingAnotherSong && !queueSongId ? "Back track this song" : undefined
           }
           onGrow={openSong}
           lookup={lookupStatus[panelSongId]}

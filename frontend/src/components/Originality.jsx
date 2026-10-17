@@ -13,7 +13,7 @@ import { songFamily } from "../data/graph.js";
 import { SAMPLE_LABELS } from "./GraphElements.jsx";
 
 const formatPercent = (e, t = 1) => `${(e * 100).toFixed(t)}%`,
-  ORIGINAL_COLOR = "#cdbfa8",
+  ORIGINAL_COLOR = "#516b91",
   GENERATION_LABELS = [
     "This song",
     "Parents",
@@ -66,7 +66,7 @@ function Originality({ g: graph, id: id, onOpen: onOpen, onReport: onReport }) {
               {"▶ Hear the lineage"}
             </button>
             <button className={"paper-btn"} onClick={() => onOpen(id)}>
-              {"See the ancestry"}
+              {"Back track"}
             </button>
           </div>
         </header>
@@ -216,7 +216,7 @@ function Originality({ g: graph, id: id, onOpen: onOpen, onReport: onReport }) {
         <footer className={"report-foot"}>
           <p>
             {
-              "How this is calculated: every song keeps 40% of itself and passes the rest down to the records it sampled, split by what was taken (vocals and hooks weigh a little more than drums). A cover keeps 15%. It's a playful model, not musicology. Every sample link is sourced; open any record in the ancestry view to see the source."
+              "How this is calculated: every song keeps 40% of itself and passes the rest down to the records it sampled, split by what was taken (vocals and hooks weigh a little more than drums). A cover keeps 15%. It's a playful model, not musicology. Every sample link is sourced; open any record in the back track view to see the source."
             }
           </p>
         </footer>

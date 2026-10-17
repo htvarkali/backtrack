@@ -239,7 +239,7 @@ function AncestryGraphView({
       minScale={0.42}
       reveal={k}
     >
-      <g className={"Back Track"}>
+      <g className={"ancestry"}>
         {h.edges.map((S) => {
           const _ = d.nodes.get(S.from),
             z = d.nodes.get(S.to),

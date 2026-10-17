@@ -1,6 +1,6 @@
 # Verification
 
-The production build and 40 automated checks passed after adding Vercel support. A successful build is separate from verification of live external providers.
+The production build and 52 automated checks passed after adding Vercel support and provider fallback handling. A successful build is separate from verification of live external providers.
 
 ## Browser verification completed
 
@@ -44,3 +44,19 @@ After the rename, all 21 automated checks and the production build passed again.
 - All 40 checks pass with Node.js 24, including hosted origin validation, no filesystem access, bounded caches, visitor isolation, browser persistence, external-song restoration, storage failures, and cycle protection.
 - The actual `api/index.js` entry was exercised over HTTP with the bundled graph: health reports all 179 songs, hosted contribution validation succeeds without retaining user data on the server, and unknown APIs return JSON errors.
 - Vercel's deployment dry run recognizes the Vite preset and excludes `.env.local`, local runtime data, dependencies, and generated output from uploads.
+
+## Live Vercel verification
+
+- The production URL returns HTTP 200 without credentials; health returns the full catalog and `storage: "browser"`.
+- The homepage, Gold Digger graph, and 40/24/36 originality report render with the blue theme. Gold Digger playback reaches the active Pause state, and Stop works.
+- A verified Gold Digger/Ray Charles contribution shows "saved in this browser". Refresh retains the graph without duplicate sample edges.
+- Live Massive Attack search, iTunes search, MusicBrainz search and nested recording details return real records.
+- Gold Digger's Apple preview and Blood on the Leaves' Deezer fallback return playable URLs; a Deezer range request returns HTTP 206 with `audio/mpeg`.
+- The public Spotify Discovery album imports all 14 tracks.
+
+## Hosted provider fallback
+
+- Genius rejects requests from the hosted runtime even though local requests succeed. Curated sample relationships remain available, and unknown tracks fall back to exact MusicBrainz recordings and forward sampling relationships.
+- A live fallback check with Genius forced unavailable recovered Paper Planes → Straight to Hell from MusicBrainz. Teardrop returned an honest empty partial result when the selected recordings had no documented samples.
+- Automated checks verify exact recording matching, relationship direction, bounded request deadlines, accurate source attribution, retrying incomplete histories, and duplicate-free refreshes that preserve curated sample types.
+- The interface labels incomplete research and never caches provider failure as a completed history.

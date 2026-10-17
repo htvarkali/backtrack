@@ -216,3 +216,68 @@ test('local development contributions accept the localhost frontend origin', asy
   assert.equal((await result.json()).scope, 'local');
   assert.equal((await (await fetch(`${url}/api/health`)).json()).storage, 'local');
 });
+
+test('Genius failure falls back to bounded, exact MusicBrainz recordings and forward samples only', async (t) => {
+  const id = (number) => `00000000-0000-0000-0000-${String(number).padStart(12, '0')}`;
+  const recording = (number, changes = {}) => ({ id: id(number), title: 'Test Song', score: 100,
+    'artist-credit': [{ name: 'Test Artist' }], releases: [{ count: 10 - number }], ...changes });
+  const relation = (number, changes = {}) => ({ type: 'samples material', direction: 'forward',
+    recording: { id: id(number), title: 'Source Tune', 'artist-credit': [{ name: 'Source Artist' }], 'first-release-date': '1973-01-01' }, ...changes });
+  const requested = [];
+  const { url } = await fixture(t, { fetchImpl: async (target) => {
+    if (target.hostname === 'genius.com') return response({}, 403);
+    requested.push(target.pathname);
+    if (target.pathname === '/ws/2/recording') return response({ recordings: [
+      recording(8, { 'artist-credit': [{ name: 'Wrong Artist' }], releases: [{ count: 1000 }] }),
+      recording(9, { title: 'Test Song (Remix)' }),
+      recording(10, { disambiguation: 'live at a concert' }),
+      recording(11, { score: 50 }),
+      recording(1), recording(2), recording(3),
+    ] });
+    const number = target.pathname.endsWith(id(1)) ? 1 : 2;
+    assert.equal(target.searchParams.get('inc'), 'recording-rels artist-credits');
+    return response({ ...recording(number), relations: [relation(20),
+      relation(21, { direction: 'backward' }), relation(22, { type: 'remix' }),
+      relation(number, { recording: { id: id(number), title: 'Test Song', 'artist-credit': [{ name: 'Test Artist' }] } }),
+      relation(23, { recording: { id: id(23), title: 'No credited performer' } }),
+    ] });
+  } });
+  const path = `${url}/api/samples?title=Test%20Song&artist=Test%20Artist`;
+  const data = await (await fetch(path)).json();
+  assert.equal(data.sourceName, 'musicbrainz');
+  assert.deepEqual(data.checked, ['musicbrainz']);
+  assert.match(data.warning, /Genius is unavailable/);
+  assert.equal(data.found.length, 1);
+  assert.deepEqual(data.found[0], { title: 'Source Tune', artist: 'Source Artist', year: 1973, type: 'sample',
+    source: `https://musicbrainz.org/recording/${id(1)}`, sourceName: 'musicbrainz' });
+  assert.deepEqual(requested, ['/ws/2/recording', `/ws/2/recording/${id(1)}`, `/ws/2/recording/${id(2)}`]);
+  await fetch(path);
+  assert.equal(requested.length, 3, 'fallback results are cached without repeating MusicBrainz requests');
+});
+
+test('MusicBrainz without an exact recording returns an honest attributed empty partial lookup', async (t) => {
+  let requests = 0;
+  const { url } = await fixture(t, { fetchImpl: async (target) => {
+    if (target.hostname === 'genius.com') return response({}, 403);
+    requests += 1;
+    return response({ recordings: [{ id: '00000000-0000-0000-0000-000000000001', title: 'Teardrop', score: 100,
+      'artist-credit': [{ name: 'A Cover Band' }] }] });
+  } });
+  const result = await fetch(`${url}/api/samples?title=Teardrop&artist=Massive%20Attack`);
+  assert.equal(result.status, 200);
+  const data = await result.json();
+  assert.deepEqual(data.found, []);
+  assert.equal(data.sourceName, 'musicbrainz');
+  assert.match(data.warning, /no exact recording match/);
+  assert.equal(requests, 1);
+});
+
+test('curated samples avoid extra MusicBrainz work when Genius is unavailable', async (t) => {
+  const hosts = [];
+  const { url } = await fixture(t, { fetchImpl: async (target) => { hosts.push(target.hostname); return response({}, 403); } });
+  const data = await (await fetch(`${url}/api/samples?title=Modern%20Song&artist=Modern%20Artist`)).json();
+  assert.equal(data.found[0].title, 'Source Song');
+  assert.equal(data.sourceName, 'curated catalog');
+  assert.deepEqual(data.checked, []);
+  assert.deepEqual(hosts, ['genius.com']);
+});

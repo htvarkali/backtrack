@@ -21,7 +21,11 @@ function parseRoute(e, t) {
         ? {
             name: "all",
             focus:
-              i(r) && !((l = t == null ? undefined : t.byId.get(r)) != null && l.external)
+              i(r) &&
+              !(
+                (l = t == null ? undefined : t.byId.get(r)) != null &&
+                l.external
+              )
                 ? r
                 : undefined,
           }
@@ -65,12 +69,32 @@ const navigate = (e) => {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "")
       .slice(0, 60);
+// A repeated discovery must not grow storage or replace an existing edge's type.
+function mergeDiscoveredLinks(existing, discovered, knownLinks = []) {
+  const known = new Set(knownLinks.map((edge) => `${edge.from}>${edge.to}`));
+  const seen = new Set();
+  const merged = [];
+  for (const edge of existing) {
+    const key = `${edge.from}>${edge.to}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    merged.push(edge);
+  }
+  for (const edge of discovered) {
+    const key = `${edge.from}>${edge.to}`;
+    if (known.has(key) || seen.has(key)) continue;
+    seen.add(key);
+    merged.push(edge);
+  }
+  return merged;
+}
 async function materializeSamples(e, t, n, r) {
   const i = [...e.byId.values()].filter((o) => !o.kind && !o.listenOf),
     s = [],
     l = [];
   for (const o of n) {
-    let a = i.find((u) => sameRecording(u, o)) ?? s.find((u) => sameRecording(u, o));
+    let a =
+      i.find((u) => sameRecording(u, o)) ?? s.find((u) => sameRecording(u, o));
     if (!a) {
       const u = await lookupRecording(o),
         d =
@@ -109,6 +133,7 @@ async function materializeSamples(e, t, n, r) {
 }
 export {
   materializeSamples,
+  mergeDiscoveredLinks,
   navigate,
   parseRoute,
   readExtraLinks,

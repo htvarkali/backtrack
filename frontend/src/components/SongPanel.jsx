@@ -198,13 +198,15 @@ function SongPanel({
               ))}
           </section>
         )}
-        {!m && g.length === 0 && (
+        {!m && (g.length === 0 || lookup?.warning) && (
           <p className={"panel-note"}>
             {lookup === "looking"
               ? "digging for its samples…"
-              : w.length
-                ? "bedrock: nothing it sampled is documented. dig to see what it grew out of."
-                : "no samples documented. dig to see what its genre grew out of."}
+              : lookup?.warning
+                ? lookup.warning
+                : w.length
+                  ? "bedrock: nothing it sampled is documented. dig to see what it grew out of."
+                  : "no samples documented. dig to see what its genre grew out of."}
           </p>
         )}
         {!m && !song.listenOf && onHeard && (

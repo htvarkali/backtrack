@@ -204,21 +204,36 @@ async function researchWikipedia(e, t) {
     genreLabels: m,
   };
 }
-async function researchSamples(e, t) {
-  const n = await fetch(
-    `/api/samples?${new URLSearchParams({
-      title: e,
-      artist: t,
-    })}`,
+async function researchSamples(title, artist) {
+  const response = await fetch(
+    `/api/samples?${new URLSearchParams({ title, artist })}`,
   );
-  if (!n.ok) throw new Error(`sample lookup ${n.status}`);
-  const r = await n.json();
-  return r.found.map((i) => ({
-    ...i,
-    source: i.source ?? r.url ?? "",
-    sourceName: i.sourceName ?? r.sourceName ?? "catalog",
-  }));
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok)
+    throw new Error(result.error || `sample lookup ${response.status}`);
+  if (!Array.isArray(result.found))
+    throw new Error("Invalid sample lookup response");
+  const checked = Array.isArray(result.checked)
+    ? result.checked.filter((source) => typeof source === "string" && source)
+    : typeof result.sourceName === "string"
+      ? [result.sourceName]
+      : [];
+  return {
+    found: result.found.map((sample) => ({
+      ...sample,
+      source: sample.source ?? result.url ?? "",
+      sourceName: sample.sourceName ?? result.sourceName ?? "catalog",
+    })),
+    checked,
+    warning:
+      typeof result.warning === "string" && result.warning
+        ? result.warning
+        : result.partial || !checked.length
+          ? "Some sample sources could not be checked."
+          : undefined,
+  };
 }
+
 let nextMusicBrainzRequest = 0;
 async function fetchMusicBrainz(e) {
   const t = Math.max(0, nextMusicBrainzRequest - Date.now());
@@ -399,78 +414,140 @@ function matchGenreLabels(e, t) {
   }
   return r.slice(0, 3);
 }
-const RESEARCH_CACHE_KEY = "nn-lookup-2",
-  researchCacheKey = (e, t) =>
-    `${normalizeResearch(e)}|${normalizeResearch(t)}`,
-  readResearchCache = () => {
-    try {
-      return JSON.parse(localStorage.getItem(RESEARCH_CACHE_KEY) ?? "{}");
-    } catch {
-      return {};
-    }
-  },
-  pendingResearch = new Map();
-function lookupAncestry(e, t, n, r = false) {
-  const i = researchCacheKey(e, t),
-    s = readResearchCache()[i],
-    l = Date.now() - ((s == null ? undefined : s.at) ?? 0);
-  return s && l < 864e5 && (s.checked.includes("genius") || l < 36e5)
-    ? Promise.resolve(s)
-    : (pendingResearch.has(i) ||
-        pendingResearch.set(i, researchAncestry(e, t, n, i, r)),
-      pendingResearch.get(i));
-}
-async function researchAncestry(e, t, n, r, i) {
-  const s = [],
-    [l, o, a, u] = await Promise.all([
-      researchSamples(e, t).then(
-        (m) => (s.push("genius"), m),
-        () => [],
-      ),
-      researchWikipedia(e, t).then(
-        (m) => (s.push("wikipedia"), m),
-        () => ({
-          found: [],
-          genreLabels: [],
-        }),
-      ),
-      (i ? Promise.resolve([]) : researchMusicBrainz(e, t)).then(
-        (m) => (i || s.push("musicbrainz"), m),
-        () => [],
-      ),
-      lookupCatalogGenre(e, t).catch(() => {}),
-    ]),
-    d = [];
-  for (const m of [...l, ...o.found, ...a]) {
-    const g = d.find(
-      (w) => normalizeResearch(w.title) === normalizeResearch(m.title),
-    );
-    g ? (g.year ?? (g.year = m.year)) : d.push(m);
+const RESEARCH_CACHE_KEY = "nn-lookup-3";
+const INCOMPLETE_HISTORY_WARNING =
+  "Some sample sources are unavailable. This history may be incomplete.";
+const researchCacheKey = (title, artist) =>
+  `${normalizeResearch(title)}|${normalizeResearch(artist)}`;
+function readResearchCache() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(RESEARCH_CACHE_KEY) ?? "{}");
+    return cached && typeof cached === "object" && !Array.isArray(cached)
+      ? cached
+      : {};
+  } catch {
+    return {};
   }
-  let f = matchGenreLabels(o.genreLabels, n);
-  !f.length && u && (f = matchGenreLabels([u], n));
-  f.length || (f = ["pop"]);
-  const p = {
-    found: d,
-    genres: f,
-    checked: s,
-  };
-  if (
-    s.includes("wikipedia") &&
-    (s.includes("genius") || s.includes("musicbrainz"))
-  )
-    try {
-      localStorage.setItem(
-        RESEARCH_CACHE_KEY,
-        JSON.stringify({
-          ...readResearchCache(),
-          [r]: {
-            ...p,
-            at: Date.now(),
-          },
-        }),
-      );
-    } catch {}
-  return (pendingResearch.delete(r), p);
 }
-export { lookupFirstReleaseYear, lookupAncestry, sameRecording };
+const pendingResearch = new Map();
+function hasIncompleteAncestry(title, artist) {
+  return readResearchCache()[researchCacheKey(title, artist)]?.partial === true;
+}
+function lookupAncestry(title, artist, genres, quick = false) {
+  const key = researchCacheKey(title, artist);
+  const cached = readResearchCache()[key];
+  const age = Date.now() - (cached?.at ?? 0);
+  if (
+    cached &&
+    !cached.partial &&
+    !cached.warning &&
+    Array.isArray(cached.checked) &&
+    Array.isArray(cached.found) &&
+    Array.isArray(cached.genres) &&
+    age >= 0 &&
+    age < 86_400_000 &&
+    cached.checked.includes("wikipedia") &&
+    (cached.checked.includes("genius") ||
+      cached.checked.includes("musicbrainz"))
+  ) {
+    return Promise.resolve(cached);
+  }
+  if (!pendingResearch.has(key)) {
+    const lookup = researchAncestry(title, artist, genres, key, quick).finally(
+      () => pendingResearch.delete(key),
+    );
+    pendingResearch.set(key, lookup);
+  }
+  return pendingResearch.get(key);
+}
+async function researchAncestry(title, artist, genres, key, quick) {
+  const checked = new Set();
+  const warnings = [];
+  const samplesPromise = researchSamples(title, artist)
+    .then((result) => {
+      result.checked.forEach((source) => checked.add(source));
+      if (result.warning) warnings.push(result.warning);
+      return result;
+    })
+    .catch((error) => {
+      warnings.push(
+        error.message || "The sample catalog could not be checked.",
+      );
+      return { found: [], checked: [] };
+    });
+  // The hosted API can already have performed MusicBrainz fallback research.
+  const musicBrainzPromise = quick
+    ? Promise.resolve([])
+    : samplesPromise.then((result) => {
+        if (result.checked.includes("musicbrainz")) return [];
+        return researchMusicBrainz(title, artist)
+          .then((found) => {
+            checked.add("musicbrainz");
+            return found;
+          })
+          .catch(() => {
+            warnings.push("MusicBrainz could not be checked.");
+            return [];
+          });
+      });
+  const [samples, wikipedia, musicBrainz, catalogGenre] = await Promise.all([
+    samplesPromise,
+    researchWikipedia(title, artist)
+      .then((result) => {
+        checked.add("wikipedia");
+        return result;
+      })
+      .catch(() => {
+        warnings.push("Wikipedia could not be checked.");
+        return { found: [], genreLabels: [] };
+      }),
+    musicBrainzPromise,
+    lookupCatalogGenre(title, artist).catch(() => undefined),
+  ]);
+  const found = [];
+  for (const sample of [...samples.found, ...wikipedia.found, ...musicBrainz]) {
+    const existing = found.find(
+      (item) =>
+        normalizeResearch(item.title) === normalizeResearch(sample.title),
+    );
+    if (existing) existing.year ??= sample.year;
+    else found.push(sample);
+  }
+  let matchedGenres = matchGenreLabels(wikipedia.genreLabels, genres);
+  if (!matchedGenres.length && catalogGenre)
+    matchedGenres = matchGenreLabels([catalogGenre], genres);
+  if (!matchedGenres.length) matchedGenres = ["pop"];
+  const result = {
+    found,
+    genres: matchedGenres,
+    checked: [...checked],
+    partial: warnings.length > 0,
+    warning: warnings.length ? INCOMPLETE_HISTORY_WARNING : undefined,
+    warnings,
+  };
+  // Partial records retain only retry status; they are never successful cache hits.
+  // This lets the app retry even when an earlier partial lookup added graph edges.
+  try {
+    localStorage.setItem(
+      RESEARCH_CACHE_KEY,
+      JSON.stringify({
+        ...readResearchCache(),
+        [key]: result.partial
+          ? {
+              partial: true,
+              warning: result.warning,
+              checked: result.checked,
+              at: Date.now(),
+            }
+          : { ...result, at: Date.now() },
+      }),
+    );
+  } catch {}
+  return result;
+}
+export {
+  hasIncompleteAncestry,
+  lookupFirstReleaseYear,
+  lookupAncestry,
+  sameRecording,
+};

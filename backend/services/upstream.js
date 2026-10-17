@@ -8,22 +8,26 @@ const allowedHosts = new Set([
 
 export function createUpstream({ fetchImpl = globalThis.fetch, timeoutMs = 12000 } = {}) {
   let musicBrainzSlot = 0;
-  return async function upstream(url, { json = true, ...options } = {}) {
+  return async function upstream(url, { json = true, deadline = Infinity, ...options } = {}) {
     const target = new URL(url);
     if (target.protocol !== 'https:' || !allowedHosts.has(target.hostname) || target.username || target.password) {
       throw new AppError(400, 'Unsupported upstream address.', 'INVALID_UPSTREAM');
     }
+    const expired = () => new AppError(504, 'The music lookup took too long. Please try again.', 'UPSTREAM_TIMEOUT');
+    if (Date.now() >= deadline) throw expired();
     if (target.hostname === 'musicbrainz.org') {
       const wait = Math.max(0, musicBrainzSlot - Date.now());
       if (wait > 20000) throw new AppError(429, 'MusicBrainz is busy. Please try again shortly.', 'UPSTREAM_BUSY');
+      if (Date.now() + wait >= deadline) throw expired();
       musicBrainzSlot = Date.now() + wait + 1100;
       if (wait) await delay(wait);
     }
+    if (Date.now() >= deadline) throw expired();
     try {
       const response = await fetchImpl(target, {
         ...options,
         redirect: 'error',
-        signal: AbortSignal.timeout(timeoutMs),
+        signal: AbortSignal.timeout(Math.max(1, Math.min(timeoutMs, deadline - Date.now()))),
         headers: {
           Accept: json ? 'application/json' : 'text/html',
           'User-Agent': 'BackTrack/1.0 (local music discovery app)',

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   materializeSamples,
+  mergeDiscoveredLinks,
   navigate,
   parseRoute,
   readExtraLinks,
@@ -22,7 +23,11 @@ import {
   toggleSong,
   usePlayerSelector,
 } from "./services/player.js";
-import { lookupAncestry, sameRecording } from "./services/research.js";
+import {
+  hasIncompleteAncestry,
+  lookupAncestry,
+  sameRecording,
+} from "./services/research.js";
 import { lookupRecording } from "./services/catalog.js";
 import {
   analyzeAncestry,
@@ -248,7 +253,13 @@ function App() {
       const K = graphRef.current;
       if (!K || lookupRef.current[F]) return;
       const J = Y ?? K.byId.get(F);
-      if (!J || J.kind || J.listenOf || (K.samplesOf.get(F) ?? []).length)
+      if (
+        !J ||
+        J.kind ||
+        J.listenOf ||
+        ((K.samplesOf.get(F) ?? []).length &&
+          !hasIncompleteAncestry(J.title, J.artist))
+      )
         return;
       lookupRef.current = {
         ...lookupRef.current,
@@ -284,14 +295,21 @@ function App() {
         });
       me.length &&
         setExtraLinks((Ie) => {
-          const It = [...Ie, ...me];
-          return (saveExtraLinks(It), It);
+          const links = mergeDiscoveredLinks(
+            Ie,
+            me,
+            graphRef.current?.samples ?? K.samples,
+          );
+          saveExtraLinks(links);
+          return links;
         });
       setLookupStatus((Ie) => ({
         ...Ie,
         [F]: {
           found: me.length,
           checked: we.checked,
+          warning: we.warning,
+          partial: we.partial,
         },
       }));
     }, []),

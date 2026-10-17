@@ -53,7 +53,7 @@ test('the Gold Digger report has the expected 40/24/36 split', () => {
   assert.equal(ancestry.oldest.year, 1954);
 });
 
-test('all 267 song, genre, and tradition ancestry produce finite, complete layouts', () => {
+test('all 267 song, genre, and tradition starting points produce finite, complete layouts', () => {
   for (const record of [...graph.songs, ...graph.deep]) {
     const layout = buildSongLayout(graph, record.id);
     assert.ok(layout.nodes.has(record.id), record.id);

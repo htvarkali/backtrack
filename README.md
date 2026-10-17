@@ -28,7 +28,7 @@ Optional settings are listed in `.env.example`. Copy it to `.env` if needed; the
 
 ## Included
 
-- Layout, typography, and starter song timelines with Back Track branding and a blue palette.
+- A blue interface with responsive typography and starter song timelines.
 - Full curated dataset: 179 songs, 119 sample connections, 45 genres, 43 traditions, and 154 historical influences.
 - Search across the local crate and the live music catalog.
 - Interactive ancestry graphs with pan, zoom, fit, earlier influences, and record details.
@@ -43,9 +43,9 @@ Optional settings are listed in `.env.example`. Copy it to `.env` if needed; the
 
 The curated graph, artwork, fonts, and app are served locally. Live catalog searches, public playlist imports, sample discovery, external source links, and official audio previews require internet access and remain subject to their providers' availability. Private playlists cannot be imported anonymously. The app does not require a Spotify login for public imports.
 
-When running locally, contributions and API caches are saved under `.local/`, which Git ignores. Browser discoveries and the selected library also persist in local/session storage. On Vercel, personal sample contributions are saved in the visitor's browser, and provider caches are temporary server memory. Contributions are not shared with other visitors. Clearing browser data removes that browser's saved contributions.
+When running locally, contributions and API caches are saved under `.local/`, which Git ignores. Browser discoveries and the selected library also persist in local/session storage. On Vercel, personal sample contributions are saved in the visitor's browser, and provider caches are temporary server memory. Contributions are not shared with other visitors or submitted to music providers. Clearing browser data removes that browser's saved contributions.
 
-Server endpoints provide adapters around the bundled data and public music services.
+Server endpoints provide validated, cached access to the bundled data and public music services.
 
 ## Structure
 
@@ -68,7 +68,7 @@ npm test
 npm run build
 ```
 
-See [verification notes](docs/VERIFICATION.md) for exercised browser flows and external-service limitations. See [provenance](docs/PROVENANCE.md) before redistributing source or assets. `package-lock.json` is committed for repeatable installs; credentials, caches, generated output, and `node_modules` are excluded from Git.
+See [verification notes](docs/VERIFICATION.md) for exercised browser flows and external-service limitations. See the [data and asset notes](docs/PROVENANCE.md) before redistributing source or assets. `package-lock.json` is committed for repeatable installs; credentials, caches, generated output, and `node_modules` are excluded from Git.
 
 ## Deploy to Vercel
 

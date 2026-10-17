@@ -1,14 +1,16 @@
-# Frontend
+# Back Track frontend
 
-The React frontend provides music search, listening libraries, interactive ancestry graphs, originality reports, and playback controls. Components, hooks, services, and graph utilities are organized into editable modules.
+The React client provides song search, interactive ancestry graphs, recording previews, playlist imports, originality reports, and personal sample contributions. D3 supports graph navigation and transitions.
 
-React and D3 use npm dependencies. Remote music research calls use the local backend gateway, and contributions are saved locally. Artwork and fonts are mirrored under public/; recordings still require their upstream audio providers.
+Music research requests use the same-origin API. Contributions are validated by the API and retained in a verified browser ledger, including the metadata needed to restore external songs after a refresh. Local installations also save contributions on disk; the hosted app does not retain them in a shared server database.
 
-- src/components: home, search, library, interactive graph, song inspector, originality report, player
-- src/services: catalog, research, listening imports, persistence, playback
-- src/utils: graph traversal, inheritance math, layout
-- src/hooks: listening and responsive inspector state
-- src/data: graph loading and indexes
-- src/styles: blue theme, presentation palette, and layout styles
+Artwork and fonts are bundled under `public/`. Recording previews and new catalog research require their music providers to be available. Incomplete research is labeled and can be retried after refresh.
 
-Run the commands in the repository root README.
+- `src/components`: home, search, library, interactive graph, song inspector, originality report, player
+- `src/services`: catalog, research, listening imports, contribution persistence, playback
+- `src/utils`: graph traversal, inheritance math, layout
+- `src/hooks`: listening and responsive inspector state
+- `src/data`: graph loading, indexes, contribution restoration
+- `src/styles`: blue theme and presentation palette
+
+Run the commands in the repository README. Asset and dependency licensing notes are in `docs/PROVENANCE.md`.

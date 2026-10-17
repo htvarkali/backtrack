@@ -1,6 +1,6 @@
 # Back Track
 
-**Live website:** [Back Track](https://backtrack-kappa-dusky.vercel.app/)
+**Live website:** [Back Track](https://backtrackmusic.vercel.app/)
 
 Back Track is a music ancestry explorer: search a song and explore its samples, genres, and musical traditions. Use the live website or run the complete app locally.
 

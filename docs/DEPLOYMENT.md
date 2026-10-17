@@ -1,6 +1,6 @@
 # Vercel deployment
 
-Production: https://backtrack-kappa-dusky.vercel.app/
+Production: https://backtrackmusic.vercel.app/
 
 Vercel project: `ytmolecular-1435s-projects/backtrack`. The project is connected to `htvarkali/backtrack`; pushes to `main` deploy automatically. The production URL is publicly accessible without signing in to Vercel.
 

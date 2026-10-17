@@ -1,0 +1,3253 @@
+{
+  "retrievedAt": "2026-10-17T06:52:15.482100+00:00",
+  "graph": {
+    "sourceSha256": "555d448e784eb39f78c7999a9ab587055627ff545eb596b35949b40d471b3df3",
+    "sourceMeta": {
+      "built": "2026-10-13T07:00:55.099Z",
+      "songs": 179,
+      "samples": 119,
+      "previews": 168
+    },
+    "counts": {
+      "featured": 8,
+      "also": 12,
+      "families": 12,
+      "genres": 45,
+      "songs": 179,
+      "samples": 119,
+      "traditions": 43,
+      "influences": 154
+    },
+    "localPath": "/data/graph.json",
+    "modifiedFields": [
+      "art URLs rewritten to local artwork copies when downloaded"
+    ],
+    "artReferences": 546,
+    "uniqueArtworkUrls": 456
+  },
+  "artwork": [
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features/53/63/98/dj.lpbzctsa.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3e0a2a3c36d9c0b99ec2cfc5.jpg",
+      "status": "downloaded",
+      "bytes": 92557,
+      "sha256": "0eb0c01c7800aa79a501034cc01b1c98fb535c531eecf89827130af2ff276453"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/3e/dc/57/3edc575c-53e7-8b80-b91f-b78fc2dfa06c/dj.gayvfeal.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b142442408aa5fe094046682.jpg",
+      "status": "downloaded",
+      "bytes": 108054,
+      "sha256": "8d81e3275bda04a81500f9f0a52acc5358e416b08db27f2f141ff6c21afa32f4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/49/e1/78/49e178f5-0d78-9ef5-4bc7-25a810dea995/dj.etkcfosv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8566e7265297312fac21594f.jpg",
+      "status": "downloaded",
+      "bytes": 169070,
+      "sha256": "0c6fa32e2f4ad1810c043e28563acc93f9c561e2e509a12c8418f569b53dbbb4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/08/66/e3/0866e3ef-c111-c0a2-f18e-a10035a5bb07/dj.hpsoegav.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0eb42530681777490cfa3c6f.jpg",
+      "status": "downloaded",
+      "bytes": 90083,
+      "sha256": "e8de78e83a4471fc6b11e79b8149199204eb3eef2f83fc4a55ac5288fb262843"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/2d/27/f4/2d27f445-abf6-f360-f56a-683b65c9b842/dj.hhpuvuwv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/eae50c16c178d6f8c05aef73.jpg",
+      "status": "downloaded",
+      "bytes": 47148,
+      "sha256": "ee2a98cabbe2488741dcfab8c7c9c21f0e79ae67a6691db5806f5bc1200a8298"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/34/8d/c7/348dc71c-d75e-9baf-671a-994e9e74b018/dj.pimdxdmf.jpg/600x600bb.jpg",
+      "localPath": "/artwork/95bc352edd2b1fb4156ad87b.jpg",
+      "status": "downloaded",
+      "bytes": 118698,
+      "sha256": "207d312a2ca472a037312476f244dee1929cda89d736e2ffb38645198394f1c9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/72/62/2a/72622a87-6983-ae1f-a02a-5940c4298553/dj.pcbpnexk.jpg/600x600bb.jpg",
+      "localPath": "/artwork/53967083e97b2694b6821b0a.jpg",
+      "status": "downloaded",
+      "bytes": 157395,
+      "sha256": "0795e821e31de43b61100c1e572de602b3fb5692c697d0a084ea351500d94428"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/74/34/58/7434589c-4c48-5334-56b2-aa1388935851/dj.xilerauv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/123e20baa46083dab57556b6.jpg",
+      "status": "downloaded",
+      "bytes": 64574,
+      "sha256": "0eb191aed975ec18786ab72a3bd07878b79c95d919d6948e047b612bca39027f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/b5/4c/c2/b54cc20d-03f5-f2c4-4a0d-9b51ad65af89/dj.txuslqgv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5182ffdc1fe839add7f8f86b.jpg",
+      "status": "downloaded",
+      "bytes": 128094,
+      "sha256": "bc5feffcec1a4a5d973f761830d57bf83f616ae823c0583bf4a5d0b146289915"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ca91318711b0456e78b9458d.jpg",
+      "status": "downloaded",
+      "bytes": 116494,
+      "sha256": "31691787711c6a67b4509d3aa52e7b2c4c6801958d3679b3fecb75d5a58fde9b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/05/c5/dc/mzi.wmuncckr.jpg/600x600bb.jpg",
+      "localPath": "/artwork/97d46ae174bc4a61c213d01a.jpg",
+      "status": "downloaded",
+      "bytes": 121487,
+      "sha256": "0e4aea2d144a4621f185f09be77009640038399dd5e3838d78339322dd7d581e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/12/f3/aa/mzi.rktwmzym.jpg/600x600bb.jpg",
+      "localPath": "/artwork/336e06dc633049674bd3ed07.jpg",
+      "status": "downloaded",
+      "bytes": 155304,
+      "sha256": "8b56147cf5fb85282cbfc1e34745a6291f3bc25d659b8b70bbc26a8a9331168b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/1a/56/e4/mzi.anmtigzp.jpg/600x600bb.jpg",
+      "localPath": "/artwork/70caa09840297e702146d7d5.jpg",
+      "status": "downloaded",
+      "bytes": 109877,
+      "sha256": "d4b50e9f5ba92dc4a44b9e3c60cca54d389e85e6f1f33d9832a550b4c927bbea"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/1d/b2/34/mzi.itlwnkel.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f5c776025f135ed02659e8fa.jpg",
+      "status": "downloaded",
+      "bytes": 99959,
+      "sha256": "74d048b6be3e1c6d00cb4c4baede874f4c9ebbeb4727a982f9824b7133646100"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/22/f4/be/mzi.xrwfxjfy.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8908129637114367cb0f597f.jpg",
+      "status": "downloaded",
+      "bytes": 101730,
+      "sha256": "375fbf2a74324e37c7d0e41dc69ad23ca3d2e60fd09c2c419fdfef5691d1b7f5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/24/c3/30/mzi.hyqkadvx.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0a4fe9d443742873f4b75aa6.jpg",
+      "status": "downloaded",
+      "bytes": 77072,
+      "sha256": "7216c33556cadd9429d9605a89f7f4cafff43ed5a6d803572d0ea5f0c5f179e8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/27/36/e4/mzi.nqdliugn.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a50c68ed353ca2149b54d237.jpg",
+      "status": "downloaded",
+      "bytes": 174308,
+      "sha256": "b56d194370843b7c6d82757fcc00a59329f4a7f4ca5e15848fc6b9b58c8d405b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/31/a6/d6/mzi.vtgbygzf.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4b52b95ed71eb7353a786af6.jpg",
+      "status": "downloaded",
+      "bytes": 97051,
+      "sha256": "b22cc357344473470fedef80b8c287834c3ba95aa5e88200f9f3f62e3ec1d250"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/3d/a1/65/mzi.ftuckvht.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c99c7b242621d4335e197dec.jpg",
+      "status": "downloaded",
+      "bytes": 125127,
+      "sha256": "b44b2e75356926d71d16fbf0ca5f6d17e006220d79d80274ef579f6567ef2b18"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/43/0e/2b/mzi.uftbeetz.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f05ee8fab1e098c3672bd398.jpg",
+      "status": "downloaded",
+      "bytes": 124770,
+      "sha256": "f6b4f45643b04b86b4d8fd122a0d6cdadf24c1fd12f33d85b1a757cc5054ad68"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/49/af/71/mzi.mukbhrkf.jpg/600x600bb.jpg",
+      "localPath": "/artwork/86b7a5927580b87e87ccd127.jpg",
+      "status": "downloaded",
+      "bytes": 140841,
+      "sha256": "254fcbac8a6ae5ea7902310492644cab9e5bac376ba003585eb9c9c797ff5cae"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/4e/84/15/mzi.elqfpddh.jpg/600x600bb.jpg",
+      "localPath": "/artwork/2958ae95e4c57c36139ff979.jpg",
+      "status": "downloaded",
+      "bytes": 149794,
+      "sha256": "a603a3c91f55a6e0ff359320edcd5fb7906c2916ccfed91997711a1481cf1918"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/54/e3/5c/mzi.rviwtikb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/91d689068c4e20438092eaef.jpg",
+      "status": "downloaded",
+      "bytes": 116981,
+      "sha256": "3a8b0e28f85878d7c11f16834c592e7c2e977f4402fdb3c9c7a53a23b1ebd4b9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/55/99/a3/mzi.hrlccxem.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f2796e5434a77340f910ac46.jpg",
+      "status": "downloaded",
+      "bytes": 153229,
+      "sha256": "2bcfd79a5f2a1b64ba88b58f7316c7117b402e4a3a7c53441f8cb4d349990250"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/59/d9/83/mzi.kblbbpah.jpg/600x600bb.jpg",
+      "localPath": "/artwork/cbb7ddc10f429fa809a73ef6.jpg",
+      "status": "downloaded",
+      "bytes": 79794,
+      "sha256": "2f3dae79beebd7c833e4480ee8811025249ebb646869658436d9b6e0e44b98fd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/73/a9/80/mzi.qdagzjdl.jpg/600x600bb.jpg",
+      "localPath": "/artwork/840683f7eeda8168d06bf84c.jpg",
+      "status": "downloaded",
+      "bytes": 162892,
+      "sha256": "08d13bcd520ed079f67d1f2436f4c19e68f6d665cadd8c6b0f3e76888f757fb3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/74/01/54/mzi.irvhrzdk.tif/600x600bb.jpg",
+      "localPath": "/artwork/9306d9f29f44f22e44078b7b.jpg",
+      "status": "downloaded",
+      "bytes": 103184,
+      "sha256": "d404373f67bc808a9ffd363ca0d1101bca3dd9584cd36ecb9796c5f50e782818"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/7e/eb/d2/mzi.poggifmm.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a2bd3bf3670cae796191de5c.jpg",
+      "status": "downloaded",
+      "bytes": 234796,
+      "sha256": "fed0d744a3d03ee1b756478f1b50a9874dd5a76e20c5eae2c70b6130e072341d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9905fe002c38b31478000c8f.jpg",
+      "status": "downloaded",
+      "bytes": 61116,
+      "sha256": "779ff741ecb7d82e3a814762fe98dc45ed3f279da85c8bfbed0160c6e16266de"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/82/09/26/mzi.mxxpqqav.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a075b2017660452d010bafa3.jpg",
+      "status": "downloaded",
+      "bytes": 62321,
+      "sha256": "b57c83c5da2b62183a42ec2a2fc52eb074cdd1a49bb8dc88f79fcb711689f2c5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/8a/56/96/mzi.kxqigvzg.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0f99916869c1fe1518514cfc.jpg",
+      "status": "downloaded",
+      "bytes": 166854,
+      "sha256": "5c1a972d4574fb5f5194a4e7c58bad6bc65883b9a4d887d277138db9e965a3a7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/97/71/ba/mzi.nffcqprt.jpg/600x600bb.jpg",
+      "localPath": "/artwork/162e5532b34d52f4667eafd0.jpg",
+      "status": "downloaded",
+      "bytes": 146346,
+      "sha256": "d933f79d2527eab679b7c97751b89272ffcb6c24749880ff32a9978c261d1adf"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/97/cf/53/mzi.cxpgggzy.jpg/600x600bb.jpg",
+      "localPath": "/artwork/427650bdb81f3bdfee785497.jpg",
+      "status": "downloaded",
+      "bytes": 115315,
+      "sha256": "68ffcbcacaf1b213a6657c9645e0db81014a6fe9d9ccbe043b326446543a94a5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/99/5e/6a/mzi.pfgveole.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7a136366a9e3ad5e46d0c42a.jpg",
+      "status": "downloaded",
+      "bytes": 77966,
+      "sha256": "554c9b99668796a168d0203b8315982ce6134194ae7507ab80f6fd35b2f9537c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/9b/c4/83/mzi.sduvumez.tif/600x600bb.jpg",
+      "localPath": "/artwork/8bb35fdbd5bfa87478acf510.jpg",
+      "status": "downloaded",
+      "bytes": 163551,
+      "sha256": "27fa424ff4d52af00986daa48449f3a9385a7681ef7b8821f6f3ae788899c9f3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/9e/b6/1c/mzi.vqtivbis.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7c89f69043e02b5f3b7a6d17.jpg",
+      "status": "downloaded",
+      "bytes": 144201,
+      "sha256": "90f59fe8c84642ceecfcabaa40d5896d0cc77e3a691ace7d3667ce31abfddcb8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/9e/bd/f8/mzi.irgqmonl.tif/600x600bb.jpg",
+      "localPath": "/artwork/9188d0d97d1029fa90197ec8.jpg",
+      "status": "downloaded",
+      "bytes": 127662,
+      "sha256": "23a55fb9a4f9f398d2e9abb2ab76fe85b976b673bb855ec2961aec5e71573553"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/aa/c3/7f/mzi.kiwvnmcw.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4466dd67102473d621ebe470.jpg",
+      "status": "downloaded",
+      "bytes": 153537,
+      "sha256": "04e7b9aa90533c9e252ea16bcc49de75b2ef61540a30a62ba5b92568ca283c6a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/ad/20/b1/mzi.zmwjukfl.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bd92bd991222b65df19ce536.jpg",
+      "status": "downloaded",
+      "bytes": 100718,
+      "sha256": "b66ce339cb42abd92b9162d758ef89dbdcd7f0255433bb3d44a1dee2b2b44b92"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/b3/d9/9a/mzi.sltdytzs.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1614eff6d322d80f27f522c1.jpg",
+      "status": "downloaded",
+      "bytes": 123857,
+      "sha256": "5c9c63b55807336e9892df1b1fa76fdad71584661d6e3e0d96b7405a511ec551"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/b5/d4/47/mzi.emefxfzx.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e04d8b96f3624030f24a24bc.jpg",
+      "status": "downloaded",
+      "bytes": 120266,
+      "sha256": "ab4199f7bf19d87e7f36d2481431d647f8ef1f57f3a65c18ce68d2672ee43410"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/b9/d3/99/mzi.lnnuvjqp.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5f8f06bc42cb68ec6a9d3faf.jpg",
+      "status": "downloaded",
+      "bytes": 108485,
+      "sha256": "1e4256c0dedbd032e551019165e4d93ff9fbbf79269034cb7a31578e5657b277"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/be/03/1d/mzi.jofxiiwa.tif/600x600bb.jpg",
+      "localPath": "/artwork/e8f3397baee5269a3c2efafb.jpg",
+      "status": "downloaded",
+      "bytes": 99731,
+      "sha256": "0c1a5d2b17ac6406743b937421babd46b74bab8c319f8dc7d9702831f46cffa9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/cc/fa/c2/mzi.yatyjfst.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0080b2bea7b17d248947faf1.jpg",
+      "status": "downloaded",
+      "bytes": 102071,
+      "sha256": "980373b545dcd84356c0c4f7cbcbd0614bedc93f1d7b9f096098c8d30205dddd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/ce/11/00/mzi.mcdbyrde.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5e87d79947e2fffb741b935a.jpg",
+      "status": "downloaded",
+      "bytes": 157128,
+      "sha256": "f0c718de47e3c719a3daa7ffd40a3f0ac4d780634b8985f47f7282be41c34adb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/d6/67/91/mzi.xaaunqcc.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dd79e539af26a1fd99b8423d.jpg",
+      "status": "downloaded",
+      "bytes": 96718,
+      "sha256": "cb26970d3bbd84dc4df19fa080bf7821e915b7783aba5e507e16fb94461ed726"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/e0/56/32/mzi.hxijgxbt.tif/600x600bb.jpg",
+      "localPath": "/artwork/249976fc3c5bc232c465198d.jpg",
+      "status": "downloaded",
+      "bytes": 149450,
+      "sha256": "2b3fb5eca40af4a2538e17957ba6a2587bdc3bf7c1c5388570afd9822eb45e11"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/e7/ae/b1/mzi.pqtfawxf.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8357c38891a54b62b89ae9d9.jpg",
+      "status": "downloaded",
+      "bytes": 73479,
+      "sha256": "649096d55787d092f2093acb82eb3ae1b4fab150ddfe6f691afc8fdf7dbc70c5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/f0/ce/8a/mzi.cypbonzv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0565678fc1def0bfea91b16f.jpg",
+      "status": "downloaded",
+      "bytes": 121353,
+      "sha256": "087f72e2d01f9f258b2ccfdf69fd41c4b3fe81f69bf0be0fdf739fa3bc7e604f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/32/76/a3/3276a306-233b-06e7-6262-5d657c031979/Cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/17f840c53474459abb4fdd63.jpg",
+      "status": "downloaded",
+      "bytes": 90389,
+      "sha256": "ae7f281e0f621c631eb4d1bbfc9c665b8ac8624a6dcb44298a727a05eb6f01b8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/34/38/e9/3438e94e-e1e2-f570-fc33-03d0b61f5283/Apache_-_The_Shadows.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ad173b5d6e18d0aa359fb05e.jpg",
+      "status": "downloaded",
+      "bytes": 90705,
+      "sha256": "46b330d2fe7a8c82d66c45b774bbc433ff4bf7021521525b3e9ebd1150ae35a6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/43/28/d9/4328d98b-bfe8-35d8-a3cb-53ebd96ca4ec/675754037062.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0c003e67cf42c886a1304716.jpg",
+      "status": "downloaded",
+      "bytes": 114372,
+      "sha256": "d174559b928d213cc6ed7d5a76172ddcd9f63921152826e7d3b68c458eb1321d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/4c/23/1e/4c231ef3-9951-f1f8-3181-89d059740307/00015707011754.jpg/600x600bb.jpg",
+      "localPath": "/artwork/becd7c6abdfcf4a1edda24d8.jpg",
+      "status": "downloaded",
+      "bytes": 131207,
+      "sha256": "c311a440b1504e13bfc04cea687e3360b9c2b17d5210833bde79a1fbdbfd8825"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/55/33/7e/55337e95-d781-1057-cd6a-94ee425b6850/5099930156159.jpg/600x600bb.jpg",
+      "localPath": "/artwork/36949428dc6b2e7a015a1820.jpg",
+      "status": "downloaded",
+      "bytes": 123517,
+      "sha256": "b7d78313eb972f9d6e76f560673d9ba37c4065d07569c640de90e961901af074"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/5a/4f/5f/5a4f5fcc-5352-b286-38ea-0893e1dd76d8/5099930157958.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5dfffbe418ff8744972a00e3.jpg",
+      "status": "downloaded",
+      "bytes": 82153,
+      "sha256": "745d8d336bdd129bdf6521b3809dfd2d7343e7ed922aa97246cec8dd2742ca65"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/97/23/8e/97238eae-4fe1-5e09-012b-91b49268dc60/0724357819855_1401x1401_300dpi.tif/600x600bb.jpg",
+      "localPath": "/artwork/ee927e1e95e4345da05a38d1.jpg",
+      "status": "downloaded",
+      "bytes": 81112,
+      "sha256": "24d69b385d269276866f603638f25080a1c278707a3a01766208091bdc9e53f7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b5/a6/a0/b5a6a0ef-f79c-4095-b02e-f6be74809f3d/Cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8696451ed0157fd36c0d047a.jpg",
+      "status": "downloaded",
+      "bytes": 112169,
+      "sha256": "a8780d99cdfc437a3bd957728fcb2dcc36e57fd6f06ba17603b72fd8af291cfc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m05/d05/h12/s05.tlawfduk.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c1fb9e3af93e68da79de9146.jpg",
+      "status": "downloaded",
+      "bytes": 119211,
+      "sha256": "9c694f7d6523ebc15314e963b4306268c0b2b154638615a2232413636ad34876"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m05/d11/h07/s05.vtbwpijl.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ecef3689e7e2647f5711ce8a.jpg",
+      "status": "downloaded",
+      "bytes": 90929,
+      "sha256": "66c6e952d2da12c32a150262958e71d5a733d06666864d8571e41223aa6eea09"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/3d/9a/57/3d9a57c1-034a-793d-9b3f-07163a803c16/dj.agyibvlt.jpg/600x600bb.jpg",
+      "localPath": "/artwork/90604a1e102d8cd49d309157.jpg",
+      "status": "downloaded",
+      "bytes": 42909,
+      "sha256": "799f934d50cdafbf27e1382f21527d9c7e0bbbec1be9aa94f20128dd8a2fcab6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/77/29/f3/7729f302-5372-29ee-fff7-9757a5d465c2/8433391185803.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9d7668a2fa034d97c28563d8.jpg",
+      "status": "downloaded",
+      "bytes": 81759,
+      "sha256": "992a6e5782b37a9bf9222296f74fb1658746c6243891d3c6a5f4a4c2a2d2c47b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/85/c1/1d/85c11d96-b5c4-f95a-1370-2403d6970460/dj.iylffdry.jpg/600x600bb.jpg",
+      "localPath": "/artwork/274ff7f981de3c19149c14e7.jpg",
+      "status": "downloaded",
+      "bytes": 95773,
+      "sha256": "85e7d7c5e440f2838792aed01cd8bfe5e680bb0fd86e7a2d54c928f450f93d21"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/89/42/e0/8942e0e0-8c0f-50d3-7d39-923fc5e24964/888831902119.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6a7e7b611a85d7353da634bd.jpg",
+      "status": "downloaded",
+      "bytes": 85378,
+      "sha256": "dd6470b56d621ecdfa428cd5a9d95b30775aaa4e26ed1961c102d359378d1dc9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/ac/34/2d/ac342dcf-8349-676f-9510-c1bd27e932d2/dj.ajlyslln.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6c79e45d500b4e6875d512d5.jpg",
+      "status": "downloaded",
+      "bytes": 89131,
+      "sha256": "7e9dfc92a7b81356fae04fda13094239c4fc75dcad28fb239a2202dce382f7b8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/ce/7e/be/ce7ebe2d-418a-bbf6-8fd6-054beff0cf18/724596905456.jpg/600x600bb.jpg",
+      "localPath": "/artwork/662a6a7c4cc932777b38a6c2.jpg",
+      "status": "downloaded",
+      "bytes": 152168,
+      "sha256": "96271b2215a438a78896e0d0560f2f2ea8ad20e4f0cc6115c424102bd56a853e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/df/99/2c/df992c90-76b1-1903-2fba-092154fada7d/886444339728.jpg/600x600bb.jpg",
+      "localPath": "/artwork/398444909c0654302a0b022c.jpg",
+      "status": "downloaded",
+      "bytes": 127401,
+      "sha256": "3651ebda30d40d9f20d791a98e420658925f160a3d73eccc769f5a21377252b3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/bf/09/51/bf095183-26b9-78a1-9c11-cb1ff5dffe2f/191018164263.jpg/600x600bb.jpg",
+      "localPath": "/artwork/17625e7239f148f4cbc181f5.jpg",
+      "status": "downloaded",
+      "bytes": 74743,
+      "sha256": "b909bc4e26b6681151732e46cd6d05ec2c7948ae337cf33ddcbbedb87a88c942"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/e1/fe/9d/e1fe9d22-2a74-cb1d-03c7-d804f471b160/886446376899.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5fc455e0fd51e611fb188f04.jpg",
+      "status": "downloaded",
+      "bytes": 105695,
+      "sha256": "7b9ceda6383f53b93f2d065f7d0507a40cce8cffaecfcac3ceea492e22a72098"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/ef/53/03ef5302-65c7-b0e1-9877-926257626ead/15UMGIM77911.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/366bc15ac2bba89d63b1807b.jpg",
+      "status": "downloaded",
+      "bytes": 43821,
+      "sha256": "0da1f8c7172a40650d92988714213c4d8e87c51e10b540930db3b38a83423df1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/05/05/f3/0505f338-9873-feb4-af7f-27a470405e5f/196589246974.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a614df75aea06e967b038875.jpg",
+      "status": "downloaded",
+      "bytes": 43233,
+      "sha256": "59e56edcc325cc9318c392f254214438f46818ff606b0151096786cd8342bdbc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/25/46/17/2546176c-0f7c-b1a0-20b8-5200ebc6c473/16UMGIM27321.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d29ed2bd1b49354700e7bae8.jpg",
+      "status": "downloaded",
+      "bytes": 81835,
+      "sha256": "a9c8ee406148f85f58363f3295244acd11506151736abdf728e685c0a6884496"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/29/b7/81/29b781e5-3773-c87e-c6a8-82581e53d270/13ABKIM00053.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/57c920e6038379863581e954.jpg",
+      "status": "downloaded",
+      "bytes": 146422,
+      "sha256": "de9dfd4d90878467d4d5333f1ccd70546f2b2e75b70a16fdf88a50b6480c95b4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/44/60/90/446090ab-15e3-80d8-c2b1-2628b8230845/18UMGIM23690.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/261e95ef02e463aa69fe7cea.jpg",
+      "status": "downloaded",
+      "bytes": 241916,
+      "sha256": "2df2f34551eb4a75d321e4a692cf58fb37703aed69299292ed681aa444915270"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/53/7f/a5/537fa592-7dbe-1966-afe9-d7097997b63d/884977869781.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3a693a8fb8e0e540d0e5af2d.jpg",
+      "status": "downloaded",
+      "bytes": 59616,
+      "sha256": "6a46fd8a7c3509c24a8276d8d329c707fb66ceaf2372729b2e397d806d5ca44a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5a/6d/80/5a6d80cb-fcc5-1ceb-623c-1cd5145b69d0/0884108012673_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/664d62200d25580d932d82d3.jpg",
+      "status": "downloaded",
+      "bytes": 82221,
+      "sha256": "ce4b1a3c5bcfd55b84f68d74a2f6a0bd3f1ed17ca81694e3686521979cd43d59"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/36/2d/76362d74-cb7a-8ef9-104e-cde1d858e9a9/20UMGIM95279.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/384cba579b439501cf15c813.jpg",
+      "status": "downloaded",
+      "bytes": 120905,
+      "sha256": "0a2e9ffe3a48ab035aa9ecdfccdae0a94d6c8c1c5225e9a76f91c3c6d87dcab1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/88/ec/43/88ec43e7-3321-6664-835b-73243625f668/4250282801123.jpg/600x600bb.jpg",
+      "localPath": "/artwork/364a01cec264cc1d3f8645ec.jpg",
+      "status": "downloaded",
+      "bytes": 67374,
+      "sha256": "ffad251589e5bbb8febc944f6d336fc062874c629f7ccfee5d93ef577c686bc5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8b/d4/0f/8bd40f66-f9a7-963c-c327-79980e91445f/06UMGIM17125.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c283c226d65e4ed923f99129.jpg",
+      "status": "downloaded",
+      "bytes": 159917,
+      "sha256": "4306e572d0a2b834f478ca3d31d8c78b868a39abcfdf7abf32adda409c5e92ea"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8d/69/0b/8d690bbb-5711-bfe9-7ae3-b0079e16ac19/14UMGIM55268.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1d25f2e3aea3ca88de1de1c5.jpg",
+      "status": "downloaded",
+      "bytes": 102994,
+      "sha256": "d942d1e92fe9dc4008478cf9cf3b0a811e22239ecc01ecdf0cc5d49527b258f0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c5/15/5f/c5155fb0-4e81-c87b-a5f7-1f2a960e2d44/06UMGIM02222.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0332c9eaa8eca1aa2fc7f84e.jpg",
+      "status": "downloaded",
+      "bytes": 104615,
+      "sha256": "5dc2d2bb680121870364c3e99dce436514c0c4f6770b0812ac1e6efb49c26113"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c6/dc/1c/c6dc1cc5-5966-7bf9-c752-74d24cf2efe8/603497891436.png/600x600bb.jpg",
+      "localPath": "/artwork/5be066141b51c0a5ba8bdabb.jpg",
+      "status": "downloaded",
+      "bytes": 171692,
+      "sha256": "aef86d6be0d7c5ef7a0ccf58218e11e2376fcb4de5513caacae2368db0f1e132"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/cf/ea/cc/cfeacc37-5c57-07b3-0188-025842d5ac61/06UMGIM60257.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/404df7961dd9a1d64f4dc554.jpg",
+      "status": "downloaded",
+      "bytes": 99707,
+      "sha256": "04109aa9a4433606b3b5fdc96f9924898a08017c6917c4d503af5605ef1542a3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d8/ec/4f/d8ec4f92-0691-9151-1738-9fbe2e19a270/886445144888.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ca1a9571c13e1078228dcc8b.jpg",
+      "status": "downloaded",
+      "bytes": 203204,
+      "sha256": "924468edfc01e681094ac971d42aacabb07de1b24385807cd09c088d8460b073"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/de/b3/6b/deb36b59-7bb1-9a88-7b56-3fd4ba0a33a3/197187536160.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e6c92fcf0fd58c38f29aff3f.jpg",
+      "status": "downloaded",
+      "bytes": 71815,
+      "sha256": "5f1fa70978dee0cbc720a3b87ea9302e02007ff6424d2195d3fb077e9d418bd4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ff/39/b6/ff39b60d-1ed1-f8d7-1ea5-79186743bc4d/6009555116888_Cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/902922e1b299ec4e6757616b.jpg",
+      "status": "downloaded",
+      "bytes": 143642,
+      "sha256": "3e0fa044fbb9f3b8d7f60adf443172ed7e99ab6d51811392227a5507286b449d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/04/92/e0/0492e08b-cbcc-9969-9ad6-8f5a0888068c/5051961007107.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fb110d45455d56b08babcab6.jpg",
+      "status": "downloaded",
+      "bytes": 155641,
+      "sha256": "c82e7694fafad8c84fa8e48d7cec7759714c1ae2047de8ff73ed50a5b1d25977"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/1d/a8/76/1da87683-6db2-bd19-e719-039762b98814/193483828572.jpg/600x600bb.jpg",
+      "localPath": "/artwork/260c811c8818a4fee230cc7c.jpg",
+      "status": "downloaded",
+      "bytes": 99839,
+      "sha256": "2b46b81036b856fe78d428c710c7b040f8fdcf31d5cd325e43a7f378768b65fa"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/2c/32/01/2c320187-8b55-6724-874d-1aa19e470048/661868012064.png/600x600bb.jpg",
+      "localPath": "/artwork/e3e426ea0e9d5169c74aafce.jpg",
+      "status": "downloaded",
+      "bytes": 193004,
+      "sha256": "6a3c82640823cce320f17a2964f31416526ab0b3d3d5e05151fbb697fed46779"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/35/c6/58/35c65858-52cd-94f5-2f8f-fbaa811a49da/16UMGIM58854.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/37633d28b6d6987485bb585a.jpg",
+      "status": "downloaded",
+      "bytes": 94026,
+      "sha256": "0fb21a520843318910277c779dd29068da472c7d2ea53505046349e1bb70e6c4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/4c/b1/32/4cb13290-7d01-1949-57e9-a8a1874e60a2/19UMGIM79184.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/35a4d1063d9df1f6282fe24b.jpg",
+      "status": "downloaded",
+      "bytes": 103515,
+      "sha256": "f0f0cbf27580dbb86655464527d89c7cbb23151503560b058528536e754bc1ea"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/6a/bf/52/6abf52bd-0cb8-f385-f141-a62ff05e3c17/19UM1IM06868.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/aff4a4fd7006bc2f4131974d.jpg",
+      "status": "downloaded",
+      "bytes": 136979,
+      "sha256": "dfc99958945dd40512dd2365907452484c77a7da3c012d77eec39bdeaf6b5e62"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/84/a4/b8/84a4b8b3-56b7-6dda-aea1-5a93bd6a9b88/19CRGIM19669.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/cce5cb33981e2bc080a706db.jpg",
+      "status": "downloaded",
+      "bytes": 94875,
+      "sha256": "f84382d3423c99568a269a1591527c9432122856a28a84bac4b355cfb79ac52a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/8b/44/27/8b4427e0-8a3e-fb27-eaa2-14c7379464cf/886448160809.jpg/600x600bb.jpg",
+      "localPath": "/artwork/843d4d0b18d23638dce81447.jpg",
+      "status": "downloaded",
+      "bytes": 94941,
+      "sha256": "bcc2a632fca9b860c8427ee37019195bad0ffa04798c845b499e4c0c3a949f95"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/a8/34/2f/a8342f9b-92c5-017e-9c9e-ef8fc939435b/736640369589.jpg/600x600bb.jpg",
+      "localPath": "/artwork/49833b57e7e106cb70ac606b.jpg",
+      "status": "downloaded",
+      "bytes": 111585,
+      "sha256": "88395129058263cc96eae00a52e9f43a69f2f3a1c1847b5a9ee2c1479942a531"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/01/d7/1d/01d71d63-3fec-5c9c-571b-7a033e0d28cc/dj.wsybhmzt.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5834dc9bea8bcb049bec8ab0.jpg",
+      "status": "downloaded",
+      "bytes": 107549,
+      "sha256": "233773d01b45537f4e25a051502908770e5dfa69d48fc64ec354f80a353c86aa"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/07/25/09/0725098a-09f4-f240-e551-94384a590371/886448799009.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d8bbf4e0fe251bf6c97957a2.jpg",
+      "status": "downloaded",
+      "bytes": 59994,
+      "sha256": "d769e91c70fbb95752dba6de9d8c673102a7a8a8f08fbb37c0f3118cc9b26ced"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/20/3c/f5/203cf53d-689e-528f-29d7-ba33758254aa/mzi.rotbotfl.jpg/600x600bb.jpg",
+      "localPath": "/artwork/31d2ff9eeaccf303c2066906.jpg",
+      "status": "downloaded",
+      "bytes": 150263,
+      "sha256": "701bc9e6dd6277dfd4c95f9f827912a3530f187d6255ec9f1eac83c1d83828d5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/25/4d/c2/254dc257-1ea4-cdb8-4b14-7f8f8a041901/886447714348.jpg/600x600bb.jpg",
+      "localPath": "/artwork/827c87b672f1ee3695d6e0ad.jpg",
+      "status": "downloaded",
+      "bytes": 143661,
+      "sha256": "a7819c147501109abb60615046ce24eb74271f953c1363f5d359e3f78545ddb0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/31/2e/2d/312e2da7-6277-3f91-221a-bc0739a8183b/mzi.kjsrfisp.jpg/600x600bb.jpg",
+      "localPath": "/artwork/083afc1ae99fb1f2f0b589e1.jpg",
+      "status": "downloaded",
+      "bytes": 91371,
+      "sha256": "75a2977a397526e0e583bda0c37b03126da7cae8e58623c78acb188687684e13"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/43/21/7b/43217bda-9f7f-d030-c7ed-a28673b4edc7/157484.jpg/600x600bb.jpg",
+      "localPath": "/artwork/99a6af06b1e815ea78002d33.jpg",
+      "status": "downloaded",
+      "bytes": 89869,
+      "sha256": "ea3a20462d0e0c18b818af77969db0d8987f22468051cb9f4197c4dc7dfbe79e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4c/ba/64/4cba64ec-3070-f314-285f-604b3f6d9583/859724974773_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/21c6fe28120c4b01ec805991.jpg",
+      "status": "downloaded",
+      "bytes": 126736,
+      "sha256": "636b519903daefc8602a2629ff741d4a40b4d4328f47eadec65556b445b9b45c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4f/e5/f5/4fe5f511-462e-e87b-0711-d4e42809fb17/dj.goshfswo.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3accfd5e88969273a2a1d462.jpg",
+      "status": "downloaded",
+      "bytes": 129637,
+      "sha256": "44aff793fdea82d0670f6a23e9f7ced1cabadea09cc7af5b994b938bd63a97f8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5c/4d/4e/5c4d4e34-789a-2114-ece5-f6847d2874da/886447553619.jpg/600x600bb.jpg",
+      "localPath": "/artwork/94bc1b9000f54f5080ee5815.jpg",
+      "status": "downloaded",
+      "bytes": 102354,
+      "sha256": "2220c5c7ada2f19759be7fe48c940e52094596c6c7e539a068c231016f3ab10b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5e/9e/60/5e9e60dd-a249-b43d-fd58-bc04bff74d33/708527256923.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6f6ac018012b51557ba3b5ed.jpg",
+      "status": "downloaded",
+      "bytes": 75038,
+      "sha256": "cec0bed8d00b1b3789452c931f9991499ea397f797a1baedf6eca3ae02d1385c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5e/c9/f3/5ec9f3f2-d652-8d9b-6719-0f9a1a1b887f/13UAAIM01775.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/84d6a69e19a6a44d5ce3464b.jpg",
+      "status": "downloaded",
+      "bytes": 116205,
+      "sha256": "5337f2f11a3ff4fafe08faadf283ce640b9f4548f85f0aa5624969d1e98f4924"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/62/61/61/626161c0-f4d7-e6ff-8586-768340ef278f/00602537002382.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1cab7b99cc17abe4ba611e79.jpg",
+      "status": "downloaded",
+      "bytes": 139169,
+      "sha256": "35b9de78d83461ea1fdf87092109d4c062dc8698d28e68ba0f5586fafee07e99"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6a/22/af/6a22af55-6dc2-008f-6929-8b752b661e11/5060236631145_1.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e5b3b4fa2dd3c2da7e8c4ddc.jpg",
+      "status": "downloaded",
+      "bytes": 104820,
+      "sha256": "77c9042ae1b82303d4998cd5a5f41b8f1bc4f8ae1efa3914210dba59f46be135"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6f/73/d8/6f73d8de-0043-fd9c-e427-ead7fd497f58/00028946020821.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1869a475b230864c46acb286.jpg",
+      "status": "downloaded",
+      "bytes": 88460,
+      "sha256": "5737915b14f75dd3fb3495ea9364a920fbe991aec185d28ab695613567744dbd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/76/60/2b/76602b81-5e69-b9d6-cf86-ea691da91f4c/603497930418.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b05f0c631e59863ce34f5058.jpg",
+      "status": "downloaded",
+      "bytes": 111531,
+      "sha256": "18235195f8922f34b5a74b7c615b83b9c1e5f8d93ae22846d68dc6f373d884d9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/77/57/ba/7757ba77-0163-a195-950b-95786aa7a90e/17UMGIM98492.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3517b76a71fc874122b860ee.jpg",
+      "status": "downloaded",
+      "bytes": 130040,
+      "sha256": "9ef251fb1ada4fb7fc214efcccf60d4d9454b9d37a983f87eee25fe94a0c88c4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8e/21/a0/8e21a0e9-1b14-5fdc-6876-7c6a1c48d7e6/s06.htmfxnam.jpg/600x600bb.jpg",
+      "localPath": "/artwork/25e4d43443d53db146fb35ea.jpg",
+      "status": "downloaded",
+      "bytes": 107292,
+      "sha256": "fe0472926eb379a9262a0f56b89b00c24fbb12d313545d31c16cfaeb9fce7677"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/af/2d/9a/af2d9aa4-94cf-a210-9dd2-932c58240048/00076732217528.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d8b0bb3602a9814a3eb60e87.jpg",
+      "status": "downloaded",
+      "bytes": 122723,
+      "sha256": "2268203e7ecfea995aab7f9479737c665829396dfffc1e97c787e87c306265db"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/af/48/9b/af489b4e-b6d5-3b5a-198b-445c6aa8c8fb/00077778627753.tif/600x600bb.jpg",
+      "localPath": "/artwork/5baa76e4b4bc22d96fde24c6.jpg",
+      "status": "downloaded",
+      "bytes": 54743,
+      "sha256": "b1a5974552af714c1c8a3b24023c508af681bcd9ea93afe7a3d51fd35b8ab5b2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/af/b5/34/afb534ed-9620-1e0e-75da-af5f6c675ad4/06UMGIM07597.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/91d383455f8cb9c651cf16f4.jpg",
+      "status": "downloaded",
+      "bytes": 90625,
+      "sha256": "34279f423b8d4de57a6f6e15ca21c7e6bee5df09ef9685b6268ddf52a4b1503a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b2/0a/c8/b20ac807-6160-ccc1-5e14-7a11857e8fa3/00042284889421.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b3fbf853bff666bbd7fbdac3.jpg",
+      "status": "downloaded",
+      "bytes": 93012,
+      "sha256": "09130320d77146ebcaa86d6cc62e62c2d15a7f2270645613613ea736e96354d4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b3/df/c5/b3dfc5e2-3980-7b7c-f227-7022c846f5dd/814908020219.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dbdb348f73bcd567d22e7686.jpg",
+      "status": "downloaded",
+      "bytes": 97998,
+      "sha256": "332958486abe38afbbd337700cb845718c617a9d114492e264595d6fed5f173d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b6/3a/15/b63a15ba-dd50-62b0-4054-03a81241774a/00602567743217.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d791f68013aa9c726145fe17.jpg",
+      "status": "downloaded",
+      "bytes": 121305,
+      "sha256": "a96332ea2bc6975c97bf63b92e278322805e2542c3553655916955d44e4ef983"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c6/4e/fc/c64efc7d-8373-bbdb-eaa1-7bad2f80e67f/886445446715.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b4a97262af4f009a0de44d8f.jpg",
+      "status": "downloaded",
+      "bytes": 75140,
+      "sha256": "3dbb28b4eb09dfe95321a7c6e62773498e8785d7d1ecca7f5a8cfa7c6ac5ba04"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/da/b1/6f/dab16f8c-e45a-6713-c8db-86f98face960/18CRGIM08529.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dc13cdcb31e437dd16175cf3.jpg",
+      "status": "downloaded",
+      "bytes": 118233,
+      "sha256": "b4620bbaf4e0099e7351ba31393da5e33101bc9d2cd4f4dc0436234ffb5b65b3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e1/c0/b8/e1c0b820-d12b-d595-a714-9b614c08645b/mzi.uedebbso.jpg/600x600bb.jpg",
+      "localPath": "/artwork/795db379bd0d9819d0f4e5a7.jpg",
+      "status": "downloaded",
+      "bytes": 98378,
+      "sha256": "a99e8e8eefc964b0ffac0e453dda7e45501661d774db93689e56d524fa062d6e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e7/00/1d/e7001d44-c6da-035c-a3fa-d9b700693e92/mzi.rebafluv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bcbd920118b4b49b5d7beaca.jpg",
+      "status": "downloaded",
+      "bytes": 54636,
+      "sha256": "d4c9c76d9652a0f3f6dd9a665259a46847f4153aaf50384c45acb50956df3cce"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e8/98/8a/e8988a4d-27e6-cc9b-1942-a6b7daa8aaa2/00008811066826.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/78e45fea1786969c967d0bc7.jpg",
+      "status": "downloaded",
+      "bytes": 144966,
+      "sha256": "8b716f926acee7bd4011ce6a99b1a70be7cec350eb9750aa1924711d8625d292"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/3c/15/eb3c1520-e377-fe3f-e53d-32da66fa4490/888880552938.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0dbe4c3707866c5325967167.jpg",
+      "status": "downloaded",
+      "bytes": 74902,
+      "sha256": "96a03760c8aae36abb398e7c7126884dfd47eb994ead8e21b576825bc49fd885"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/ca/0d/ebca0d0d-3c73-686a-285a-f5899d1e0f25/075679954046.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b502ef549279affe175871f5.jpg",
+      "status": "downloaded",
+      "bytes": 81006,
+      "sha256": "3410df68fbcf266ca37fe5e1bfbbd8803cba75a3aeb76c9dde3737024efd6285"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f1/e8/c1/f1e8c10a-df1a-2a90-4dc6-0c903d6432ac/827170141889.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3f7e0ca6a69ddebb5d036f47.jpg",
+      "status": "downloaded",
+      "bytes": 76772,
+      "sha256": "be41c6d3e722014a7b7716340d1aa73c4ea8bc75f63bd19d7f02c85bb252c07f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ff/fb/f6/fffbf684-dab8-0075-1cc7-31b8776eee28/886448436645.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bf734b75ac99cd955dd49ca8.jpg",
+      "status": "downloaded",
+      "bytes": 49688,
+      "sha256": "b2aab4859b1e78baf7e59859ca973d7f3845646afb1ecad1f7b2c2447875e383"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/01/24/87/0124872c-b19f-f607-6409-6170dec2a9bb/766929908628_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8be5a041435144453598969b.jpg",
+      "status": "downloaded",
+      "bytes": 78887,
+      "sha256": "eb3acc36a376ae2439a9fab423bbf620e2d195748eefab3e98720a66d42098da"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/08/59/3f/08593fb1-9fa6-3f9c-5753-f5eb6620b644/dj.jnqewlpv.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fe1621dc23b8beedd8a83f02.jpg",
+      "status": "downloaded",
+      "bytes": 98934,
+      "sha256": "446abef6ddfbe690f20d8ad59cad13de3192093f3ac37ae5aa4cb6a757207f33"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/98/55/0a98555b-8d9d-3b46-660a-b91261557d17/00724384559953.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/31a64638b4bec98e77a0155f.jpg",
+      "status": "downloaded",
+      "bytes": 79475,
+      "sha256": "fb2119235c4b64d764c496133aa56488daad76e08017a09fc7a02294daa7b445"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/10/a4/3d/10a43d25-f05e-612c-799c-4c3687a3aeb6/603497886128.jpg/600x600bb.jpg",
+      "localPath": "/artwork/26f5fc66076d874b9a6be826.jpg",
+      "status": "downloaded",
+      "bytes": 111495,
+      "sha256": "661ea807cf36c60721e0b05fef0eb7bac3ef8e5c2fd0c5f2dee2e6b1b5360c34"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/12/42/d1/1242d169-4eb6-450b-f68c-f49355cc6306/886444234061.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7d7d3a01f84e1cfa41893f41.jpg",
+      "status": "downloaded",
+      "bytes": 96775,
+      "sha256": "71a57349a6baf00b56ff5170233c52f8fdd59765607400950e82300a5b01aa8f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/55/fb/1355fbb0-60f1-d15e-12cb-ad0008b99524/mzi.zqdpvvdq.jpg/600x600bb.jpg",
+      "localPath": "/artwork/78eaba51e2b8f494a3c7464b.jpg",
+      "status": "downloaded",
+      "bytes": 109341,
+      "sha256": "241ee208d5c14bfe456eb89a7fb831add16e02beb04d1f554a7f9a3415ff87b2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/68/31/15683110-5d60-1a2a-e196-18be48cf5c30/00602567825920.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7fd5f01f86fdf05b3730b486.jpg",
+      "status": "downloaded",
+      "bytes": 173227,
+      "sha256": "5704d6519026bd9613b0d3e0c8de6c08c3692d5fb68e1f9fff4b6f2fb45cfc13"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1d/c8/ff/1dc8ff05-307c-0734-17ed-6a5f7bd645ff/mzi.varbrygk.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6ae14ae31253938b3d29d71e.jpg",
+      "status": "downloaded",
+      "bytes": 61150,
+      "sha256": "6ff4fbd65856460aa70246414de1d2d6e354693647d676d60f8c949fa1a06e7f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1e/14/58/1e145814-281a-58e0-3ab1-145f5d1af421/886443673441.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8e540c920de9d061e08e3461.jpg",
+      "status": "downloaded",
+      "bytes": 22746,
+      "sha256": "9cb58d09b141eb1aa162abac0cba03e745609b422ab3212b562496f27effcf31"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/f2/85/21f2856c-b6b9-9855-ede0-57b68427e268/00044006351322.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/03fe60739b040a7d48f88168.jpg",
+      "status": "downloaded",
+      "bytes": 118608,
+      "sha256": "0ff957a04e6df7dd5c2c9b2e950df0f4e65b9ce731c45db6cdf173d25cbc1d57"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/28/61/8a/28618a95-6ee3-e6cb-b386-422b4453cd45/dj.atqvzmrx.jpg/600x600bb.jpg",
+      "localPath": "/artwork/2223d758e2b20237c1823450.jpg",
+      "status": "downloaded",
+      "bytes": 110299,
+      "sha256": "88b4e037e77cc8aca301749193a64ebf2b08a309596f912b043e3f7ef5e90421"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/29/e6/d7/29e6d727-9365-61a1-e5c3-c622956b85e4/05037128006565.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a8b61e74be6351b27b9d386c.jpg",
+      "status": "downloaded",
+      "bytes": 154097,
+      "sha256": "d68e479e9dac745cc4afa25cd47e02103b39da4bde1e95eff4685c19572ed62e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/19/0c/2d190ce6-a157-6364-b5b4-e9b00265d313/mzi.ucefobwj.jpg/600x600bb.jpg",
+      "localPath": "/artwork/30c82ceb4e35864175eeb502.jpg",
+      "status": "downloaded",
+      "bytes": 163256,
+      "sha256": "83e12ec2460fa368f300f954364c92cdfd68d2b1ac361c3d81f487ade835ffb9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2f/0b/25/2f0b252d-838e-4f19-3c08-91e49b269564/15UMGIM18445.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8047ce83a11357edd74fa17d.jpg",
+      "status": "downloaded",
+      "bytes": 104080,
+      "sha256": "649a0f3d9e67757c9a0172e4de6e99c1cbeafa954bbb43ee4b0375431d1c0fc1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ad5af716f08039608aea3db4.jpg",
+      "status": "downloaded",
+      "bytes": 89427,
+      "sha256": "511c17f50a55c64a64406310ae529166146e1537fd213f5514f1f477fe115200"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/3c/74/0d/3c740deb-0293-4184-a66d-5176b9e872a4/mzi.scyemciw.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1c83862c56b27dcfeb65c091.jpg",
+      "status": "downloaded",
+      "bytes": 119675,
+      "sha256": "1a801feaf7bba9c300979766dda1901076de435af99ccb83213131e5a1d971e1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4a/54/3e/4a543e0a-fdda-4d89-4dc0-b67c7743c18f/00602567083108.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e706643d986af73993907ebe.jpg",
+      "status": "downloaded",
+      "bytes": 135636,
+      "sha256": "4af078ab762eb198ba0724bdccbc1180b97e1a4df5b8254747e025be23c08712"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5b/5c/a3/5b5ca38d-2be1-e628-15e0-5ea1841a7a8e/s06.nkbeomks.jpg/600x600bb.jpg",
+      "localPath": "/artwork/12bd806aca8fc6b38170942c.jpg",
+      "status": "downloaded",
+      "bytes": 154686,
+      "sha256": "b749ea94bcb3088024a452f335d976811d46ae963437d35b75c08acdf02da8eb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/af/dc/5cafdc13-ba15-bcc9-800c-dd42aac696ee/00018771021025.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0f6a1cf320fa63478470a22f.jpg",
+      "status": "downloaded",
+      "bytes": 59566,
+      "sha256": "78839d98d2918a17cb91c045762a24c97967230d638a3945aa5b5136fa1e6624"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/b1/85/5cb18512-9cbd-7b84-4042-37f23bc2ae45/17UMGIM89555.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3751b9596d241b39e387af01.jpg",
+      "status": "downloaded",
+      "bytes": 140315,
+      "sha256": "a38464fdba2aa25487d5c662feb57921b72b32d4f9da3e997d2b6d4d820b5dcd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/62/e4/01/62e40187-e672-17e5-f31f-9aee262703a3/mzi.bifzeufu.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7aec92a937ec18830b64c489.jpg",
+      "status": "downloaded",
+      "bytes": 24211,
+      "sha256": "9064d5991b5722e35a326cabc9a60d779bafdc33c2234edda21bf5d60ab54ddd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/70/2e/91/702e914a-cd03-b5c5-4c9a-b017b2ceedb3/041-SqBig.jpg/600x600bb.jpg",
+      "localPath": "/artwork/da4c8f3b2c8be841388343f5.jpg",
+      "status": "downloaded",
+      "bytes": 118147,
+      "sha256": "86d10adee054d55f6344a7f3dfe9f1377028f6d86f546d21e648697eb5d449b5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7a/e3/06/7ae30672-0c73-a4d4-0a74-624eefc2843b/dj.ytdbjvto.jpg/600x600bb.jpg",
+      "localPath": "/artwork/493367499db0920ce1d42943.jpg",
+      "status": "downloaded",
+      "bytes": 133533,
+      "sha256": "c23816be83432a9951f1bfad54358d251b072afba2d049b64109a22d6257aa2d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/84/33/66/84336688-1346-a1ee-951c-d24120b16b77/00602577112454.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9a0a078a37982f634d5fe6f9.jpg",
+      "status": "downloaded",
+      "bytes": 70555,
+      "sha256": "440e5e5562f53b83be66c8b4d5cdcbaf9cc3289f3b8e672dbc1815c916ddf38c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b5/25/86b525b1-bff1-4bf6-6112-531251b3d672/dj.hthdmusj.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c6ddc40a21b0114c8a221945.jpg",
+      "status": "downloaded",
+      "bytes": 102090,
+      "sha256": "c40713fe3d4014fc444f4686f41866c763a9540bcae10c9563170fa1df3c028a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/88/78/27/887827a7-175d-9b01-e9e5-7f43fd743ba4/842474176481.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ea6f6cc97561e7e4edf5578a.jpg",
+      "status": "downloaded",
+      "bytes": 66469,
+      "sha256": "cf7c6cc7ee05f2c1e92cb50ebabdb50b896fdbe80ff7ff932d733c780044497b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/89/46/95/8946959a-e959-f22d-ced2-745feb799454/mzm.upagbaeg.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0c862034d12c190c2deebfdb.jpg",
+      "status": "downloaded",
+      "bytes": 63955,
+      "sha256": "78714e1e24be8d366feda2bcdf8122d64589769d4e5fe13fd857785c8b10903f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/89/e0/c3/89e0c34e-0362-9f16-5e31-57ccea6716f5/603497880720.jpg/600x600bb.jpg",
+      "localPath": "/artwork/93b9e848e2edd59cc303d02a.jpg",
+      "status": "downloaded",
+      "bytes": 100608,
+      "sha256": "8892d0234c194cfe5df20db3f47c96ba2d0e5bee9c54b6fc97be551f1e896281"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/92/0c/94/920c9478-abe1-d5c0-2212-e110946cbe60/00731453639225.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6cf054c25eab9af3391bd676.jpg",
+      "status": "downloaded",
+      "bytes": 83698,
+      "sha256": "b58d14f6976ee932aa84647fbbf2f391aa191e19a48df39fbcb0f008bbf9a818"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a4927be077e01f5e054f922d.jpg",
+      "status": "downloaded",
+      "bytes": 101186,
+      "sha256": "96e0349e25fa36057e418338a38f1ba4cfb687beabd7cf96e7fd3c9271fad460"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/96/47/9d/96479d49-1ccd-ea1a-7bee-6750a73f363f/mzi.haxmzhnz.jpg/600x600bb.jpg",
+      "localPath": "/artwork/16869db439adb9a3b7564c21.jpg",
+      "status": "downloaded",
+      "bytes": 59129,
+      "sha256": "f9b8f6628a97a090a4eb3f721a8b4272e64fda16e60fa0ce2030e477250ddce1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/96/fc/a7/96fca79c-227b-1320-acbd-17618a4d263f/00030206591293.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ac14325554166022bbb322a0.jpg",
+      "status": "downloaded",
+      "bytes": 178889,
+      "sha256": "3358a98bf59c97901420d266f08d02a9533e1a0faa03266d4e339fcfd4fd0c46"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/99/3e/c7/993ec7f7-34af-06c0-60ae-3f7843a7a719/cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bd43960c5854e6bb5bda98e1.jpg",
+      "status": "downloaded",
+      "bytes": 85910,
+      "sha256": "fbc859e16d732dcab60bdd84fdf4d942fca59e304104f5ff99c683d5c487812a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9f/4c/90/9f4c9042-5940-40a3-532f-55fbda933978/886446919140.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ee1bc44eac6fe8b569e33f79.jpg",
+      "status": "downloaded",
+      "bytes": 131083,
+      "sha256": "0cc61d0e21eaaebaf7cfec4ecd7997c33c386a239d8219415f2da4b6d3561acb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/69/07/bb6907de-8ad4-970b-3311-121320e1bf9c/19UMGIM03691.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ecb79894fdbfc6af221dc993.jpg",
+      "status": "downloaded",
+      "bytes": 57670,
+      "sha256": "06ac9bae22396d1305f84deed2c2df51a4adb1c4b802d0471f00e1a27a2d79f4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/6d/8f/bb6d8f67-6d04-10b5-dd62-eb5809ac54fc/00602567879152.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ee9ee26f72e1fcd8bb3dd923.jpg",
+      "status": "downloaded",
+      "bytes": 85585,
+      "sha256": "aa85953bd14407aaf13b0bc8f0d15795fdc113776aa8d1fee5a7df5029fd3f7e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ca/58/e5/ca58e5e3-acb7-8ca3-6af9-ad63af3b71f1/075679873675.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6eef10974070dbda37730c98.jpg",
+      "status": "downloaded",
+      "bytes": 132671,
+      "sha256": "338e273b0bbe9b2ea181ce977c414643161b4b8d0d05a2c35e26461a111d6380"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cf/f5/19/cff5191f-a668-2c7f-f73a-fe51f519b577/dj.yrzoirxd.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bb3f357280fe280ac9952630.jpg",
+      "status": "downloaded",
+      "bytes": 83888,
+      "sha256": "6559080b9b912ad951044a6beb4c8672f7bc19bac0ebb528c1c02bc76469c528"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d0/b7/57/d0b757e6-7a9f-b4d2-2619-86c65d1d727d/740042304628_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/477951786228a3b6b8cba6e3.jpg",
+      "status": "downloaded",
+      "bytes": 85635,
+      "sha256": "0adfc6a6a7c2444ec2984b861a79451d135cb299eb59efa549f07856283217c9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d4/9c/f6/d49cf63f-a412-5737-9392-1576c297b475/00888072396272.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dae2b8ce01b3ce0919e510b1.jpg",
+      "status": "downloaded",
+      "bytes": 157507,
+      "sha256": "5526cc858e9a6b33d096229c132a10aaca8026a788a2e68d8420f524ebb9a1f3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/80/bc/e280bcf9-4048-8c42-2b6b-d8b9c9bbed52/5099996602058_1500x1500_300dpi.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ea8bae197076948c32ee707c.jpg",
+      "status": "downloaded",
+      "bytes": 35223,
+      "sha256": "05909b53397e5ad19fdefe431b6342d19708ffe214abd63f4874ea931df901be"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e3/e0/84/e3e08400-2d03-75f9-6b8b-a3345452aa98/886444197816.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1a0d67d96df7dcff92b54e5b.jpg",
+      "status": "downloaded",
+      "bytes": 110023,
+      "sha256": "4b02b54bb60943ea5880abfab1e3201ce726f31bc436177c80e561c9ead0b3d4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e9/6e/5d/e96e5de7-f9ca-792c-014c-646017c2d854/00602547503701.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/921efbe806f06484ebb83ae8.jpg",
+      "status": "downloaded",
+      "bytes": 74426,
+      "sha256": "093405aba6b7d2a235a201b38483ba3026ba9e7d4ae764488a1cfdf2d2554a79"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f2/0d/8b/f20d8bff-a927-ae98-6784-20a1f51cb23e/16UMGIM27642.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9c2f715bec52e9df68b8ed44.jpg",
+      "status": "downloaded",
+      "bytes": 76100,
+      "sha256": "9e124c9ae0fc24f4e9aa84fc8d556f8282838df7ad8b95080ebc6a491bfd594b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/25/2b/f5252b6e-0659-890b-7e9d-0e691944b95b/cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/695b8fff651dd0fc8dad8eb2.jpg",
+      "status": "downloaded",
+      "bytes": 101497,
+      "sha256": "dea0ad3719507b167bdebbb070e58bcce09b5067dbac0b8f235695c1301cb608"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f8/65/88/f865880d-fd53-531a-ae50-140483d37ede/4897012133644_3000.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8c737a5ed87c922df994a250.jpg",
+      "status": "downloaded",
+      "bytes": 107874,
+      "sha256": "d5d03e9f28a047f24b69c7849c8b626ff87c66d83aa68bb9239e70b60757900e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0e/22/ca/0e22ca6c-c603-e0e4-1e08-fd79b732ce2e/634904116521.png/600x600bb.jpg",
+      "localPath": "/artwork/6f922808129f3ebefc56c679.jpg",
+      "status": "downloaded",
+      "bytes": 57457,
+      "sha256": "3168cdfe288d895d8f7ef403bedda069119f7074e5a12101252e698282513640"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1f/b9/db/1fb9db01-804f-6f37-7e66-ce50016e9473/196626085405.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8a78ac96bb777ab11015bafa.jpg",
+      "status": "downloaded",
+      "bytes": 86913,
+      "sha256": "992443e758fbe09c4311c189530d0bc28e6cfb9f44aed22e85b6af0ab8c911da"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/26/71/86/267186a1-5623-fcbe-ff74-8c991674d59d/0.jpg/600x600bb.jpg",
+      "localPath": "/artwork/39fdd8e72632627bec601816.jpg",
+      "status": "downloaded",
+      "bytes": 123320,
+      "sha256": "0a274abdfe2da28d9753f75040486382d0fa25e7c94ae59358befc1ebcbd71c5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2e/2e/c1/2e2ec19a-cec5-3294-0998-e89ee598e123/5056495367277_1.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8dfc746bf8a0698cea2260f0.jpg",
+      "status": "downloaded",
+      "bytes": 194013,
+      "sha256": "7eed6aab17cd7fcd14f9b19631b469df20a46a71b272df6b3a4d119acd48ab7a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3f/6a/dc/3f6adcfb-4d27-303e-b964-3710c56800e3/11UMGIM13385.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a7ade223c9c0e311c2665530.jpg",
+      "status": "downloaded",
+      "bytes": 55588,
+      "sha256": "6011736dc33233aeb2047112aada82d2f23bb02904e408718e9144b96164b5b2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/41/ee/66/41ee66fa-f8dd-7e82-155a-3a1b360dc562/190295322175.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d04340de471cbf23bc195807.jpg",
+      "status": "downloaded",
+      "bytes": 127371,
+      "sha256": "c1f97af9bc583c989e44fa61da53fe8573fe6a03e4bc9f38ad299ca945e8bcbd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/45/1f/45/451f4526-224b-900b-853e-789e0618d210/18UMGIM12089.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/66716da139b851f8adac9290.jpg",
+      "status": "downloaded",
+      "bytes": 131828,
+      "sha256": "dbbfbf4751f33db2faa6dd8288819cfb15a803f6c9af9b70319643fd2ebef2ad"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/52/1b/e9/521be9ab-8516-4d17-988b-88f89b1d0845/0730003317255.png/600x600bb.jpg",
+      "localPath": "/artwork/3fa67ea222e9c078f1f7c7f0.jpg",
+      "status": "downloaded",
+      "bytes": 98189,
+      "sha256": "c46a66b07bafacb494467bd868d31ccf5989f7dc18f7611387b8c4b33f945a9b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/59/5c/49/595c49ca-20af-1a27-3716-fe1fe481c45e/617513535860_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3978fce1f87d118a5d8c1e8f.jpg",
+      "status": "downloaded",
+      "bytes": 92340,
+      "sha256": "e46b8fae9920076bf08c9892e05ed1770ca601bede49a6ece8ccf8300a307981"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/93/8b/5a938b3e-a74d-9c8b-dcf1-c9c1f83498da/4050538455618.jpg/600x600bb.jpg",
+      "localPath": "/artwork/860bf31fa930c21de722c531.jpg",
+      "status": "downloaded",
+      "bytes": 86637,
+      "sha256": "4f8afd1d64ed8ed33fa8545372a9356fc48a113d0272e0a5f57ce945493d9c17"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5c/36/12/5c3612ff-8196-3637-9e69-81afce66f356/06UMGIM27986.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7053dc03f6d9bccfb98ac77b.jpg",
+      "status": "downloaded",
+      "bytes": 86219,
+      "sha256": "2dc1fef1f14de632e65dadd64c98bd1b65728b394cfc75d0cb903c3a1fd3b9c8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/60/31/b3/6031b374-04ba-6f35-396c-497557735a05/4066004374963_3000.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a0df8d7f4d8653a64a6b0a72.jpg",
+      "status": "downloaded",
+      "bytes": 109430,
+      "sha256": "eaec9cb70a91605cb0a4aa87c061e6fc0d7c5a40298c15b51c6ed7b940895751"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/68/b7/c0/68b7c018-dc15-f44a-2611-be10237fc9a5/652637080308.png/600x600bb.jpg",
+      "localPath": "/artwork/2197177fa1c31551f643ef5f.jpg",
+      "status": "downloaded",
+      "bytes": 72083,
+      "sha256": "f878a7734ba054f5651955a18edb5aac8888f1297f8d55d21fec891219ea1201"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fbb7d4946e783e2a7728799b.jpg",
+      "status": "downloaded",
+      "bytes": 91080,
+      "sha256": "8e004cbf5fd171598e476a131c51408a8316ba65f1d40b57dbcf044418beae9c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/74/86/9f/74869f4f-c52b-289b-31a7-9ac9fec31e2d/06UMGIM70785.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f6bb46a1335e6a5f3b258ffc.jpg",
+      "status": "downloaded",
+      "bytes": 134514,
+      "sha256": "4418f170171b94f30300b14dd261b33f5abde05d3600576fe132e82084192184"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/9b/af/759baf5f-f3c9-b8c7-d3cf-55a3079914b9/18UMGIM24792.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/86afce8ca0546e159f3ceb40.jpg",
+      "status": "downloaded",
+      "bytes": 109255,
+      "sha256": "0ddb7f0c24f6e300bf318f09f352bfbe4ec7afc83c1369c8a5b91c19e974f895"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/78/af/45/78af45f6-e4e6-5681-c1f6-a20e3949ab8c/18UMGIM31237.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/133f5224b57b961673e3cf31.jpg",
+      "status": "downloaded",
+      "bytes": 77245,
+      "sha256": "5eb4be4bed34213a2ed8ee99af849cbd665c7c51111d7f0b4b47cc1ce062eb1b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/82/13/19/8213190b-60a9-95cd-9cc0-0948e08a085a/06UMGIM05259.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/edd198d745235ffcbf2c1a0c.jpg",
+      "status": "downloaded",
+      "bytes": 185233,
+      "sha256": "703847c9d306db493f4f4e7c728e3bf82b790cdd6234af72df66f4c850020ea4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/83/9c/45/839c451c-4a4c-45f1-2bc8-1f5e41800434/4560427466828.jpg/600x600bb.jpg",
+      "localPath": "/artwork/887e31a9c6d4e3bad6aa59ad.jpg",
+      "status": "downloaded",
+      "bytes": 69510,
+      "sha256": "a09497eeaff898f4149d13ffecdb0e631306902813c3bdebae9e0f4a7783415b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/93/ae/8b/93ae8bda-3b31-0745-221c-39e73794f31c/190295919870.jpg/600x600bb.jpg",
+      "localPath": "/artwork/519fe9ea2b8e352f5f76ca64.jpg",
+      "status": "downloaded",
+      "bytes": 107512,
+      "sha256": "13981be507709279c16f36c1841d45a6468e8a127bf5f77ede2d8cadedd7b2a7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/96/ae/f6/96aef61f-306a-c9f9-e899-98a8b60550b6/14UMGIM59294.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5b7632e7f87c107bcda0cb32.jpg",
+      "status": "downloaded",
+      "bytes": 103786,
+      "sha256": "feac860237c50663e1163d1ffe58ef4d12b091f9e1c359c5f196054bffbed3f2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/99/98/27/99982707-07ed-cf56-7bc7-bc18f7443574/13UAAIM08287.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d87f90a2ee4a87243153b6f5.jpg",
+      "status": "downloaded",
+      "bytes": 58438,
+      "sha256": "64b6946cc273ab75e548bfdab652cfc07031809a2a0649072a205d95af29a683"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b2/ed/5e/b2ed5ea1-2bc0-5b3a-8297-7df5ed2d13b8/15UMGIM29010.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/83db1dc47908c42e66914f07.jpg",
+      "status": "downloaded",
+      "bytes": 51296,
+      "sha256": "ccab2989273d4d5472cea7676cebfb9b3078c4841908f7c4bb279dcc88b2562e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b9/3d/60/b93d604d-e3e4-813b-1feb-8be6d6d0af89/22UMGIM27531.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/70817a69d45610e24eced0e2.jpg",
+      "status": "downloaded",
+      "bytes": 124271,
+      "sha256": "5d4e4c851d274de1372937a495dbf1a26cf2e97238ac9d48a6d7ee682399c086"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bc/3b/b4/bc3bb436-a5ea-c09d-1362-17c288c0d7e7/198009510634.png/600x600bb.jpg",
+      "localPath": "/artwork/c7e786d87d9edf2713ee948f.jpg",
+      "status": "downloaded",
+      "bytes": 79392,
+      "sha256": "e032e7de6ae6a6518d145c8210c7edd302fcd530bdd47f741059e990a56f66ed"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c0/54/97/c05497aa-c19f-bf4f-de29-71edf30fbefb/075679688767.jpg/600x600bb.jpg",
+      "localPath": "/artwork/82555b3aadc4703f8f2679ca.jpg",
+      "status": "downloaded",
+      "bytes": 51463,
+      "sha256": "50897c543080f4352b2f9f8eace9a04d5d99688bc2716264f70b61425d93da6e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f9/7b/62/f97b6286-872a-618e-d189-804b078bbaac/0.jpg/600x600bb.jpg",
+      "localPath": "/artwork/980eef12f10845db51e2b554.jpg",
+      "status": "downloaded",
+      "bytes": 77726,
+      "sha256": "b8b95bc06d995ca26c05ee6fa229174147c1ef70ec38ff180d6ad7c41be0f16c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/23/5b/b2/235bb2c3-abaa-22e2-753d-afa8b1806dfe/603497853588.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8fcbcd0bffaf34da59edb7b6.jpg",
+      "status": "downloaded",
+      "bytes": 105522,
+      "sha256": "90469029553407be80a5c33cd9d480cffd03d8f16088fef5c56f16efd2bf0f2b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/2d/5c/3e/2d5c3ee2-85a1-806d-ebb4-0ff45be6c9df/00060768032927.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/622d206e3b8451cae10bbb59.jpg",
+      "status": "downloaded",
+      "bytes": 161393,
+      "sha256": "e257dbfa2784b5f65d1d90cd48a105f0927946e541d52777db45221a924c7497"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/36/84/2b/36842bc3-a206-a588-4713-894b6ec3373c/00606949050825.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/52d99623dd89207507349949.jpg",
+      "status": "downloaded",
+      "bytes": 155132,
+      "sha256": "58ecac1c90dca01b469c398cc558ad2cc1fade90d60069ee8b0758f821946bb9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/37/52/4a/37524afd-9ebf-2ff7-086c-845bd199aaa6/00602498611197.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5011021d9d98883d81c31c95.jpg",
+      "status": "downloaded",
+      "bytes": 32938,
+      "sha256": "68e78a93b2629631d82c6f0dfc66802cef7440f9aecef247717542197e76e2b2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/89/21/4e/89214e8a-85ac-b8ae-f5ca-1f6f607088ca/00602567859529.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e2e78a1ddfb104bb8a59bf62.jpg",
+      "status": "downloaded",
+      "bytes": 100378,
+      "sha256": "9bdd901723d71080519bf8104aababb7b7d40b2ba1eb35635f834cf7b55dc937"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/8c/45/7d/8c457ddb-685c-ea0a-9d39-190a5e7e0e03/00602537386840.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dbdf5a6ba68785b40673554f.jpg",
+      "status": "downloaded",
+      "bytes": 83453,
+      "sha256": "36aad14f9d386bec005f50becb94a9c1eacbe1f13e6de6f795f1582f756c6dcd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/94/26/69/94266931-72dd-0094-a727-7fca4efede80/00829410982078.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c31337acce2477423b45a553.jpg",
+      "status": "downloaded",
+      "bytes": 184423,
+      "sha256": "aa989ba7d1228ac1d273f27fa7bc825b90ef7c6dc8156eeb2a28af3426540f24"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ae/15/d6/ae15d64d-3574-c7f2-258a-6e58b30adced/00016253102224.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/52feadb4f55d57f1a29f214e.jpg",
+      "status": "downloaded",
+      "bytes": 174127,
+      "sha256": "06c63b7782ffc15dc76e79d8bdaa1bd685793b00103b3391ea48707c1d0c6d67"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b3/dc/3a/b3dc3af0-b044-6914-1cdf-2ba2c8b36169/00602547748492.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/601934a7abad148f03d73138.jpg",
+      "status": "downloaded",
+      "bytes": 129630,
+      "sha256": "c8fd40c04d2976582492775b18085328866918b34144bc40c93e9a61ffee8f7d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/be/eb/90/beeb90d3-fc64-c6ee-4cf0-e7cdbf7fa32f/00602547588142.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bb36ed8385fe0be47ad903d6.jpg",
+      "status": "downloaded",
+      "bytes": 97182,
+      "sha256": "04dd3d55510365ef4190175fc185522aaa8d9939be1f291d3c6dc8309c26a7a3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/c1/51/d9/c151d9c7-d298-e107-97dc-620360a7e443/886447435670.jpg/600x600bb.jpg",
+      "localPath": "/artwork/58da20dc2e187fc73dc54b5e.jpg",
+      "status": "downloaded",
+      "bytes": 130622,
+      "sha256": "5cffaaee0b9902b352932aa155d7c1438fae3c3c0beea6775a74acc6cdb34a0f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/c4/f4/bc/c4f4bc0e-f59d-f33e-402e-877c93a50b67/00602547748829.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1d4b6c21b5dedcec39e35d3e.jpg",
+      "status": "downloaded",
+      "bytes": 138451,
+      "sha256": "033b0d460fba16aa0a75b004b3b449b02e014be2dfd912de903f9e5d47ef7ad6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/cd/4f/0e/cd4f0e81-87f2-3b39-a71b-53a568577d12/00602567847946.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/950f5143f47b63646009fd32.jpg",
+      "status": "downloaded",
+      "bytes": 146034,
+      "sha256": "4b450209f885319756565691ba346fb98edfbb20fa78df3324536e7a76e21c31"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d0/2c/15/d02c15b5-c6a6-27e7-cff3-8d0796e12700/190295567484.jpg/600x600bb.jpg",
+      "localPath": "/artwork/94f9bb85c2494b13334acae2.jpg",
+      "status": "downloaded",
+      "bytes": 57105,
+      "sha256": "5f7894c689e0a21c22de74e83fc2f092f4a927838eafa6f2e98155acf90ae34b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/de/68/d7/de68d739-eebc-804e-fbcf-0d6ab08307db/859754580210_cover.png/600x600bb.jpg",
+      "localPath": "/artwork/af1d75c39610fdb7a70fd57c.jpg",
+      "status": "downloaded",
+      "bytes": 43815,
+      "sha256": "4ed2245a4298958cdfd78090bcb98f2bc101fb8980a68b95f47929711cf0da6d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/02030e8fa76e13431f60d90c.jpg",
+      "status": "downloaded",
+      "bytes": 105279,
+      "sha256": "ab7c4b972b845c4a6b1b614457b8a6fca12214cabb84090b17d34569d97d0ac0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/00/eb/14/00eb14fa-647c-2f3d-e0df-f48617ada7b9/22UMGIM87050.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7560ed3786194d6600e7e865.jpg",
+      "status": "downloaded",
+      "bytes": 147905,
+      "sha256": "734fa294c1b618a8547a5ca4543fe2034073f35e50524af75068b340b5539cf5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0c/a5/7c/0ca57c94-601d-f973-eb79-3941573aac7c/13UABIM74018.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bc2ac2ea8597811a5f27d185.jpg",
+      "status": "downloaded",
+      "bytes": 69688,
+      "sha256": "732e7e4c026848c8bfc7985f4312be8df6595cfe8cd3f183d177445efd06e31e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/15/82/94/158294c4-e26c-ec66-6cd0-1f017db4359e/603497833917.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0bd8bbd9758b8005fb59aef1.jpg",
+      "status": "downloaded",
+      "bytes": 100483,
+      "sha256": "63d40417935d6420c73d00cb4f3e5bcfa44aafe09ecf5081af7d647b547efc2e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/24/ae/7c/24ae7c8b-363e-fc74-1b4d-7edf31ebb592/191061443445.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4e637ae967c6fdc84522ebd4.jpg",
+      "status": "downloaded",
+      "bytes": 142590,
+      "sha256": "f2fa6286c6da7206426d4fa5053a261419cc5b0e4dcd7b2c749e004a6f5b0604"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/33/d8/29/33d829b5-f510-27f8-f50c-b00cd3c0b9e6/084247961713.jpg/600x600bb.jpg",
+      "localPath": "/artwork/effec3eb5499424fdfb331db.jpg",
+      "status": "downloaded",
+      "bytes": 127403,
+      "sha256": "cf4ddc73f2750c4fda20f07650d56ad3bcc77367eb766eddcdd48b32f398c5ed"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8d/7f/fd/8d7ffd6d-1dca-7012-1859-0241a2a86033/7340027075005.jpg/600x600bb.jpg",
+      "localPath": "/artwork/17466c36d205fb2de832f85d.jpg",
+      "status": "downloaded",
+      "bytes": 87118,
+      "sha256": "bf8dde77ded6c8b23bf72d62e32c1825035ac0222c77f59d08731638d822d650"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8d/aa/fa/8daafacd-6c82-37f8-d0dd-48b2fd41edcb/16UMGIM86256.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b0dadb158169416113945ce9.jpg",
+      "status": "downloaded",
+      "bytes": 94121,
+      "sha256": "dc4073aadfaf76f373e06629f4678e0948cecda964ec7ad53e97303e0b845954"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8e/f6/0e/8ef60e84-b497-8a61-762d-1b3c19d94419/07UMGIM00389.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bd744153f4ad44fe7831d6fa.jpg",
+      "status": "downloaded",
+      "bytes": 100520,
+      "sha256": "c5c98ef2ded6e86f1f1eba97016852d9826fe40ce8926f765c7a7f55ec47eb62"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/99/9f/20/999f20a9-5432-2233-c1b5-a113e490354f/29.jpg/600x600bb.jpg",
+      "localPath": "/artwork/75aa3ddf0095b25c60118749.jpg",
+      "status": "downloaded",
+      "bytes": 55732,
+      "sha256": "1745ecdc10365ae9f979a3c4fc4ba7d43f9e0cc0ed9965495da8605384830d93"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/3b/a9/bd3ba9fb-9609-144f-bcfe-ead67b5f6ab3/196589564931.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3c1e9562fb7f23f16b989cea.jpg",
+      "status": "downloaded",
+      "bytes": 172918,
+      "sha256": "9f68c49d49608d201c91c05e9d4119805259be90877fd10e38fed9d8d4f3378d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/cf/9a/0e/cf9a0ee1-3b03-c511-cf7c-4929265e261c/075679745118.jpg/600x600bb.jpg",
+      "localPath": "/artwork/79083788e5bfcc67a10a2f70.jpg",
+      "status": "downloaded",
+      "bytes": 43251,
+      "sha256": "074c49c4d959a0f09f6496054b136bcea848312ac6681568a305338bcb5b430f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d0/75/0d/d0750dcb-9c62-49ef-41ad-45b026901667/06UMGIM21181.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/72fe1b14743035157ac9b8f7.jpg",
+      "status": "downloaded",
+      "bytes": 120327,
+      "sha256": "abb765078a5e9306517b4cbdf2209af53b61bfc43b25223a8ba741435ccd6357"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/fd/be/cd/fdbecdf2-5bf5-09fc-8fab-6e93250ebda4/13ULAIM54464.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c541cb2211348af83c2e91d8.jpg",
+      "status": "downloaded",
+      "bytes": 116430,
+      "sha256": "9e70b07b4aee252b06e535ada31718e4b0e31dcd2998f0d876137298c79a8dfd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/01/41/23/01412362-adca-5895-f24c-e0ffa7ad7c6f/19UMGIM33129.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b91c8efa5551f0a05916b6a0.jpg",
+      "status": "downloaded",
+      "bytes": 119268,
+      "sha256": "c79aad59d77d96cd7be2898ab0711644859ac1f3e24432956fdb51d40a58fdbd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/0b/3c/ce/0b3ccec6-73f4-ca56-5386-336af39a6cc2/5051961019100.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fda7e05abe53df1a5a753a18.jpg",
+      "status": "downloaded",
+      "bytes": 170449,
+      "sha256": "9a5610add1408f15c8e4df385452fd81a7745664a75afda9e0f7c587f22a8521"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4c/c3/f0/4cc3f0ac-c5fc-f9ed-4e24-675fd70349a8/00028945221229.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5078eb8ee01689554b1d93b1.jpg",
+      "status": "downloaded",
+      "bytes": 179745,
+      "sha256": "179096e57081b33a11668b9e9c96e25bbc701159afd2c4b6a4f8388bfceb4afa"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4e/a1/f7/4ea1f781-3aea-a162-785a-25e82131d81f/cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/77f86800a5949f7d955b05d0.jpg",
+      "status": "downloaded",
+      "bytes": 115348,
+      "sha256": "04a533586c06558111bd305e255e627caed001afa5f2e1d8b405b607730d565a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/81/20/73/812073f2-c437-fd1d-636d-6be5a4432747/0801061910532.png/600x600bb.jpg",
+      "localPath": "/artwork/1e7d7d634762ab4151897321.jpg",
+      "status": "downloaded",
+      "bytes": 98332,
+      "sha256": "340bb8e9cf5156452c04c36cab85eead9b7ff2be2c52413fe0916a888b34a268"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/84/2d/f1/842df19d-e5f4-3b9f-9405-6779bbc43fe0/06UMGIM07353.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0cb73f855c76e660ce06b100.jpg",
+      "status": "downloaded",
+      "bytes": 129306,
+      "sha256": "eddde40f35fc3f95d255cf62053ea0dcf1de90bcd018a1ba11892cbc186ac9d6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/a7/5f/94a75fd1-17da-3a38-42dc-c5e35bf56046/16UMGIM86639.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f0f0b451299616da0e07a716.jpg",
+      "status": "downloaded",
+      "bytes": 76101,
+      "sha256": "861d436804c50c19ee5bf3ee249f778986098f915c17c349c7750891029e3298"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b9/ec/9f/b9ec9f4a-c4f1-5136-7587-86826e28d67b/06UMGIM34964.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4c4394b50ce39b474d30e95b.jpg",
+      "status": "downloaded",
+      "bytes": 118096,
+      "sha256": "dd4fe92edd9a0df68f2de0f11efde60282f010366d4e45796ea2ca72a8e1992b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/be/74/ef/be74ef9c-1a0b-b81f-fe2b-2a81573faddb/7899989968417.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ea125a4a5c69063b1efd6133.jpg",
+      "status": "downloaded",
+      "bytes": 163965,
+      "sha256": "8a62a0a1dae04346bb062c1ed883f5ca57f0d5c0be5273a7aeb651868af9c859"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/c2/7f/f8/c27ff8db-07f8-05d1-28ef-2131d52258d8/18UMGIM19154.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a59063c92b447c7f63d1ea17.jpg",
+      "status": "downloaded",
+      "bytes": 123278,
+      "sha256": "eeb371dc3c352fe11f256b909414fd90b0f4435bc114d52bb74c695799f39ce4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fe/3e/20/fe3e20a2-3809-ccd5-06cd-0f867b86c7d2/22UM1IM37105.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fcb4edf9c850c6cac9b55660.jpg",
+      "status": "downloaded",
+      "bytes": 151743,
+      "sha256": "5b26adcd0244def6c39c9984c807b3186adedfa674c2053f41a3481206289263"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/02/52/e4/0252e4b0-ed23-b02d-da10-4ef755a1e16f/075679878458.jpg/600x600bb.jpg",
+      "localPath": "/artwork/303c4744f057fad0fdd7bdef.jpg",
+      "status": "downloaded",
+      "bytes": 123481,
+      "sha256": "50a803259e183fa8926fcda2a2bf786ff8447f2526fc897327e7eefc5c13654d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/03/ae/96/03ae9690-b862-45a3-1e98-062b196ee4d2/cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/359cfea6599465264bccc8c8.jpg",
+      "status": "downloaded",
+      "bytes": 96238,
+      "sha256": "b3ebb4f06409c05864eee44dd0dce1d4a89ac5c9d0f4cac4c552d28045df4feb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/05/35/6b/05356b8f-730f-bc36-7ca5-3a139d95dd2b/mzi.eqjkwcds.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fcd779b488d8a6f502bef75b.jpg",
+      "status": "downloaded",
+      "bytes": 101454,
+      "sha256": "7d3c14fbbd52ef4359a59c177ab8cdf5191df1f205b56f8422f0a50c900b7f6a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/07/8b/c4/078bc4f8-8c22-355f-128f-90e4ffb53fd3/5060243326904.jpg/600x600bb.jpg",
+      "localPath": "/artwork/99ade4c0c8f0ec5cbbbce539.jpg",
+      "status": "downloaded",
+      "bytes": 58634,
+      "sha256": "b0fd47ec50860e52871118289ab910b60bdef3220b6c6d831793edecff7cc9f7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/07/d4/c3/07d4c33e-b793-d78f-bb1b-52f1e224da88/886447788264.jpg/600x600bb.jpg",
+      "localPath": "/artwork/869d1c498f6ad933765442a5.jpg",
+      "status": "downloaded",
+      "bytes": 95760,
+      "sha256": "5e5d5ef9c32b8f3a4885e9153efb8a527fae59691afe7ebe842a43812f730cbf"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/18/f5/07/18f5070d-b5dc-796c-bce4-42badb41a762/00602527812526.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/90ed4e241c324cb0f3f0adda.jpg",
+      "status": "downloaded",
+      "bytes": 197400,
+      "sha256": "069ec6accfa8b307fa91a3636b1174fc2829fa2ffa81038d501187738aa0e631"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/c0/e3/19c0e3b6-4c2f-17ee-2a4a-6e2208de8aa6/00857366006951.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9c5b98e9afc1a7c857e8bc65.jpg",
+      "status": "downloaded",
+      "bytes": 91599,
+      "sha256": "03aaebbe3153e772697e21ef05a334b9f05cbd8a37567f41412bc568398c49fa"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/31/e5/42/31e54235-1e4f-65d6-6536-d456186ab2e4/13UAAIM06691.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e3fd75f50f2040fb3c7a1265.jpg",
+      "status": "downloaded",
+      "bytes": 62809,
+      "sha256": "a2d14f19513b790af02a015a35730f0c1f4d54bd27c01bc0bd025199399acbca"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3c/72/61/3c72615b-44ff-0500-bb9f-3748e460e458/mzi.cstgnnnn.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3a71bba146ffd8971180d3ee.jpg",
+      "status": "downloaded",
+      "bytes": 97679,
+      "sha256": "7af88fb362478042a78c0eefa73c855a9c864560ff550242e603f1b16a0b620f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3f/51/5f/3f515fd1-5ef1-6f12-3738-d0e212b474c8/s03.kzsiadji.jpg/600x600bb.jpg",
+      "localPath": "/artwork/69c48f593405b8038ede88b3.jpg",
+      "status": "downloaded",
+      "bytes": 51669,
+      "sha256": "f4f96a3848b014bf16c08d1a0de5b8d62f094242beb6681c5fc22b0244ba7b34"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5c/a2/84/5ca28489-2481-328f-ef38-d7c1cde2dcda/mzi.jmcotzpo.jpg/600x600bb.jpg",
+      "localPath": "/artwork/508af8143416844731e64543.jpg",
+      "status": "downloaded",
+      "bytes": 159080,
+      "sha256": "5f3369ebf3cde066b0c936f5c601f74dda64b284a729c70edfe1917479a85161"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/65/8d/ea/658deacc-0f1e-e822-8550-08a1b55b3a8a/4062548001204_3000.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5b3772451b528ba5f9c735d0.jpg",
+      "status": "downloaded",
+      "bytes": 73928,
+      "sha256": "08bee93f87a5ad737dfa0bbfef4f430871145df1c8e041d9959e73f7399c9028"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6f/ca/06/6fca065f-7551-561c-661a-827502dacf8c/06UMGIM21392.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c16fe18000ce2d588fe2462c.jpg",
+      "status": "downloaded",
+      "bytes": 168026,
+      "sha256": "0ed8b7d0ca15be0fd729042029592e634033fb621f48515bb3f7fc857e0a2af2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/70/ff/8c/70ff8c59-95dc-5444-fd3b-81204d0477e5/00600753223598.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c75ac0c5e3a83d5b525c0aba.jpg",
+      "status": "downloaded",
+      "bytes": 86215,
+      "sha256": "407688b6fa09c73bcdeee168166bac8caa1e63d3d6732e3367a45473050e95b6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/72/00/89/720089d8-c063-a323-e0cc-de921e50b968/00602527051789.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b9fe04422c10ebfd14a66de2.jpg",
+      "status": "downloaded",
+      "bytes": 93135,
+      "sha256": "e1c589ccd8e01ddc2e409ef3ffabd77d41452ebd201fbc01991b5bb2d15add00"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/72/44/0e/72440ee1-e883-bf7d-58f2-a040185d9be3/00602537373994.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/221fba8e35c9ba5f065485eb.jpg",
+      "status": "downloaded",
+      "bytes": 102906,
+      "sha256": "188e3ba40e877112564c8128e3bb9476d385e4399ec0165078eb8ef9d1d5e30c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/75/3d/c8/753dc86b-601f-f071-ef30-7659d5b74939/LM00187487.jpg/600x600bb.jpg",
+      "localPath": "/artwork/79e77dfd4b447e962c1f321a.jpg",
+      "status": "downloaded",
+      "bytes": 194700,
+      "sha256": "9f7b66efb015be0fc48ba159458f3051ddaaa4e40d11901d104ab55d521e0a30"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7c/db/54/7cdb546f-2989-a6c2-9007-3adb9bc952fc/191018227470.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c51d1f50bafcd5e2a474ea01.jpg",
+      "status": "downloaded",
+      "bytes": 79441,
+      "sha256": "485a8e269d3b4af454e07629fc6d508c7f5691a0b65cff1a25ac54749fb144fe"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7f/ef/36/7fef361c-064c-1bb3-33f6-8a0ea845e1e9/00724354206757.jpg/600x600bb.jpg",
+      "localPath": "/artwork/43956612606098487fe12a26.jpg",
+      "status": "downloaded",
+      "bytes": 110576,
+      "sha256": "17c0ecc28704fce9ebc529d4582c6b26dbbf75020ae864f51f91506460931b97"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/80/23/b5/8023b525-f8c0-c77d-3779-45fd8707195e/00814647020785_Cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ec6c9019cbdf46841cd96549.jpg",
+      "status": "downloaded",
+      "bytes": 188364,
+      "sha256": "baf822b3a8e314f8831f5cda9eeaed28869e6c021e3929a9215bbd53bbacff6c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/83/e1/02/83e102bb-b5b8-78ea-10ce-8f210211a9a8/603497889945.jpg/600x600bb.jpg",
+      "localPath": "/artwork/abe8affb60a2ad4f738a64b7.jpg",
+      "status": "downloaded",
+      "bytes": 102354,
+      "sha256": "45c46a3e0f80eebaa94f656394b85272ce874b3fa7d6b8d1345434f6c946595f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/85/49/94/8549949a-da32-2e74-9f45-711926c42384/mzi.xkbqrkib.tif/600x600bb.jpg",
+      "localPath": "/artwork/37932f21e06c75acddd1423d.jpg",
+      "status": "downloaded",
+      "bytes": 92345,
+      "sha256": "6fdaaddc08502eb9f08ab3c9cb875b7c533fc43c3dcf7cf889729017a72633d7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/91/92/2f/91922f36-a0cf-6d67-01e3-c4138cf8256d/18._Link_Wray_Rumble.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0a04753f7b9ea51ac8343b9b.jpg",
+      "status": "downloaded",
+      "bytes": 101945,
+      "sha256": "83995d946db06dc445a1b0275ed924800f3119c2481cad03978e216618127f05"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9b/03/67/9b036757-2529-03f0-c0a5-31824af8def4/5051813580109_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7a5b0402dd3097274943adea.jpg",
+      "status": "downloaded",
+      "bytes": 82317,
+      "sha256": "f5023b710867c723aa04ea09794a2d5a8c671e577fc36ca684b21f471165f5bc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9c/39/54/9c3954d2-afd0-bba2-404f-a3d773816ac9/2097.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f7cdfe1fecb688ea95f4c43a.jpg",
+      "status": "downloaded",
+      "bytes": 173420,
+      "sha256": "7cf74843e151d6343ef9ced94d7b61a32ed09c21c9aaa5bb8037b0dcbac71b13"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a0/ed/16/a0ed16c5-87b6-10cd-c528-baa75475d1bb/20CRGIM25364.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7f06bad54bcccdd35b431631.jpg",
+      "status": "downloaded",
+      "bytes": 117732,
+      "sha256": "3c7989e2bc498295bf1df98155c3b1737cf5fb3947230ce11002547dc3b1b65d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a3/3e/5d/a33e5d7c-4957-acc8-d054-5e747aabb027/mzi.lkorhxlp.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c67ffac45f49d7786ae711b7.jpg",
+      "status": "downloaded",
+      "bytes": 99549,
+      "sha256": "9c1a0f4242b64e8807bd2ad07a24b725576f43bdab28a53ea2f942bb394645a2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b4/11/c9/b411c969-7e41-a698-efbd-3695618e1e52/213-SqBig.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4f08ad2a9700e578aec0b510.jpg",
+      "status": "downloaded",
+      "bytes": 92961,
+      "sha256": "77f27fdbfde4ceec506b3c470f6c8638c06566b22f19bbd1daeda95891f85c5d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b7/c1/48/b7c1481a-5a92-4b71-ee35-ab7c890770da/5099996602256.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d109c21f8405f29dfd1b8eeb.jpg",
+      "status": "downloaded",
+      "bytes": 66068,
+      "sha256": "76e9620f2d0d1642eb0c0f86fc43e0dc36fbfffbdd124786628f7458fb35cc98"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c7/38/47/c73847f9-2c3e-8c4a-9f9f-18c9d79ac2bb/mzi.jnldmlrc.jpg/600x600bb.jpg",
+      "localPath": "/artwork/bdce92b16c8141ef67385530.jpg",
+      "status": "downloaded",
+      "bytes": 163127,
+      "sha256": "ead863aee4082edb8dbae554be555722bbe0efcce56a217c394bfa653596265b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c7/3a/27/c73a27c0-cadd-2ba7-2976-9070bc233b47/00602567825555.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/64d4044ec324e261ad307a65.jpg",
+      "status": "downloaded",
+      "bytes": 134461,
+      "sha256": "fe677d56fb243a9d8075d91e7f2c3af28c42014fa0ecd1961bb25cb493a1be20"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ca/12/6a/ca126ae1-0019-7c93-c5d4-6fbd49230e6b/14CMGIM00979.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ff3348119b3b87ba0e1087c5.jpg",
+      "status": "downloaded",
+      "bytes": 136638,
+      "sha256": "d8629efa2b37b753f2dc36fedf529c6947780c8c0e16c60ab08a22f894f3db16"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/4e/ea/cd4eeac8-b592-e933-6b6b-f928afab15ae/mzi.rjmkypgd.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4fbaa49842c3e379405ae0d5.jpg",
+      "status": "downloaded",
+      "bytes": 136667,
+      "sha256": "16bec28a356abe31556db1c8dfe8bb2a86357f9c344d30e3c41c74af4cd2c194"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ce/ec/6f/ceec6fc6-2eff-cc78-fdd0-57801f00d76e/19UMGIM47108.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/deb061e92473ed62b44741a3.jpg",
+      "status": "downloaded",
+      "bytes": 108689,
+      "sha256": "d0267f4c200086610a02d82d2bb9d305a5c6d0616e36fb92cae78718ceb6a7cb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/31/ee/d131eec4-614c-d661-b580-3dc32b8547e8/603497896622.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f0261db47fb34c43d48a4704.jpg",
+      "status": "downloaded",
+      "bytes": 112735,
+      "sha256": "e7dd967450ab7b04bd215a17a0fdc2585ecd07709d33ca44ca5d97403e6e1886"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/74/da/d174dacf-5782-dfe2-19f7-ce037dcd0237/00602527584935.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/092d6870c111bddcaf178466.jpg",
+      "status": "downloaded",
+      "bytes": 65597,
+      "sha256": "517c5830d4d5d254ba48f1130092591cccbb77df6a92825cb5f8e1f8d2e384b8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/dd/79/ae/dd79ae26-15b2-a318-bf6d-68577dbc2be2/603497889976.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ce6ad4ff31e9885de2fbb81a.jpg",
+      "status": "downloaded",
+      "bytes": 145982,
+      "sha256": "9d3825aac7a3a48e50a21226305a6625091d0e82e9b657341f497e03bedfcfc2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/dd/ef/8e/ddef8ef7-d683-4677-74fa-a4f7ef8aa235/mzi.catuaowu.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c7d0e15131b83536b9abae52.jpg",
+      "status": "downloaded",
+      "bytes": 72200,
+      "sha256": "1f82a40d41d048d0d6411606a54911f8eeb66fde0895cc43ba66c4a0406f3fee"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e0/0a/c6/e00ac66a-e082-5204-364b-2d7e6d56f19f/828766923926.jpg/600x600bb.jpg",
+      "localPath": "/artwork/58e895182d9c613699677179.jpg",
+      "status": "downloaded",
+      "bytes": 70264,
+      "sha256": "4e47fdb6b59d3bb41c046b118b6194cf70ff7781a3865d024442193a4aecbc4c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e2/c2/5d/e2c25d1f-fe39-5cb8-726c-403d26b77ba1/mzi.opgrwyvd.jpg/600x600bb.jpg",
+      "localPath": "/artwork/22ff4037d9a217c022e07d8e.jpg",
+      "status": "downloaded",
+      "bytes": 125412,
+      "sha256": "ea305450266322898f731ec0dec4771707aab95108017999ca6e88e862bdbcbe"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e4/cd/ff/e4cdff9c-0de4-781c-aa89-f5f5e748d188/4050538410365.jpg/600x600bb.jpg",
+      "localPath": "/artwork/52e5d9e7bc6464e7c6a32bae.jpg",
+      "status": "downloaded",
+      "bytes": 55682,
+      "sha256": "43b10cb6ae8ee399832168a4c3dd5d418ff0bdf6fc085915a7ea3f810dde097a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ec/fd/e0/ecfde04e-6db2-e55e-41fe-83c87a52b16e/00602547908339.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/31659dd8f935a50fa396a4d4.jpg",
+      "status": "downloaded",
+      "bytes": 182254,
+      "sha256": "4867ba4620c317bb4c49629161674997fc0b4ce57dd1875f164356030c34c355"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ed/71/01/ed710185-1b43-1e30-8444-2e24c913a5a1/00025218300728.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e87412a488883a2b3ae63f31.jpg",
+      "status": "downloaded",
+      "bytes": 127744,
+      "sha256": "d50329744275905566dabd63d5b68e949936afd4984e5856accce7ccb8f39780"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ed/76/c1/ed76c1d9-a7b1-03e9-2b2e-a430adf3e906/19CRGIM17024.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d09a1d706512936587746a5f.jpg",
+      "status": "downloaded",
+      "bytes": 136994,
+      "sha256": "62761fac3aa93d7182be445d25e49c7eeb19090a5c1d5efc1e480e75e074ecaf"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ee/fe/57/eefe5722-cca2-ba78-c3c0-fca085c55651/20UMGIM71814.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6323f4d7a48aa2d4965f06f0.jpg",
+      "status": "downloaded",
+      "bytes": 181468,
+      "sha256": "1ca38df7d06b5d1bde750584b0b47f312e7d1e577c4575879f3de74accc01741"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f2/4c/c2/f24cc223-f889-c8a3-ebbc-8ce458438580/mzi.zbvljpxb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/90a622f70efe2522967e2bc3.jpg",
+      "status": "downloaded",
+      "bytes": 32421,
+      "sha256": "95a66ef4d109c5e20d6fff6a057c7f5d10b0f131c9a2713cdf5931deacd3efe3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f6/b7/28/f6b72899-02c9-c329-f4df-006756a37fb8/794043187803.jpg/600x600bb.jpg",
+      "localPath": "/artwork/762e72da2de87acd50a1b11e.jpg",
+      "status": "downloaded",
+      "bytes": 145368,
+      "sha256": "6a37d45fbedab5db0b2d3d12a50fe4338298fd1554672cbf7a3e6e6efeed82a3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fa/c9/95/fac995dd-0377-3005-23a2-08506ac836ba/859745438322_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/01ba640f065f58e28cf763c1.jpg",
+      "status": "downloaded",
+      "bytes": 83493,
+      "sha256": "2f3bd625a0013707bce9b07eaed6764545304cd49992685112d08d6cb9974713"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/02/c6/e1/02c6e1cd-8d57-97b4-6ef1-77d2be004509/mzi.sjrqsmrq.jpg/600x600bb.jpg",
+      "localPath": "/artwork/db964f9910e4a352be0b4887.jpg",
+      "status": "downloaded",
+      "bytes": 90182,
+      "sha256": "2728898c86ec025f5ccadef53f5447b0e0ef9337c6549c46cef25c445bf0a777"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/04/f8/63/04f863fc-2852-604f-c910-a97ac069506b/12UMGIM40339.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f524307071f41ff73a64620f.jpg",
+      "status": "downloaded",
+      "bytes": 19836,
+      "sha256": "029981524328fc3c934c6fe2316f135f91e3092b08f0215712cf6e2d862b4ab0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/09/6b/55/096b55c4-ee8f-23bd-df8f-0ca0821f3028/886446727189.jpg/600x600bb.jpg",
+      "localPath": "/artwork/2b9c06ba4f469aca4d5fca1e.jpg",
+      "status": "downloaded",
+      "bytes": 189818,
+      "sha256": "53ee1cf11b40a9f2a1ebf56ec82ada7a49e4d44e85384363f7a1cfe0ebd1f50d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/0b/45/d1/0b45d110-e637-c7b1-be21-14380c206ea2/696998693029.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ca91fa2e678b526607dffc34.jpg",
+      "status": "downloaded",
+      "bytes": 88081,
+      "sha256": "04ba52efc6f98cd0764767c2d44ff5f770f8248a030f377fc1120e20c9acbb7f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/0e/90/3c/0e903c43-9d81-f91b-90f1-727a58f7fb2c/00602498824030.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e5877ed15b3836135a022f72.jpg",
+      "status": "downloaded",
+      "bytes": 88251,
+      "sha256": "fa2d7d364280c7bf1c5401f75bf9277cd449937e2bdb24c4f44043981abef667"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1a/3d/bb/1a3dbb86-c1f8-737e-571f-d6b647a230be/dj.rhubuvkd.jpg/600x600bb.jpg",
+      "localPath": "/artwork/efb24fc7cc0925947d01b57c.jpg",
+      "status": "downloaded",
+      "bytes": 77774,
+      "sha256": "9f9837079f8a08c6ea0602bf1ce151f2f50bd2f2e1dd3fb5cc9b60ef828ed464"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1b/3a/55/1b3a55fa-9290-e8f0-a5ac-d83a36f1dccf/21UM1IM16271.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ecffff9b82e787d0a4653898.jpg",
+      "status": "downloaded",
+      "bytes": 122813,
+      "sha256": "22eae6a58f99d75b418ddf00ad727f02dc708e0a1ef15f4195ed6d4e06dd6a2c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1b/b9/16/1bb9167c-e0eb-5418-960d-e9adb61d0fdd/mzi.kqpazwnw.jpg/600x600bb.jpg",
+      "localPath": "/artwork/20f1b2987e2fe45e5c75963c.jpg",
+      "status": "downloaded",
+      "bytes": 125722,
+      "sha256": "71149ac1f17b72d3c625d080b33e0e4376a7d0038f48e1ba0127286b3be58efc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1e/34/dd/1e34ddc4-b87d-d9f9-ebbd-aa822a29cc79/mzi.nqjgihhk.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e9da50be676a5e72ead2d34b.jpg",
+      "status": "downloaded",
+      "bytes": 103134,
+      "sha256": "a4b8daef702d7a3df028e83d529de59f8d9cdc39904d56d835d2089157172278"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/29/d8/18/29d818ad-84f7-ca7a-a8c1-a76a7901747b/mzi.dusuqwfe.tif/600x600bb.jpg",
+      "localPath": "/artwork/f6d974770c170d94f2ef1125.jpg",
+      "status": "downloaded",
+      "bytes": 148859,
+      "sha256": "cc0d7927e710f0de64e9e559fb2a2df821e6e4cb53c35a49ef5d744670eb1c8c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/34/e5/33/34e533c6-5d30-7f7d-3369-69464118fc52/00016351451927_Cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/39d6bf96856214460cc50000.jpg",
+      "status": "downloaded",
+      "bytes": 182016,
+      "sha256": "d45e7d8b284305606956d53e4384af1dc4e72b280b1f86676325b5119e8d9c57"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/38/49/44/384944a8-297f-0844-77da-1ae3b976c457/603497893119.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8e949bd032e32f212d2a8546.jpg",
+      "status": "downloaded",
+      "bytes": 124273,
+      "sha256": "20c0f6abbfe77e48c0aad5e17192627d14ca23d840f5fe2e887f12f0e3bdc89a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/38/8b/7a/388b7a8f-10ff-a4e0-7624-65e29ac6a793/828765374828.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5be38e2714ed6f0298d1b5a9.jpg",
+      "status": "downloaded",
+      "bytes": 107434,
+      "sha256": "6aca925837809193ea647585e88f26def997690da8a9e33d0fa05034f0051b01"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3d/9d/38/3d9d3811-71f0-3a0e-1ada-3004e56ff852/827969428726.jpg/600x600bb.jpg",
+      "localPath": "/artwork/53dc4ef05dc8bdbce7aec877.jpg",
+      "status": "downloaded",
+      "bytes": 103859,
+      "sha256": "3c988b04695d661e39de2a73bf90c8a61d39142563d92bb3c20af7cf03886918"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/41/77/60/417760f6-e6bb-321d-5a16-1b23a6bbad8e/884385660345.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ee945a8911806c9bc6e06830.jpg",
+      "status": "downloaded",
+      "bytes": 88539,
+      "sha256": "7fb5c9bdac13a28e5ced5b8ffcc03f2b1a281cbd646fb1c007c3eb04c7a51ce8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/46/75/80/467580f9-1f8d-5c80-ac48-34e0f1a56816/081227297060.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dbf147dc8586e4c16c9227a5.jpg",
+      "status": "downloaded",
+      "bytes": 117281,
+      "sha256": "3fa5616c2b1f5bd01ce3972dc1a502aecd87c60ca1dc224431d0a20111a2a761"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/48/9c/21/489c217b-d228-59a3-296d-6fa1d90776b7/dj.bpkztuma.jpg/600x600bb.jpg",
+      "localPath": "/artwork/328e555775b93d6a9faf5580.jpg",
+      "status": "downloaded",
+      "bytes": 111749,
+      "sha256": "25735449f1f17521090463f095c8934a344b002b8e1ec2495d069e09b34dd1ce"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/e9/b9/53e9b9f0-97f4-aac7-ee5b-12c2f2007ad3/884977413878.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5b8cf2f5061834874db2a983.jpg",
+      "status": "downloaded",
+      "bytes": 125922,
+      "sha256": "f4697e439194107d3cf40bc77cbb114c7ee541fe9fd3c911c37fa5ce9eeafdf4"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/54/c6/e4/54c6e459-524b-790c-80d6-5dee6cde1633/00724384295059.jpg/600x600bb.jpg",
+      "localPath": "/artwork/69e7eed6fbd51044402448f3.jpg",
+      "status": "downloaded",
+      "bytes": 74068,
+      "sha256": "6c3380959488f0fc7645c4adb70342b189c1547961bcaac9b067a02b1ff80dfd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/58/a4/c1/58a4c10b-a9e8-0ec4-9536-375d1083aa08/00028941925022.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dcdb5fdd2e2db9f4919faa79.jpg",
+      "status": "downloaded",
+      "bytes": 172182,
+      "sha256": "ab50417293bee8dac041eb0836adeaa4234d048e7334c0d050df9784584ab826"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5f/e4/43/5fe4433e-a9ef-ccd6-4220-86dfa5e34a61/00602527921600.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/339424084efc125ee36e490d.jpg",
+      "status": "downloaded",
+      "bytes": 140098,
+      "sha256": "76aa0f9e7d6064beae0da162d35fef5a16889599fb1594114d8fa5e2b5632125"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6b/3c/1d/6b3c1d3e-46a3-d0ac-e386-c2e60c8c8f49/mzm.hdqcumzx.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5f50f0d999a23ab08b43d20a.jpg",
+      "status": "downloaded",
+      "bytes": 105671,
+      "sha256": "c11106ae55167da380753c1f720aec6ab9745ec59f3c51fe0e96d81923dd7667"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/edd3e39f9b7d8fd4834ced15.jpg",
+      "status": "downloaded",
+      "bytes": 89521,
+      "sha256": "f515f065d2b542aab8cfdbd2057517ddc13300fb6274487b9fefbbb1fc589697"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/74/00/64/740064f1-8440-df1d-7cde-ea7845763aa2/888880390806.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0d0deb72892b4a7f65726835.jpg",
+      "status": "downloaded",
+      "bytes": 88081,
+      "sha256": "2d852fbc8c8f3c792abf36d700caa64ef345f2b4644a8203f1614e891d43f4b3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/80/1f/25/801f2544-c688-6024-05a8-5340ab6f5849/mzi.ffuwcujj.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fbea25364565f8215f5dfa94.jpg",
+      "status": "downloaded",
+      "bytes": 119671,
+      "sha256": "9c7cff2a902775d0b57f3f750f5fa2c18ee51f3d364a3cb5eec49b592d641e22"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/80/bc/3f/80bc3fd0-44b9-266a-ad03-088acd54f034/dj.qxuqsbxw.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0b547b172b7f3ab812d2fe6e.jpg",
+      "status": "downloaded",
+      "bytes": 115088,
+      "sha256": "af20565f77fe4bbdeebe74b70e84a053212597b34116fdcd51b329070da99cfb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8e/44/22/8e44226d-010f-c74b-f80a-92aafe750b25/dj.slvwajdo.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c64e62d8ff3deea1aaff747e.jpg",
+      "status": "downloaded",
+      "bytes": 145133,
+      "sha256": "c0348b50d5e2df8fe9e0ae3ce08abbfb357b8826c62589396c978f598d6e1578"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8f/fc/e8/8ffce812-173c-5d0d-a264-07f81247c212/mzi.cdsdlqei.jpg/600x600bb.jpg",
+      "localPath": "/artwork/46559d272cc0046470e3e0be.jpg",
+      "status": "downloaded",
+      "bytes": 135371,
+      "sha256": "d614644c45fb902e2ca9cc160e91ab2fb240f1cdab8b9f6ecd2bc6d65f4eb952"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/96/6b/51/966b51ee-1de7-0160-dfe9-aedd42383d7e/886449549399.jpg/600x600bb.jpg",
+      "localPath": "/artwork/2ea73eb6da6d31ad4e2e755d.jpg",
+      "status": "downloaded",
+      "bytes": 193861,
+      "sha256": "507716fb31008de64f0cfcd23edaca60d8e753272b8b02de0e5638035fcf00b1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9d/9a/4d/9d9a4d75-895c-4dbe-dd1f-f586a24bd3e6/mzi.kkyhfzmk.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6ab76344405442034c394cc8.jpg",
+      "status": "downloaded",
+      "bytes": 41976,
+      "sha256": "93ef22736afa60eb111d2351c215eea1267b697f4a00d0ad24c776a0bddbae19"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9e/1b/24/9e1b24ef-1261-b384-412c-a1215be22bbc/20CRGIM24055.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d050f6dc1081fcabc7defafa.jpg",
+      "status": "downloaded",
+      "bytes": 85460,
+      "sha256": "2cb64d2423dde0eeb6a58313f5e7551b58235dc328c3b215b5d3fe0f3e5cbae9"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a9/ec/b3/a9ecb373-0ea0-4117-9a68-03f513bae597/mzi.iwxdpjun.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7fd815a963d3159817c38af8.jpg",
+      "status": "downloaded",
+      "bytes": 74128,
+      "sha256": "e1b2a38ddedf8144619738ce8d96d11c067892a0d03a15b1b50577ae21e182ec"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/af/93/2e/af932e55-0e47-035f-bdf5-27103e623404/00602547748959.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f8e606f14034ade5efd4f99d.jpg",
+      "status": "downloaded",
+      "bytes": 128457,
+      "sha256": "4bec609a549a10e00ad1752522e58543d3ff0d8dbb17301e6ff17a941541cb8a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b0/b4/93/b0b493b1-71ae-b154-ab40-e6acc7d84c46/842108036099_1.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c29f9b386d1ddc9862d88881.jpg",
+      "status": "downloaded",
+      "bytes": 116430,
+      "sha256": "7c9c6ea5bebd706191facb21a9b349df995e52ce8120e8ed9002e799bdc05bc1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b2/8b/9e/b28b9ea9-e0c1-1ca4-7f98-8565a6d40190/00602567109150.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e5ca00fe02e1f626ea90f0f0.jpg",
+      "status": "downloaded",
+      "bytes": 149905,
+      "sha256": "13501f4d85cee432138a6d5c25c1369f02714bcdd37f1de200af286dc6de5386"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b9/eb/cc/b9ebccbc-5ba4-2cdb-5332-b065739abd9a/886444567619.jpg/600x600bb.jpg",
+      "localPath": "/artwork/2d9e28c4530027e29713deb7.jpg",
+      "status": "downloaded",
+      "bytes": 107752,
+      "sha256": "852a5783ef33d3d31fb12513cf4c5cc513ed3462603d452990b8d2bd20014999"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/bb/4d/55/bb4d552c-04d8-29ba-1b41-6ff8bcd199a5/808132000222.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3a0f5ccea468bea29cc0b90a.jpg",
+      "status": "downloaded",
+      "bytes": 70133,
+      "sha256": "2ef4d82107473122292cecc4ff664b383dd57ad118c58837a58bf31597b570eb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c2/34/48/c234484e-a6f3-4355-6d41-24275da82c74/s06.kststhcn.jpg/600x600bb.jpg",
+      "localPath": "/artwork/685ba4e6b32373e0b7fd9529.jpg",
+      "status": "downloaded",
+      "bytes": 154383,
+      "sha256": "3b052becd2c6f23d023256bf3c295e38f93f802263a62e6ffab7319ecb1e3a1b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/54/33/c3543369-944f-8930-d506-0bd084b29cff/888831026495.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3dba632adf573edb87d4a2e5.jpg",
+      "status": "downloaded",
+      "bytes": 169877,
+      "sha256": "36a9f8d9716a0b4bb8395f06c90bdb99b90a4b76718c84ead2f3f8860f6f2329"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c9/29/74/c92974ce-2bdd-4b86-a261-01adc901bb65/mzi.cmambura.jpg/600x600bb.jpg",
+      "localPath": "/artwork/2348fad1839b35a615931dbc.jpg",
+      "status": "downloaded",
+      "bytes": 80059,
+      "sha256": "4bd8b51d8d6c2e282ed193646f438188032cbed893c156df8b272d78cd87512e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/cb/6b/5f/cb6b5fc3-8d35-908a-18e6-6f8eda46ce11/21UM1IM07521.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/32cd2b970a1fdac4d168e9fe.jpg",
+      "status": "downloaded",
+      "bytes": 53819,
+      "sha256": "dd884b185bed31518e3a1b6dc77518279782bd31089bf4ff9752633b3829ba17"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/da/10/25/da102506-5da5-2b7e-c4a2-7d54155c9455/828767591025.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6cd8edb4665106980bf0b12f.jpg",
+      "status": "downloaded",
+      "bytes": 122624,
+      "sha256": "5d116cc6dc9971b443aaa1fedf03102f7a86b2ad74a80cdd046031eaf51677f2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/db/2c/2d/db2c2dc7-18cd-f64e-3580-52eae12bccc0/dj.izjbcsws.jpg/600x600bb.jpg",
+      "localPath": "/artwork/31513e730e66cf81f1164bbe.jpg",
+      "status": "downloaded",
+      "bytes": 109298,
+      "sha256": "beb0141f7a7e8b4383672876abb4a00a50bd16ded77d4adf5f2a52fdcf8f2982"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e0/1d/08/e01d0889-6a71-6ee3-2d73-93ad352b1621/mzi.ytgznrel.jpg/600x600bb.jpg",
+      "localPath": "/artwork/340431167b6385659d04b4a0.jpg",
+      "status": "downloaded",
+      "bytes": 111251,
+      "sha256": "18d756cd2c64062107587b3dbcbbbf19a966862194d134e08075bae712815a19"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e7/49/8f/e7498f65-df8f-bead-d6e3-2a8d4d642a79/886447235317.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7ba6576e4b56184e62b26a2a.jpg",
+      "status": "downloaded",
+      "bytes": 137918,
+      "sha256": "a2f2c3860439aa63c8caa14f875e6431cf766237a834303b7e1870dd4923269d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ea/03/30/ea033079-3254-3a3c-e2a6-504b30095ca6/dj.wutawrld.jpg/600x600bb.jpg",
+      "localPath": "/artwork/65e441e93086ef32f92b536b.jpg",
+      "status": "downloaded",
+      "bytes": 121530,
+      "sha256": "392e411516f576bb68b0d6b1a24f7d1e7675eb2a30cbc3ddb5c376e57176a6ef"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f3/7a/df/f37adf7e-b4ad-68a7-9c01-6f9e32a6a9fe/603497898749.jpg/600x600bb.jpg",
+      "localPath": "/artwork/128733f830fae89d39b95f92.jpg",
+      "status": "downloaded",
+      "bytes": 153274,
+      "sha256": "338ef1f06ad68ccc92bb54a0685ee958489002fb0b64d3158e7ae256cfe0ade5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f9/a4/c6/f9a4c613-ecfd-2440-c268-87168e580156/06UMGIM01700.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c7e36ce1d642f32940ccccba.jpg",
+      "status": "downloaded",
+      "bytes": 105873,
+      "sha256": "183359d3dafd469e68a5c09ce4c593f895c10e2bef4f16334f716b1e46335282"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/05/a1/62/05a162ca-d0f8-462a-a033-474a019e506f/196871274111.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9dcacca7c5129f0bbe221dbf.jpg",
+      "status": "downloaded",
+      "bytes": 68026,
+      "sha256": "069478a70685655221afae941c76cae140012d9e0f26299920869c1ff4fc6843"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0b/d7/36/0bd736c2-5218-5d1f-66eb-0802a4e70df8/0724385612954.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4f9d86899ee74b070f1be4ab.jpg",
+      "status": "downloaded",
+      "bytes": 116534,
+      "sha256": "2d60ba969dea6b6cd1f1724a449b74986ebaa7b2abb84c810cb767e1fc820c2a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/11/64/9c/11649c80-2066-dba8-77a9-df7eecae26c1/17UM1IM06937.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8b7960d9b43b66f4e9a308ee.jpg",
+      "status": "downloaded",
+      "bytes": 100784,
+      "sha256": "faf8257560083a6d7f7328c7d58eec1a33b7f6c9a9dda3c36a1aef0a4928ddff"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1f/c2/0b/1fc20b49-626b-197b-2341-0477d2772b49/dj.mtesxano.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ecc547740ed99958e2ef3bce.jpg",
+      "status": "downloaded",
+      "bytes": 180040,
+      "sha256": "13d5292fe58f3cbda819423a779647e7f310b44b9233e741b91cf468da83f672"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/27/79/d5/2779d529-ff10-c15d-1c50-08cd46dd1237/06UMGIM17625.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e01ccb824956b1bdeb1fd9e1.jpg",
+      "status": "downloaded",
+      "bytes": 118132,
+      "sha256": "46a531fec3f4d92e0dcecb5cd8c9a3d64866671cb4d8b888fc77e0ed20576411"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/59/41/2a59414e-3cb8-99e6-be89-7e2716057a20/22UMGIM40134.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7dcd07be94f1b694a5da697f.jpg",
+      "status": "downloaded",
+      "bytes": 106112,
+      "sha256": "9e5c8aae8d539ff631d4ea750aa1cdc21c49b059072fe8fdf961cc7b277942ec"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/c0/81/2bc081c8-25f0-ba43-d451-587a54613778/16UMGIM59202.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a85efb077d49b45e8d5b4d17.jpg",
+      "status": "downloaded",
+      "bytes": 50343,
+      "sha256": "15b53e0306655c7c6f602011149a280bf0749aa7c3ead6849dcd7336e7fd4ed2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/096e3c0246bb1b0b5eb908fb.jpg",
+      "status": "downloaded",
+      "bytes": 78229,
+      "sha256": "72ce16aac28ad2d6886fcfeb800a3876c278c075d37df9e214b92ce153e831ea"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/46/32/3a/46323aff-5f3d-e247-8a51-7b6a6319e499/634904116750.png/600x600bb.jpg",
+      "localPath": "/artwork/36a12c5633af6e3daba13e40.jpg",
+      "status": "downloaded",
+      "bytes": 88721,
+      "sha256": "2b5ebdc120725608b4252eead4dd1808958a00c9f9508692fdb34a970203397e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/4e/0d/4d/4e0d4da8-151e-73be-10e0-1ea4fa76446d/0884977769418.jpg/600x600bb.jpg",
+      "localPath": "/artwork/541d708d77ed6ae632dd82ea.jpg",
+      "status": "downloaded",
+      "bytes": 201676,
+      "sha256": "97050b8e7e6da0b43f7336a319888f445a48f662691cf9f5b92be511848faada"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/69/65/ed/6965ed9b-32bd-6366-a462-d2b6ec83db78/15UMGIM13908.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/436cde1fc9dfa5632ff792e8.jpg",
+      "status": "downloaded",
+      "bytes": 135511,
+      "sha256": "bed7d0fda054b4a005fcbfee647a56ddde1aeaa26d9375920fdc18f1e0184eea"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e2e064c79d25f6206b3f0608.jpg",
+      "status": "downloaded",
+      "bytes": 120863,
+      "sha256": "8ae9c206b7d8e6367c398e9bb2e41df8bf5d916a52feba84c57e9c3624c03c99"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8a/71/66/8a71664b-3baa-537b-e008-b32d86da27bc/5099997227755.jpg/600x600bb.jpg",
+      "localPath": "/artwork/adde718d7c45dee026c5fe0f.jpg",
+      "status": "downloaded",
+      "bytes": 108865,
+      "sha256": "939d16ac40689abffd3bc6ce2f091371eed8aa8d23e728505ad2c34041311eaf"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/96/8b/08/968b08e4-cb2b-54c2-32bb-dba77ad1c2ca/634904912161.png/600x600bb.jpg",
+      "localPath": "/artwork/c6bfc36ac67ed9fb173b5f9a.jpg",
+      "status": "downloaded",
+      "bytes": 126300,
+      "sha256": "efc34a661792c65e67535ead959f4afd6262b2fbd9a2a3a913b5f3853c028b2e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a1/67/9c/a1679c06-1050-239c-bd3a-c374f7c6459e/886449952601.jpg/600x600bb.jpg",
+      "localPath": "/artwork/72d9c4facf7310a31fc7b35f.jpg",
+      "status": "downloaded",
+      "bytes": 28173,
+      "sha256": "74612e926911e3283e45b9aea090e8f25b981d1ef48d8613514d11d51b4a67b0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a6/68/28/a66828c0-3fe3-5419-374d-ad98739f3166/08UMGIM13954.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/76662b8bc8aa82f10e5645be.jpg",
+      "status": "downloaded",
+      "bytes": 85480,
+      "sha256": "00a425c197c076a13ef266ca78393cbecb1abcc33b72f84b869e48650f3de9c1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/bf/b5/49/bfb549f3-b875-ba13-4bff-57fc9d8898b4/5400863130701_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/858813232781f7d07392580e.jpg",
+      "status": "downloaded",
+      "bytes": 51094,
+      "sha256": "646c459affba06ea9b10c2180908be90242e4b21f52e7c59e6e8d3a8da35338f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d0/39/a3/d039a36a-35c5-4609-7cc5-5af31b7659de/06UMGIM09210.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5ec39e0c16e603344bf0ee20.jpg",
+      "status": "downloaded",
+      "bytes": 74684,
+      "sha256": "3bff434d34bbc44e7260d3900d9164fe06c5d7ad7a7e20e10f9689f6ea0d27f8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ea/0a/6d/ea0a6dcd-a1fc-4594-2854-eddb16e5c7fd/0859381180869.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9e3ee3814b1ddd1956a4eed4.jpg",
+      "status": "downloaded",
+      "bytes": 66672,
+      "sha256": "e2176e88fea072711d8906c8f31e9ef8a6880ae1433c98e2025d5b7333778943"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/45/43/fb45432f-5eb4-76c4-27f3-dded1e4f2a8c/29667526388.jpg/600x600bb.jpg",
+      "localPath": "/artwork/332720e10b4765c949a41aeb.jpg",
+      "status": "downloaded",
+      "bytes": 160562,
+      "sha256": "224a86f086496efca33f47398a633ab9f833b5ad14dea56be6e8d6cf72c5cfe6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/01/3b/5d/013b5d43-bf7f-b879-6ac0-f726a1704f31/190374262088.jpg/600x600bb.jpg",
+      "localPath": "/artwork/49987f0312908ca02c60d211.jpg",
+      "status": "downloaded",
+      "bytes": 111876,
+      "sha256": "0dab7ef01d79b6bb7d574f4a23b2eb4e57ec1dc0e5065dd0f1b254a556a14655"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/33/12/df/3312dfbf-2cd2-e149-1ccb-9688e2a60980/00731454913720.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a80bfea13a07458d8d4b5ed9.jpg",
+      "status": "downloaded",
+      "bytes": 99226,
+      "sha256": "1707ebb8c81abea00774aebd20d3d407277d1d784223b5388057d740d5461ba6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/39/25/2d/39252d65-2d50-b991-0962-f7a98a761271/00602517483507.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f57ff878d393205e8c077420.jpg",
+      "status": "downloaded",
+      "bytes": 101155,
+      "sha256": "2bf08850e422c665d6102f030a4c87982ed767defa17946dfe5f70b65f556240"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/49/67/fb/4967fbed-fc6b-cf55-a31d-548968a6a8fd/00602557778458.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/76aea051d96e73949b042c1e.jpg",
+      "status": "downloaded",
+      "bytes": 88445,
+      "sha256": "09b5b5c9dbde65fc6888d96e8b3fb7a41bb5467bad3cf876eee17364e5fc6742"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5b/74/6e/5b746e8f-04f0-38b3-dd7f-8b772d01b9d4/00600753248140.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6823ba94dd9d5df39b3d7d3e.jpg",
+      "status": "downloaded",
+      "bytes": 121626,
+      "sha256": "a11b32f71344fb454ff8877ff76c96660efff34c1975ebe90bc2f2f2aba0a9d7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5c/1d/ef/5c1def36-6627-620e-3564-8d81d96d62a7/00724353359553.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c8305856bd8c4dcce057e294.jpg",
+      "status": "downloaded",
+      "bytes": 164644,
+      "sha256": "241c44d97e89420cb303dbf06fdbb26986d8f92466fac1026c5e35e6b5c2068a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/6d/0c/90/6d0c904c-eefa-8e49-9d07-50565b2febb2/JollyBoys_PopNMento_3000.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d26186b22d448bb7b1854e41.jpg",
+      "status": "downloaded",
+      "bytes": 110438,
+      "sha256": "0929d9df73e6002482a032308e791e4e2d18fe3e50a31ab139567c8882623fe3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/6e/98/b8/6e98b853-44ae-7063-2c02-4df4851dc9dc/00075021538122.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0e299c8e786a28077c7c89dd.jpg",
+      "status": "downloaded",
+      "bytes": 119947,
+      "sha256": "863a1cfac0d4eb671f8bd56785ea7bb2b7b67889cdd132cd4a1a8099e2fd9716"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/73/61/c7/7361c7a6-ff58-e5c3-8f3b-eafe638202f6/00888072388321.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5794676b49c35061c3ea885c.jpg",
+      "status": "downloaded",
+      "bytes": 123782,
+      "sha256": "bbd51d48f67a111e924e3de3adb0043de57f8379939ef52afce4ee2bb668c1fd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/7b/d7/8f/7bd78f1a-0030-131a-5e70-a8ffe15d6887/0724383335053.jpg/600x600bb.jpg",
+      "localPath": "/artwork/885b54701b50dd96e994b12f.jpg",
+      "status": "downloaded",
+      "bytes": 144359,
+      "sha256": "4ad40332f3b4842f645279a77c12c74c8449a4a31841495d5761ac63f2b6e25b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/91/81/21/918121bf-11b9-5e53-c3dc-c482ec652319/00602567824619.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6b5fb03e71b4a237af9a6e81.jpg",
+      "status": "downloaded",
+      "bytes": 119454,
+      "sha256": "388b51d62c74d70acfba871c690d5878b82f9b122013da7a12e1c96b9c738efa"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/d5/c3/fd/d5c3fd03-3b72-9b4a-04a1-14ad80426d4c/809274947826.jpg/600x600bb.jpg",
+      "localPath": "/artwork/deb91b239f1e34e283dec2b2.jpg",
+      "status": "downloaded",
+      "bytes": 171484,
+      "sha256": "d8cfae39d3d7393ede6f468990c7e0d9e441d6c2407e4eba34cb4d80d1d7a026"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ee/d1/da/eed1da86-9e2f-a19b-498a-f03622b183b2/00854242007569.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dd7951b399b771c2030e1f23.jpg",
+      "status": "downloaded",
+      "bytes": 28079,
+      "sha256": "073f79bfc59c24532d8a093f2a129e0d914b0d8ee79fecd188acf87d4c29b960"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music19/v4/8c/d3/3e/8cd33e95-0876-39c4-03b8-169401e16742/8718525092746.png/600x600bb.jpg",
+      "localPath": "/artwork/cd4ec2dd9a53fc2f02ea990e.jpg",
+      "status": "downloaded",
+      "bytes": 248650,
+      "sha256": "f691b4677fc739620a7ee7c391801270a3c82b4ced6e33af00e7eed6fed40673"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/ba/c5/1a/bac51a20-1420-8afa-02c0-d960f4ce5c06/888831199137.jpg/600x600bb.jpg",
+      "localPath": "/artwork/90b26aad0e0e5c31052708f0.jpg",
+      "status": "downloaded",
+      "bytes": 100340,
+      "sha256": "b84d40627ff84f0cecc67d44cca5afd12f91e8c65fd840675cee545dcbcc6c6e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/f8/49/5a/f8495a3c-cab0-f42e-2258-4b6647cdb530/888002077745.jpg/600x600bb.jpg",
+      "localPath": "/artwork/50aef0c1ae067e0de5c24044.jpg",
+      "status": "downloaded",
+      "bytes": 84451,
+      "sha256": "5577e6d45b0e08061cdc7a903bffe6dc6213d71568593449ecc5c858298529b8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/72/0b/00720bab-3cba-5f1c-5405-1cd5a3037491/720841207597_Cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f0dd4d1857b05d6c8bfc1704.jpg",
+      "status": "downloaded",
+      "bytes": 136657,
+      "sha256": "fe978d10a3f04326c8d997443832bf61fb25187f681d47174a10e95148518642"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/06/eb/b1/06ebb16a-7e31-5818-4be9-684cb57622dc/PA00204086_0_234544_jacket.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f9f07e3fd65fe9d52d8358f9.jpg",
+      "status": "downloaded",
+      "bytes": 20584,
+      "sha256": "500bc9f5269a08cf2e23f40dc482b1be1cf58c9a5f5bb82643686fe2fa17a4ae"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/23/e1/0a/23e10a6e-c125-b46f-7972-1b726ecf49d2/5017742001504_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4c69c618083f5cbdc5ec4d18.jpg",
+      "status": "downloaded",
+      "bytes": 115075,
+      "sha256": "9f54be55272ad87c985f2e21e02c03779451f6623e1c3b0fbaee3ef65af6ce75"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/0f/18/3d0f188a-f456-3d41-201b-96ff178b1e10/199502314767_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/48ccc907668910451f7337da.jpg",
+      "status": "downloaded",
+      "bytes": 93154,
+      "sha256": "1060399909a792862e383cbcb693a9db1b426f8eccb376627cc4ff7bab3ca7e1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/42/b7/db/42b7dbe1-d13f-c600-5b78-daa57c5d0f08/06UMGIM50761.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7e90cdf50219f23d624971ef.jpg",
+      "status": "downloaded",
+      "bytes": 92414,
+      "sha256": "90d33682931d0865ba23ef9281113c5a7425c4b6ec27dff31b6c66c13863c30d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/a6/b0/49a6b061-cbd8-ede5-446d-dae8b50e3b32/5099996601457.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5d6abff86482648efab7e067.jpg",
+      "status": "downloaded",
+      "bytes": 29761,
+      "sha256": "10ec554cfb06e21477ad696317483d26242521d126693f0207af4f0e4979aa36"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/c2/cc/50c2cc95-3658-9417-0d4b-831abde44ba1/24UM1IM28978.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e2954add0b0960682abf1709.jpg",
+      "status": "downloaded",
+      "bytes": 69206,
+      "sha256": "efb8957a8769a6066052c0edf852b0a2c77712350e5c5324a445e422d167a1d0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/73/28/5173280b-9b5e-c5e4-d3f8-a2612d044543/888880423368.jpg/600x600bb.jpg",
+      "localPath": "/artwork/71dbafef442482f12220120d.jpg",
+      "status": "downloaded",
+      "bytes": 91864,
+      "sha256": "33e5a24bb565971167d9212542b2ae625bcc92531f64cb044895338be85705f2"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/59/92/29/599229b0-ffb2-2078-0f57-7927400b91e6/859718636427_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/040281d5e4d25f5ae0f97a66.jpg",
+      "status": "downloaded",
+      "bytes": 106902,
+      "sha256": "64d7fc0aeb0936b2066f143bfe35e64c70c5ad7c0bff15b88d3a94707c452c73"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/65/6e/fb/656efb76-ba63-3091-d458-7539948e45e4/14UMGIM51556.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f5143b5c3ee5100ee3c5b9d3.jpg",
+      "status": "downloaded",
+      "bytes": 108599,
+      "sha256": "01ee9ccba1a5a0971ba3a1d312f2941e8c35db5565b6f9e364d52c094f88d119"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/38/43/67384338-9ed7-fc68-5927-93f1fcf4705d/11UMGIM36900.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/39203060786fdfce0ed3aeff.jpg",
+      "status": "downloaded",
+      "bytes": 86476,
+      "sha256": "d3df73a6691710c2a312284106898652e02abf12bb829ed0e91d80eeef5623d1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/db/ea/69dbeab9-ced6-823a-8db7-dd7de18181a2/199350537837.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d88caea67cdb9a3f781e6951.jpg",
+      "status": "downloaded",
+      "bytes": 171232,
+      "sha256": "95c446cbd8069069612e534993bbc83d3d2b7af16cd4841a437e74281f0ebeb1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/74/00/cd/7400cdf5-08e3-afb7-f95d-6be9ebd9149a/06UMGIM01808.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e38eaf89422dcd5ddfbc5f6b.jpg",
+      "status": "downloaded",
+      "bytes": 101302,
+      "sha256": "b2939a232a53845ec2192a8995eb80b53a6c570c9f44ad4666af93ae1b8b0b44"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/44/7b/80447bd9-c672-1a0c-b570-fda304195352/5060516092222.png/600x600bb.jpg",
+      "localPath": "/artwork/6d6e1c3885bb95e4154e1937.jpg",
+      "status": "downloaded",
+      "bytes": 122461,
+      "sha256": "f5379ab0cc298739904a8f553d7641d7fd3ed265642c5ff1426f15cd84d5bc3b"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/f6/a1/80f6a147-3841-dc7f-12d2-629e6d4cddd6/10063.jpg/600x600bb.jpg",
+      "localPath": "/artwork/049b513696642ed34043ccc9.jpg",
+      "status": "downloaded",
+      "bytes": 76913,
+      "sha256": "99a6b87cd841756e6a81688b2b862c358d007bc0248054797b1b6aa6e5832eb3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/85/0e/bc/850ebc19-bf6d-5510-b623-e6c54059c519/598.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7b7b4d6ca74b426803b33471.jpg",
+      "status": "downloaded",
+      "bytes": 89332,
+      "sha256": "ba71e8f92c5f33eca85c8aac04ce45c2bf31cfec8fb7e7966920dfa9c7e0e86c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/86/5d/f6/865df684-6ab2-70f0-7eb0-2bd1b4e13687/0031257138062.png/600x600bb.jpg",
+      "localPath": "/artwork/2646cf32dd400fd120cdb34f.jpg",
+      "status": "downloaded",
+      "bytes": 135013,
+      "sha256": "7882836aeea4ab22ef31d700c2312f094da5dc374fb0530dc89672bf97142cdc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/62/6c/94626c44-4657-739e-e639-39ae55e6d2cc/13UABIM03827.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e3b863da499b986dc71ac541.jpg",
+      "status": "downloaded",
+      "bytes": 187853,
+      "sha256": "5f69c529ccf3a2f1c5264b7998274d352dafbaa893320b78ed93a5523e6337b1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/d4/04/94d404dd-28f0-a548-7f0b-b9b2228eda59/822299213905.png/600x600bb.jpg",
+      "localPath": "/artwork/596f55bcd9d7743637c23a70.jpg",
+      "status": "downloaded",
+      "bytes": 42929,
+      "sha256": "765df3c90911b07bbea243dbc3c092eba4edc3cf59b56fbef587e20cb755e9e8"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a9/fb/cb/a9fbcbff-7787-ed8a-4405-52be02aeb889/0810098500968.png/600x600bb.jpg",
+      "localPath": "/artwork/39180b082bf8c74b42e50cc4.jpg",
+      "status": "downloaded",
+      "bytes": 60394,
+      "sha256": "4791a11849248ff198308a011b5396a1028597ba246110ec12c0824eb4101c98"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b0/9f/ef/b09fefe9-2a33-7e87-3f33-ad8ef25dfa9e/840401713792.png/600x600bb.jpg",
+      "localPath": "/artwork/ebf220524e6445192f62caf3.jpg",
+      "status": "downloaded",
+      "bytes": 86022,
+      "sha256": "23b1aff1380b199877ef4eab6c127e0b0bd112132c6c9c43a80beb6f83ff921e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/3b/79/b33b79db-6e1a-61f9-fd2d-afbfa9e88d2e/2243.jpg/600x600bb.jpg",
+      "localPath": "/artwork/88a1b6a0a87669edf5518e00.jpg",
+      "status": "downloaded",
+      "bytes": 189182,
+      "sha256": "49f685cf3ac01fbd0cb5bddef46c65c3c8d05c3d92df3b124950528c015efea6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b4/a3/19/b4a31958-0323-07de-dedc-38d321ee0f88/15UMGIM66228.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fe03cf8994b9f08fb6a50de7.jpg",
+      "status": "downloaded",
+      "bytes": 116853,
+      "sha256": "7b185306f8550a8557fbb8e5a423f30e1d3d21148c67addd8cc8b9ae6365690a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/62/08/bf620883-b91a-be89-a2ea-e7aba5c0ae1f/14ULAIM00344.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/6b0b8bc95c19a3c5dca10ae3.jpg",
+      "status": "downloaded",
+      "bytes": 180183,
+      "sha256": "b3f951116b43e9454f5534c834418b7cc5122efb1328fe87ff766a8baa266313"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/23/0b/c2230b5f-e753-e9b0-c032-b9ea0713450f/016998513262.png/600x600bb.jpg",
+      "localPath": "/artwork/1c047f649be1404b6779ecb0.jpg",
+      "status": "downloaded",
+      "bytes": 96452,
+      "sha256": "df29c3c4f1bc00add6cde69d3d32f172783e27604e74fece1c70361a3c3440c5"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/a7/62/d8a7622f-a7ea-6a5a-8e3c-d67fccad7bed/054645417365.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3ace1e217314cc9c77db20c1.jpg",
+      "status": "downloaded",
+      "bytes": 191235,
+      "sha256": "5de955476e3b8dfbf82ba4d52dd76b83f72fc9f823163744da8767f4d2abe6f7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/47/ba/dc47ba03-ced2-87fb-7960-22e85f231d0c/859724516386_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/4f983871be7f2d07db9c1d53.jpg",
+      "status": "downloaded",
+      "bytes": 129427,
+      "sha256": "ffbf8c72ee201c40f18a2e5ed3b28cd217bec277a716e37d2f6cf89dda4c3aa0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f7/24/19/f724197c-b6b7-b2ad-94a9-06b2f5f95455/617465226458.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7dda3270a63c25532bc28ea7.jpg",
+      "status": "downloaded",
+      "bytes": 35958,
+      "sha256": "f80e4044bd14960d80eb6569025af2aaed2dac96db2cd00acf9f25483131873e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fe/b6/46/feb64670-4fe7-bbc0-1101-c5f11bfb6905/196871937399.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f5c3267d3b2ee760dc8efff3.jpg",
+      "status": "downloaded",
+      "bytes": 72346,
+      "sha256": "8f262830b75de4b1afce905cee64b66c6b77badf33b121451680ce316477ec5f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/b3/c2/06b3c2af-9b63-91a7-1a04-ad2ce2c7461e/199350831768.jpg/600x600bb.jpg",
+      "localPath": "/artwork/57fc6a429bb59e8518bcaa46.jpg",
+      "status": "downloaded",
+      "bytes": 71138,
+      "sha256": "02aa30432b9520390e7446086be62d323accfaa8a82fa3c77a50c7eb67c3a28e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/11/9d/07119da9-29b2-d223-91e3-e2d67c3f05eb/093624974130.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8bce4e06c7cce1100d28a7c9.jpg",
+      "status": "downloaded",
+      "bytes": 117986,
+      "sha256": "18e7f4d099c76ea5bf27c081534ee63c5198705ee39b9b287c2fd224c26dc7f1"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/fe/a3/0cfea324-57c1-d530-5248-9bb591bbd7bf/074643574525.jpg/600x600bb.jpg",
+      "localPath": "/artwork/5ca81ce2087e731108b644a2.jpg",
+      "status": "downloaded",
+      "bytes": 107097,
+      "sha256": "c6a04ccc66b6be9f37bae07556cc652cec3a808a4038b3e265cd20048c1d178c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2f/43/c4/2f43c4bf-48a2-dfff-8e22-76405b9bd9ea/06UMGIM61391.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b0679799f2fd53f58a528a4f.jpg",
+      "status": "downloaded",
+      "bytes": 116098,
+      "sha256": "d3585f2768b653337b1ce70a7e9eb5e32170979ec25df422466967d6b822d576"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/3a/3f/313a3fbc-bb8f-80c7-b5a2-e226869a38cd/24UMGIM51924.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/617bab0b156ed71257438073.jpg",
+      "status": "downloaded",
+      "bytes": 108891,
+      "sha256": "4cc5c2b968b2dbf839a62e1b76dc39d73b78ff49be93c3511430983bc7faaa14"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/37/35/62/373562e8-ab69-254b-bbf2-f1cb9aca66fe/06UMGIM16889.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dfbd8bb28ac58e2aa89a4384.jpg",
+      "status": "downloaded",
+      "bytes": 185532,
+      "sha256": "2d779fcb6f0bf0440149c3653c5420bbbfd180f025447b1348a04be22f456669"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/33/f6/3a33f6bb-f50d-a8c5-a365-61e76ebc0921/054645160568.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ac27af880bd2ba1b4cad9651.jpg",
+      "status": "downloaded",
+      "bytes": 66537,
+      "sha256": "65c364434e50f54ab8dd7dd1483d44ae2405da9144b59123cf2fb3e32429dc53"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/c2/0d/3cc20dcc-8f4e-f060-36dd-7de52a7ec8fe/12UMGIM14712.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/873315ad12a463a352ac1ce4.jpg",
+      "status": "downloaded",
+      "bytes": 113544,
+      "sha256": "b191d143600f9719c8cb746f2c9db8c9cee16cd9772c16051eeff3993f49d774"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/1a/16/451a1673-1aa4-63e7-cfca-8a44ce9d0779/14ULAIM03599.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/1a84b5de56ecc401a324cb18.jpg",
+      "status": "downloaded",
+      "bytes": 187133,
+      "sha256": "523ef00ff6d0717f151eb05a4586a7bce53ac7c3468c9efc1b86da864a178c9c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/59/ac/f4/59acf4db-0ea8-a8e5-5607-01e931bb2d58/06UMGIM49867.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d35477c93242d5f63a629f4f.jpg",
+      "status": "downloaded",
+      "bytes": 122603,
+      "sha256": "35640c99cf0b373873a74744e0b5c04e319d93af663e428e90d5198bd50503b0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/12/ee/5c12ee33-b3a9-54ef-c0a9-330bc7973ed1/094636504650.jpg/600x600bb.jpg",
+      "localPath": "/artwork/31162f09af18344c360fad67.jpg",
+      "status": "downloaded",
+      "bytes": 71852,
+      "sha256": "5eb8dd21a6a116ff9c15ab499d75f94c9d544acd4bb540a4de57072d247cc437"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5f/56/ff/5f56ff7b-71b3-3e5f-208a-3b20d96bb4b0/06UMGIM21173.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e011f664e362873395a087ef.jpg",
+      "status": "downloaded",
+      "bytes": 143358,
+      "sha256": "0973d5fb79e58930d1948295a8aac4b0c9bbdf772f827837b5fd3e07571e60dd"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/60/b1/b0/60b1b052-1a98-b1c7-7554-dc68d91da6e7/13UABIM56819.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/59d2c4a3f8c22338ec909b8c.jpg",
+      "status": "downloaded",
+      "bytes": 50648,
+      "sha256": "fd3a18fdcdcf2455af54ea04a72018ca3c3e7f07d6b0d4a573ff2950a8880270"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/61/3b/3d/613b3dc8-7164-3783-ada9-a7cb195439d4/032325077726_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/901de487577e3ff13b76f4e6.jpg",
+      "status": "downloaded",
+      "bytes": 169052,
+      "sha256": "552c258cfa1d0206ef973d514279c6b9cf674fc8aee054e60c83d110c3fffd19"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/49/6f/6c496fa6-50d0-c5e6-3481-33c2401a653f/603497823475.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8a8986d1a3b72204f821afd3.jpg",
+      "status": "downloaded",
+      "bytes": 120306,
+      "sha256": "dcbbc039c62c4bc5becff2a4061120dfd3c0192649f9c4b346f261ff6b8732b0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/52/83/6c5283eb-146f-bde5-30aa-0e9892b6fc04/888880788566.jpg/600x600bb.jpg",
+      "localPath": "/artwork/37dc227f76d155b4aece910a.jpg",
+      "status": "downloaded",
+      "bytes": 86064,
+      "sha256": "6b7d54013c8500232cafc1c41220a4dee13e72ce58669c1ad38fd14d8c6956aa"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/a0/33/7aa0335b-167b-c15a-fcac-22e22ed2ea03/5099997933755.jpg/600x600bb.jpg",
+      "localPath": "/artwork/447f84eb5f195706d88a9bb1.jpg",
+      "status": "downloaded",
+      "bytes": 33012,
+      "sha256": "dc727caa5d65fd4afb8af0784ecbbc15fa806bdf040dc5f654b22592c4cc301f"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/e4/d9/84e4d95a-adca-93fe-9342-de35b72a6af3/24UM1IM10485.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/31c67f14a22daf21ea351b45.jpg",
+      "status": "downloaded",
+      "bytes": 101131,
+      "sha256": "7069d39acaac56a8f45500ee4b066c5a90d897d03ab8b5c97a5212cad352ff8e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/3d/1f/893d1f2b-7690-bc6d-6f0e-c7fc31acf7b4/06UMGIM04263.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d8d960e7792ee3a9b48bf839.jpg",
+      "status": "downloaded",
+      "bytes": 135899,
+      "sha256": "49c08b5c96044a0ec58e3bc0c503041325f7b1ea704c3f519740703fc0b90edc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/99/6e/27/996e2752-919e-deac-9e98-6fdcc3a50e17/5061017255895.jpg/600x600bb.jpg",
+      "localPath": "/artwork/143f42e2248cf0eceafa9d18.jpg",
+      "status": "downloaded",
+      "bytes": 111787,
+      "sha256": "4327e7dc52762aecf5c932e22a59a727232de85a952c396f006882b32cac0313"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9c/da/c3/9cdac3b4-f584-bafd-1a4f-d548c99bd435/5099972323359.jpg/600x600bb.jpg",
+      "localPath": "/artwork/3c9329f5308bbdf8392e26f1.jpg",
+      "status": "downloaded",
+      "bytes": 165626,
+      "sha256": "8e7cabafe135ca4f806b5ba29b60c55210ad37cb40e334146dbf62226ba61a07"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/98/d8/a798d867-344d-2bf2-fbfe-d2d1412dcef8/14UMDIM03793.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/767368e5f6c8529e88ad752d.jpg",
+      "status": "downloaded",
+      "bytes": 66510,
+      "sha256": "762b21ba4255f40dab708e7916fca13677bcf6eb565ec9c37edd61c9f5cd14a6"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/fc/70/b4fc7007-f541-1a49-8ff5-dbcff4c0b556/0031257133869.png/600x600bb.jpg",
+      "localPath": "/artwork/d3183a3ad1ca763af3349394.jpg",
+      "status": "downloaded",
+      "bytes": 86464,
+      "sha256": "d2957d6840444eae8de8e308a24cf2ee10b47ec54a169c73f224171a51eeebdc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/65/41/b865413a-d80a-96af-f042-a82e4aa36ac1/4050538293401.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b92c1020e687c07f912383fe.jpg",
+      "status": "downloaded",
+      "bytes": 63701,
+      "sha256": "0646584471b08a9357c7de241780a7a930a2bdc66f81ec20404bf8f5762f1701"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bc/f3/f0/bcf3f0b4-816b-b7b8-d7a9-ea3ddf596fe4/0859381180821.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d585626591b0ec77444213e3.jpg",
+      "status": "downloaded",
+      "bytes": 103202,
+      "sha256": "70854715b1ccb3542ec10d59370b54d254bb6c8060298b869a684f2081a9f3f3"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/6e/ba/be6ebade-739e-fc43-e430-e20162645c65/886445613940.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c5b4e206f2a3ec2d36215909.jpg",
+      "status": "downloaded",
+      "bytes": 92888,
+      "sha256": "eddf477b075cbbde0423702bacb24eab81f1a1bb6995c8c4d061ab1b37b80b62"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/8c/56/c68c56d3-321c-3e31-3ab1-78f25c33204d/26UMGIM42382.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a5ede1de9a3479fbe0a70163.jpg",
+      "status": "downloaded",
+      "bytes": 80127,
+      "sha256": "b74ba014888dd831eafdc249077a687c11bc608464b15ec10eb096c62bcdf389"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/00/5e/d3005e32-52dc-e7f6-1b74-3b7e8a5dfbd7/013491101422.png/600x600bb.jpg",
+      "localPath": "/artwork/db3653dddf8b70774563958f.jpg",
+      "status": "downloaded",
+      "bytes": 165012,
+      "sha256": "1faef2984291f654df13988c17657e940f9501508b15c108a1bd298adcbf8fee"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d6/25/9a/d6259a76-bfc7-8281-33da-d7e4d15961dd/199806863749.jpg/600x600bb.jpg",
+      "localPath": "/artwork/29e2135b08a0fe655cc5e770.jpg",
+      "status": "downloaded",
+      "bytes": 100868,
+      "sha256": "a0c71d2b74df24c1d9d89cd0fcfd04dea567fe1b58fb3b634f133cfa95bb98de"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e7/94/47/e7944769-34bb-1ee3-e1d9-b819e3497caa/06UMGIM03760.rgb.jpg/600x600bb.jpg",
+      "localPath": "/artwork/dd546b1359f3d827080822bc.jpg",
+      "status": "downloaded",
+      "bytes": 75373,
+      "sha256": "2f8764373755e9c4971bec630593654803758190239f8a300ab5cb1244857a33"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/600x600bb.jpg",
+      "localPath": "/artwork/11a0ef09c7815907f48eef04.jpg",
+      "status": "downloaded",
+      "bytes": 72468,
+      "sha256": "ccb30b1b608cd095d90a9014f1fa39269e634e57e04272831cbf3bbdc4e36afe"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ed/eb/16/edeb1693-1290-d7c9-ec56-3dcf588bd58e/601811105764.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b322e7a6a6f642667dc6b3b0.jpg",
+      "status": "downloaded",
+      "bytes": 174102,
+      "sha256": "aafc1c2a7035da51686f93030e537456053fb0e2f0bd05af5dc55cd2b4cd1acc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/9e/76/f19e760d-5675-ae65-e16c-f7251666cd30/118858.jpg/600x600bb.jpg",
+      "localPath": "/artwork/7db70f429888c201e9ff7218.jpg",
+      "status": "downloaded",
+      "bytes": 101221,
+      "sha256": "3adcf3242682b16e77918a4aa6b3f05c7b7f2a029ad4948d1e70ed50b7695252"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/d7/ff/fcd7ff64-01b1-679e-7aee-501c95121e37/5414939535970.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d8e188cbdec3ce979426b295.jpg",
+      "status": "downloaded",
+      "bytes": 140841,
+      "sha256": "f6f3387e9072966c98004aa7d710648406ecce4cd1a1d873d89b9c51176b152d"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b8e929d6a43e84fb84fdc547.jpg",
+      "status": "downloaded",
+      "bytes": 61113,
+      "sha256": "dc22c422efe590671c9c84aa5d70bd6a995febc4f092cc154ba5a808507d6beb"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/26/82/54/2682548c-62ca-4eed-5377-6bf07dc6b466/UNES08054_1500.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a52a979d956260a567ef40b8.jpg",
+      "status": "downloaded",
+      "bytes": 155884,
+      "sha256": "72194e67760e8a832f77446ee432a03b7ff1477c33f15976425df6be28aeb1dc"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/30/4f/19/304f1906-a510-06b1-faca-acc973111bf5/dj.jnxlercc.jpg/600x600bb.jpg",
+      "localPath": "/artwork/9de69db9f293b391c4336f08.jpg",
+      "status": "downloaded",
+      "bytes": 118301,
+      "sha256": "99ff92914cf007ee7bb844eedefd6e9d3eb7adfeb74842b8629c640500514b4e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/e1/d3/df/e1d3df38-dc14-c570-2bef-e565bd43d778/888831312000.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e92749c3ac587d9c10f30626.jpg",
+      "status": "downloaded",
+      "bytes": 65998,
+      "sha256": "e8dbf239864ed5aba1c41b5b3295b6e74bd3e131599b17f3c5bad31ff6e48f07"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/25/9b/49/259b4927-0f32-50b2-35b9-8acf0be13493/888002370327.jpg/600x600bb.jpg",
+      "localPath": "/artwork/72b5bcba2dbcc93799b8644c.jpg",
+      "status": "downloaded",
+      "bytes": 118950,
+      "sha256": "969d6979c7ae9cc5eb3152ff35856496108ca46c9079c38c727b21a835e4a315"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/d9/cd/37/d9cd3736-ce1d-f118-c02d-cb7b04893785/05099962637053.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d7406a91a113032dea11f46b.jpg",
+      "status": "downloaded",
+      "bytes": 151819,
+      "sha256": "bf9c869dd464a057763931e6b1f31c8f1350637120eb4dfb7d6236d3b817caff"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/f0/7f/a2/f07fa2bd-b905-7a69-7ee7-bfc014899de6/077775490459.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a4f6416fa0cd57c06263d9c8.jpg",
+      "status": "downloaded",
+      "bytes": 169954,
+      "sha256": "0f1071ee6268083d32d5869d25569ddd191a54749fb2630ad9262efbbcfb6b6c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/f7/ea/98/f7ea9804-3c91-ae1a-0066-782732c46643/cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/de291c3777d2a61a70899082.jpg",
+      "status": "downloaded",
+      "bytes": 91998,
+      "sha256": "58b1450ec116df337bf67194f4e147af683d17fa8b06ba7765ada68daea526ab"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/75/fc/33/75fc337c-5676-abb4-052d-5a01c64d6efe/MT_V3.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0e9cb8f2b672bfe93a3f610a.jpg",
+      "status": "downloaded",
+      "bytes": 70263,
+      "sha256": "6f43f1e54efddab2f56a63537edea8529996bebe3b4fcd2df6d79850fda69916"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/2f/c7/19/2fc71988-6871-be2c-6731-a3d0f2a6b232/Court_2500px.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fc11ac3ebe9c6d4ee6839603.jpg",
+      "status": "downloaded",
+      "bytes": 120030,
+      "sha256": "711de6189576c2e36303d293242d9b173cd35edfc0673969d1fdd39bb6882a01"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/84/5b/f4/845bf42c-8844-f8f2-2cba-7508dde71d06/889176876677.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ee665c970b480c91c585be42.jpg",
+      "status": "downloaded",
+      "bytes": 71802,
+      "sha256": "fae19f4836165e107f79eb26ff0d27111db2ec1b0b0692716c5462020515b343"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/d5/46/7c/d5467c84-c4c3-0dc1-df89-56fd03692742/099923082620.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0e8f5f4b0bc6ac5e67da3a7a.jpg",
+      "status": "downloaded",
+      "bytes": 174800,
+      "sha256": "26eb2a6879429eb635c3e59840e365582226164dda98676e991d178979bc2977"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/e6/dd/48/e6dd48f0-3f68-ed3a-f192-5c155556c02c/3760139809444_cover.jpg/600x600bb.jpg",
+      "localPath": "/artwork/e903acc1892a6f85361d3dd2.jpg",
+      "status": "downloaded",
+      "bytes": 136797,
+      "sha256": "efeb2435cea8db296c5b6ebdf28462a539bf50c255096c478d435a1f9265aa6a"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/48/f8/f7/48f8f7f9-33ee-0b8f-f4d4-45500a7e587a/dj.dzomfwrm.jpg/600x600bb.jpg",
+      "localPath": "/artwork/d21be9b0f93f8759c3e82054.jpg",
+      "status": "downloaded",
+      "bytes": 139250,
+      "sha256": "03bdcd3d85b832651de35b4528d659ee4f5714a4ac12c481266e933345e4116e"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/ef/87/5c/ef875cf9-594b-b3f6-cbf5-c71d6a2e64c3/mzm.gjgmhqer.jpg/600x600bb.jpg",
+      "localPath": "/artwork/0c24520b136f093b9b4573ea.jpg",
+      "status": "downloaded",
+      "bytes": 115274,
+      "sha256": "6da8723033b4a9432c4bbefdbb63ba632acc426a22834c593311e1b9c45d5dd7"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/33/4b/46/334b46b8-9afa-a308-4917-ebb2348e6413/SFW40214_McIntosh.jpg/600x600bb.jpg",
+      "localPath": "/artwork/b9f32e4b9af025fa47290b50.jpg",
+      "status": "downloaded",
+      "bytes": 169361,
+      "sha256": "63b4e7c77ca34f51cd6d2cc01eab8d5367cdd4c0d8cbd1e09333bec6091632d0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/b9/3e/11/b93e11fc-2923-2cea-bf2b-2a243f1cb582/634457464773.jpg/600x600bb.jpg",
+      "localPath": "/artwork/fa4fdd8067c5fc8e3434329c.jpg",
+      "status": "downloaded",
+      "bytes": 109025,
+      "sha256": "74c976b1f1367e956b586222960919320df06b4c2674ead130ad8fb52b27a5ad"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/0b/c9/69/0bc969c8-f14d-ec31-4763-65af86afd285/190374441568.jpg/600x600bb.jpg",
+      "localPath": "/artwork/ac5039a3a89b31c7ad3ca031.jpg",
+      "status": "downloaded",
+      "bytes": 99771,
+      "sha256": "f9d45719f9fde62bce2bdad8e5079560ebc1c7e08ecd9850f2beee950b0ad895"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/25/83/d5/2583d55d-cbe2-3ec5-2b9e-44e3a03be158/886445719208.jpg/600x600bb.jpg",
+      "localPath": "/artwork/f6c79366f864c078b1d8a09d.jpg",
+      "status": "downloaded",
+      "bytes": 92080,
+      "sha256": "d0b7147d6fac399f8566a659bb0be96b1bc1da27a194ced012c8800859c79651"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/3a/59/eb/3a59eb79-2cf0-cf27-f710-5ce81f16ebb7/dj.stcogozm.jpg/600x600bb.jpg",
+      "localPath": "/artwork/8e2cbd67dc953d6221fcc506.jpg",
+      "status": "downloaded",
+      "bytes": 145742,
+      "sha256": "3c17c52e520c1c7101b6a833342a15e83d03756f07de3cae01caecaf143163d0"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/30/92/a2/3092a2e9-e3f3-51dd-9c5a-7566ae253143/Chopin_2400x2400.jpg/600x600bb.jpg",
+      "localPath": "/artwork/a1d80e643eb195aff8b4f556.jpg",
+      "status": "downloaded",
+      "bytes": 98191,
+      "sha256": "3dd4d884eeef4af45c6bf2ae9b43f5514cdf4030f989287e31a88475266bd41c"
+    },
+    {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/8d/92/d2/8d92d20e-97f0-fbb1-4d9a-00dfc0d7fa1a/5060243320247.jpg/600x600bb.jpg",
+      "localPath": "/artwork/c9ba0c2da6e3bbc2593b1d77.jpg",
+      "status": "downloaded",
+      "bytes": 204406,
+      "sha256": "7204a8f6e8c36e35eb32b81842f3c4772d0e601bbb0417d92454b58654b8f173"
+    }
+  ],
+  "fonts": {
+    "stylesheetSource": "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap",
+    "stylesheetLocalPath": "/fonts/fonts.css",
+    "licenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "licenseStatus": "downloaded",
+    "files": [
+      {
+        "sourceUrl": "https://fonts.gstatic.com/s/archivo/v25/k3kQo8UDI-1M0wlSfdboLmvDIaK18A.woff2",
+        "localPath": "/fonts/archivo-1.woff2",
+        "bytes": 34364,
+        "sha256": "e65711486b93fdc7683ea3c64e713fa0224a93e444ec97e323917e61ebd17772"
+      },
+      {
+        "sourceUrl": "https://fonts.gstatic.com/s/archivo/v25/k3kQo8UDI-1M0wlSfdfoLmvDIaK18A.woff2",
+        "localPath": "/fonts/archivo-2.woff2",
+        "bytes": 85856,
+        "sha256": "a75c792f980dc1dbe0e85efb721808267e32d2e7ef6c4a99d525c842d8712a08"
+      },
+      {
+        "sourceUrl": "https://fonts.gstatic.com/s/archivo/v25/k3kQo8UDI-1M0wlSfdnoLmvDIaI.woff2",
+        "localPath": "/fonts/archivo-3.woff2",
+        "bytes": 90096,
+        "sha256": "4c98b9d490d1698ec95f2ff17a6c7d0e72691864c0c5d7bc2a2c161b45afe5ad"
+      }
+    ]
+  },
+  "notes": [
+    "Audio previews are streamed from their official providers and are not bundled.",
+    "Third-party artwork and musical metadata retain their respective ownership and source citations.",
+    "Failed artwork downloads retain the remote artwork URL as a fallback."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 60,
+      "includeFiles": "frontend/public/data/graph.json",
+      "excludeFiles": "{dist/**,frontend/public/artwork/**,frontend/public/fonts/**}"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index" }
+  ]
+}

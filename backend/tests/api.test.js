@@ -208,3 +208,11 @@ test('preview refresh bypasses successful Apple metadata and outer preview cache
   assert.equal((await (await fetch(path)).json()).preview, 'https://example.org/preview-1.m4a');
   assert.equal((await (await fetch(`${path}&refresh=1`)).json()).preview, 'https://example.org/preview-2.m4a');
 });
+
+test('local development contributions accept the localhost frontend origin', async (t) => {
+  const { url } = await fixture(t);
+  const result = await contribute(url, { title: 'Third Song', artist: 'Third Artist', sampleTitle: 'Source Song', sampleArtist: 'Source Artist' }, { Origin: 'http://localhost:5173' });
+  assert.equal(result.status, 201);
+  assert.equal((await result.json()).scope, 'local');
+  assert.equal((await (await fetch(`${url}/api/health`)).json()).storage, 'local');
+});

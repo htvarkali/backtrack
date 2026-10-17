@@ -342,6 +342,7 @@ function GenreListening({ g: graph, song: song }) {
 }
 function AddSample({ onAdd: onAdd }) {
   const [errorMessage, setErrorMessage] = React.useState("");
+  const [savedScope, setSavedScope] = React.useState(null);
   const [t, n] = React.useState(false),
     [r, i] = React.useState(""),
     [s, l] = React.useState([]),
@@ -362,7 +363,11 @@ function AddSample({ onAdd: onAdd }) {
       return () => clearTimeout(g);
     }, [r, o]),
     f === "done" ? (
-      <p className={"add-done"}>{"added. saved locally on this computer."}</p>
+      <p className={"add-done"}>
+        {savedScope === "browser"
+          ? "added. saved in this browser."
+          : "added. saved locally on this computer."}
+      </p>
     ) : t ? (
       <section className={"panel-section add-sample"}>
         <h3>{"what does it sample?"}</h3>
@@ -426,12 +431,15 @@ function AddSample({ onAdd: onAdd }) {
                 setErrorMessage("");
                 try {
                   const saved = await onAdd({
-                    title: o.title,
-                    artist: o.artist,
-                    year: o.year,
+                    ...o,
                     part: u.trim() || undefined,
                   });
-                  p(saved ? "done" : "error");
+                  if (saved?.scope === "browser" || saved?.scope === "local") {
+                    setSavedScope(saved.scope);
+                    p("done");
+                  } else {
+                    p("error");
+                  }
                 } catch (error) {
                   setErrorMessage(error.message);
                   p("error");

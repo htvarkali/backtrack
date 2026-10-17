@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Back track, an interactive music ancestry explorer.",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "dev:frontend": "vite --host 127.0.0.1",

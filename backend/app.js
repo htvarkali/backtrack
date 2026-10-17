@@ -55,6 +55,7 @@ function cycleGuard(graph, contribution, saved) {
 export async function createApp(options = {}) {
   const graph = options.graph || JSON.parse(await readFile(options.graphPath || join(projectRoot, 'frontend/public/data/graph.json'), 'utf8'));
   const storage = options.storage || await createStorage(options.dataDir || process.env.BACK_TRACK_DATA_DIR || join(projectRoot, '.local'));
+  const storageScope = storage.scope || 'local';
   const upstream = createUpstream({ fetchImpl: options.fetchImpl, timeoutMs: options.timeoutMs });
   const catalog = createCatalog({ upstream, storage, graph });
   const samples = createSamples({ upstream, storage, graph });
@@ -70,7 +71,7 @@ export async function createApp(options = {}) {
   });
   app.use(express.json({ limit: '16kb', strict: true }));
   app.get('/api/health', (_request, response) => response.json({
-    ok: true, service: 'back-track', storage: 'local', songs: graph.songs.length, samples: graph.samples.length,
+    ok: true, service: 'back-track', storage: storageScope, songs: graph.songs.length, samples: graph.samples.length,
   }));
   app.get('/api/search', async (request, response) => {
     response.json(await catalog.search(requiredText(request.query.q ?? request.query.term, 'Search term', 300)));
@@ -84,14 +85,21 @@ export async function createApp(options = {}) {
   app.get('/api/listening', async (request, response) => {
     response.json(await listening(requiredText(request.query.from, 'A playlist, album, or username', 1000)));
   });
-  app.get('/api/contributions', (_request, response) => response.json({ contributions: storage.contributions(), scope: 'local' }));
+  app.get('/api/contributions', (_request, response) => response.json({ contributions: storage.contributions(), scope: storageScope }));
   app.post('/api/contribute', async (request, response) => {
     if (!request.is('application/json')) throw new AppError(415, 'Send contributions as JSON.', 'INVALID_CONTENT_TYPE');
     if (request.headers.origin) {
       let origin;
       try { origin = new URL(request.headers.origin); } catch { throw new AppError(403, 'Invalid request origin.', 'INVALID_ORIGIN'); }
-      if (!['http:', 'https:'].includes(origin.protocol) || !['localhost', '127.0.0.1', '[::1]'].includes(origin.hostname)) {
-        throw new AppError(403, 'Contributions must be sent from this local app.', 'INVALID_ORIGIN');
+      const localOrigin = storageScope === 'local' && ['http:', 'https:'].includes(origin.protocol) &&
+        ['localhost', '127.0.0.1', '[::1]'].includes(origin.hostname);
+      // Compare with the actual request Host, never a visitor-supplied forwarded
+      // host. Vercel terminates TLS before forwarding requests to the function.
+      const hostedOrigin = storageScope !== 'local' && origin.protocol === 'https:' &&
+        origin.host === request.get('host')?.toLowerCase();
+      if (origin.username || origin.password || origin.pathname !== '/' || origin.search || origin.hash ||
+        (!localOrigin && !hostedOrigin)) {
+        throw new AppError(403, 'Contributions must be sent from this app.', 'INVALID_ORIGIN');
       }
     }
     const input = validateContribution(request.body);

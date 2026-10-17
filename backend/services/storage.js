@@ -34,6 +34,7 @@ export async function createStorage(directory) {
   }
 
   return {
+    scope: 'local',
     directory,
     async cached(key, ttl, load, { refresh = false } = {}) {
       const entry = cache[key];

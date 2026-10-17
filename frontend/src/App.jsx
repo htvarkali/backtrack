@@ -10,6 +10,8 @@ import {
 } from "./services/library.js";
 import { usePanelWidth } from "./hooks/usePanelWidth.js";
 import { hydrateGraph, loadGraph } from "./data/graph.js";
+import { mergeContributions } from "./data/contributions.js";
+import { submitContribution } from "./services/contributions.js";
 import {
   canPlay,
   getPlayerState,
@@ -231,65 +233,16 @@ function App() {
       },
       [ensureExternalSong, openSong],
     ),
-    contributeSample = React.useCallback(async (F, Y) => {
-      const q = graphRef.current,
-        K = q == null ? undefined : q.byId.get(F);
-      if (!q || !K) return false;
-      const J = await fetch("/api/contribute", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          title: K.title,
-          artist: K.artist,
-          sampleTitle: Y.title,
-          sampleArtist: Y.artist,
-          sampleYear: Y.year,
-          part: Y.part,
-        }),
-      }).catch(() => null);
-      if (!J)
-        throw new Error("Could not reach the local server. Please try again.");
-      if (!J.ok) {
-        const result = await J.json().catch(() => ({}));
-        throw new Error(
-          result.error || "Could not save this sample. Please try again.",
-        );
-      }
-      const { newSongs: we, newLinks: H } = await materializeSamples(
-        q,
-        K,
-        [
-          {
-            ...Y,
-            type: "sample",
-            source: "",
-            sourceName: "local listeners",
-          },
-        ],
-        false,
+    contributeSample = React.useCallback(async (parentId, sample) => {
+      const saved = await submitContribution({
+        getGraph: () => graphRef.current,
+        parentId,
+        sample,
+      });
+      setBaseGraph((current) =>
+        hydrateGraph(mergeContributions(current, [saved.entry])),
       );
-      for (const me of H) me.element = Y.part ?? "";
-      return (
-        we.length &&
-          setExtraSongs((me) => {
-            const He = new Set(we.map((It) => It.id)),
-              Ie = [...me.filter((It) => !He.has(It.id)), ...we];
-            return (saveExtraSongs(Ie), Ie);
-          }),
-        setExtraLinks((me) => {
-          const keys = new Set(me.map((edge) => `${edge.from}>${edge.to}`));
-          const He = [...me, ...H.filter((edge) => {
-            const key = `${edge.from}>${edge.to}`;
-            if (keys.has(key)) return false;
-            keys.add(key);
-            return true;
-          })];
-          return (saveExtraLinks(He), He);
-        }),
-        true
-      );
+      return { scope: saved.scope };
     }, []),
     discoverAncestry = React.useCallback(async (F, Y, q = false) => {
       const K = graphRef.current;
@@ -422,7 +375,7 @@ function App() {
       <div className={"fatal"}>
         {"Couldn't load the data: "}
         {loadError}
-        {". Check that the local data file is available."}
+        {". Check that the data file is available."}
       </div>
     );
   if (!graph) return <div className={"loading"}>{"Digging…"}</div>;
@@ -556,7 +509,9 @@ function App() {
                 : () => setPanelOpen(false)
           }
           pickLabel={
-            viewingAnotherSong && !queueSongId ? "Back track this song" : undefined
+            viewingAnotherSong && !queueSongId
+              ? "Back track this song"
+              : undefined
           }
           onGrow={openSong}
           lookup={lookupStatus[panelSongId]}

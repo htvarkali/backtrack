@@ -4,7 +4,7 @@ Back Track is a local music ancestry explorer: search a song and explore its sam
 
 ## Run
 
-Requires Node.js 22 or newer.
+Requires Node.js 24.
 
 ```sh
 npm ci
@@ -41,7 +41,7 @@ Optional settings are listed in `.env.example`. Copy it to `.env` if needed; the
 
 The curated graph, artwork, fonts, and app are served locally. Live catalog searches, public playlist imports, sample discovery, external source links, and official audio previews require internet access and remain subject to their providers' availability. Private playlists cannot be imported anonymously. The app does not require a Spotify login for public imports.
 
-Contributions and API caches are saved under `.local/`, which Git ignores. Browser discoveries and the selected library also persist in local/session storage. Contributions in this build are saved on this computer.
+When running locally, contributions and API caches are saved under `.local/`, which Git ignores. Browser discoveries and the selected library also persist in local/session storage. On Vercel, personal sample contributions are saved in the visitor's browser, and provider caches are temporary server memory. Contributions are not shared with other visitors. Clearing browser data removes that browser's saved contributions.
 
 Server endpoints provide adapters around the bundled data and public music services.
 
@@ -52,6 +52,7 @@ frontend/
   public/       # Curated graph, cover art, and fonts
   src/          # React components, hooks, services, and graph utilities
 backend/        # Local API, provider adapters, persistence, and tests
+api/            # Vercel serverless entry point for the same API
 scripts/        # Development launcher and verification helpers
 docs/           # Provenance and verification notes
 dist/           # Generated production build (ignored)
@@ -66,3 +67,9 @@ npm run build
 ```
 
 See [verification notes](docs/VERIFICATION.md) for exercised browser flows and external-service limitations. See [provenance](docs/PROVENANCE.md) before redistributing source or assets. `package-lock.json` is committed for repeatable installs; credentials, caches, generated output, and `node_modules` are excluded from Git.
+
+## Deploy to Vercel
+
+Import this repository with the repository root as the Root Directory. The committed `vercel.json` selects Vite, builds with `npm run build`, serves `dist/`, and routes `/api/*` to the Node function. No environment variables are required for public music services.
+
+For a CLI deployment, sign in with `npx vercel login`, then run `npx vercel --prod`. See [deployment notes](docs/DEPLOYMENT.md) for the hosted storage behavior and checks.

@@ -1,6 +1,6 @@
 # Verification
 
-The production build and 21 automated checks passed before handoff. A successful build is separate from verification of live external providers.
+The production build and 40 automated checks passed after adding Vercel support. A successful build is separate from verification of live external providers.
 
 ## Browser verification completed
 
@@ -38,3 +38,9 @@ Public providers can rate limit, return incomplete sample relationships, remove 
 The interface uses Back Track branding. The UI uses icy-blue surfaces, navy text, and cobalt gradients, including graphs, charts, player, controls, and panels. All 847 layout, typography, and motion declarations were compared with the previous stylesheet and remained identical. Category-label text contrast is at least 4.98:1. The curated dataset and artwork remain intact.
 
 After the rename, all 21 automated checks and the production build passed again. The running app at port 5173 was checked in the browser: homepage branding and gradients, Gold Digger graph and detail panel, and the originality report with its unchanged 40/24/36 breakdown. The API health endpoint reports `back-track`, and the new blue favicon returns HTTP 200.
+
+## Serverless deployment checks
+
+- All 40 checks pass with Node.js 24, including hosted origin validation, no filesystem access, bounded caches, visitor isolation, browser persistence, external-song restoration, storage failures, and cycle protection.
+- The actual `api/index.js` entry was exercised over HTTP with the bundled graph: health reports all 179 songs, hosted contribution validation succeeds without retaining user data on the server, and unknown APIs return JSON errors.
+- Vercel's deployment dry run recognizes the Vite preset and excludes `.env.local`, local runtime data, dependencies, and generated output from uploads.

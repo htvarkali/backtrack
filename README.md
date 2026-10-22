@@ -29,7 +29,7 @@ Optional settings are listed in `.env.example`. Copy it to `.env` if needed; the
 ## Included
 
 - A blue interface with responsive typography and song timelines under Your Library.
-- A default library with ten Drake tracks from HABIBTI, four PARTYNEXTDOOR tracks, and four Bryson Tiller tracks; personal imports join the library without duplicate recordings.
+- An 11-song default library in a saved mixed order: Drake's Classic, WNBA, and I'm Spent, four PARTYNEXTDOOR tracks, and four Bryson Tiller tracks. Personal imports join the library without duplicate recordings.
 - Full curated dataset: 179 songs, 119 sample connections, 45 genres, 43 traditions, and 154 historical influences.
 - Search across the local crate and the live music catalog.
 - Interactive ancestry graphs with pan, zoom, fit, earlier influences, and record details.

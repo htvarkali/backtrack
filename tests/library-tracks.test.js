@@ -12,16 +12,16 @@ const selectedTracks = JSON.parse(
   await readFile(new URL("../frontend/src/data/libraryTracks.json", import.meta.url)),
 );
 
-test("the default library retains all 18 selected tracks in the supplied order", () => {
+test("the default library retains all 11 selected tracks in the saved mixed order", () => {
   const tracks = composeLibraryTracks([], selectedTracks);
-  assert.equal(tracks.length, 18);
+  assert.equal(tracks.length, 11);
   assert.deepEqual(tracks.map((track) => track.id), selectedTracks.map((track) => track.id));
-  assert.equal(new Set(tracks.map((track) => track.id)).size, 18);
+  assert.equal(new Set(tracks.map((track) => track.id)).size, 11);
   assert.ok(tracks.every((track) => Number.isFinite(track.year)));
 });
 
 test("personal order wins while selected recordings stay present with verified metadata", () => {
-  const match = selectedTracks[4];
+  const match = selectedTracks.find((track) => track.title === "Classic");
   const imported = [
     { id: "personal-one", title: "Personal Track", artist: "Other Artist", year: 2020 },
     { id: "imported-match", title: match.title.toUpperCase(), artist: match.artist, year: 2099, guessed: true },
@@ -32,7 +32,7 @@ test("personal order wins while selected recordings stay present with verified m
   assert.deepEqual(tracks.slice(0, 3).map((track) => track.id), ["personal-one", match.id, "personal-two"]);
   assert.equal(tracks[1].year, match.year);
   assert.equal(tracks[1].preview, match.preview);
-  assert.equal(tracks.length, 20);
+  assert.equal(tracks.length, 13);
   assert.ok(selectedTracks.every((selected) => tracks.some((track) => track.id === selected.id)));
   assert.deepEqual(imported, snapshot, "composition must not modify imported storage values");
 });
@@ -47,7 +47,7 @@ test("duplicate listening entries collapse without dropping another artist's rec
 });
 
 test("preparation gets verified overlapping metadata but never enqueues default-only tracks", () => {
-  const selected = selectedTracks[14];
+  const selected = selectedTracks.find((track) => track.title === "Don't");
   const imported = [
     { id: "playlist-recording", title: selected.title, artist: selected.artist, year: 2026, guessed: true },
     { id: "personal-track", title: "A Personal Track", artist: "Another Artist", year: 2026, guessed: true },
@@ -82,10 +82,10 @@ test("artists sharing a first name cannot replace or deduplicate one another", (
 });
 
 test("explicit feature credits and harmless remaster annotations still match", () => {
-  const selected = selectedTracks.find((track) => track.title.startsWith("Slap The City"));
-  const imported = { id: "spotify-feature", title: "Slap The City (2026 Remaster)", artist: "Drake" };
+  const selected = selectedTracks.find((track) => track.title === "I'm Spent (feat. Loe Shimmy)");
+  const imported = { id: "spotify-feature", title: "I'm Spent (2026 Remaster)", artist: "Drake" };
   assert.deepEqual(resolveImportedTracks([imported], [selected]), [selected]);
-  const otherFeature = { id: "different-feature", title: "Slap The City (feat. Another Singer)", artist: "Drake & Another Singer" };
+  const otherFeature = { id: "different-feature", title: "I'm Spent (feat. Another Singer)", artist: "Drake & Another Singer" };
   assert.deepEqual(resolveImportedTracks([otherFeature], [selected]), [otherFeature]);
 });
 

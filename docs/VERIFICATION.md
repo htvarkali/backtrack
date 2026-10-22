@@ -4,10 +4,10 @@ The production build and automated checks pass. A successful build is separate f
 
 ## Selected library update
 
-- The homepage shows ten Drake tracks from HABIBTI directly beneath Your Library, followed by four PARTYNEXTDOOR tracks and four Bryson Tiller tracks. The previous featured-song section is removed.
-- The full library shows all 18 selected tracks. Imported playlists join the selection without replacing separate recordings or queueing the default selection for bulk sample research.
-- Apple metadata provides release years, artwork, catalog links, and preview URLs. All 18 preview endpoints returned HTTP 206 audio responses; all seven distinct artwork URLs returned HTTP 200.
-- Local browser checks opened Rusty Intro, Break from Toronto, and Don't, reached the active Pause state for each preview, and verified Stop and return navigation.
+- The homepage shows an 11-song selection directly beneath Your Library: Drake's Classic, WNBA, and I'm Spent, plus four PARTYNEXTDOOR tracks and four Bryson Tiller tracks. Artists are interleaved in a saved mixed order that remains stable across reloads. The previous featured-song section is removed.
+- The full library shows the same 11 selected tracks. Imported playlists join the selection without replacing separate recordings or queueing the default selection for bulk sample research.
+- Apple metadata provides release years, artwork, catalog links, and preview URLs. All 11 selected preview endpoints returned HTTP 206 audio responses; all seven distinct artwork URLs returned HTTP 200.
+- Local browser checks opened Break from Toronto and Don't, reached the active Pause state for each preview, and verified Stop and return navigation.
 - Automated coverage includes imported order, duplicate handling, verified metadata preparation, research state, and finite timeline positions for missing years.
 
 ## Earlier browser verification

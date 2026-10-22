@@ -1,16 +1,24 @@
 # Verification
 
-The production build and 52 automated checks passed after adding Vercel support and provider fallback handling. A successful build is separate from verification of live external providers.
+The production build and automated checks pass. A successful build is separate from verification of live external providers.
 
-## Browser verification completed
+## Selected library update
 
-- The home screen displays Back Track branding, the blue theme, artwork, and 12 starter rows.
+- The homepage shows ten Drake tracks from HABIBTI directly beneath Your Library, followed by four PARTYNEXTDOOR tracks and four Bryson Tiller tracks. The previous featured-song section is removed.
+- The full library shows all 18 selected tracks. Imported playlists join the selection without replacing separate recordings or queueing the default selection for bulk sample research.
+- Apple metadata provides release years, artwork, catalog links, and preview URLs. All 18 preview endpoints returned HTTP 206 audio responses; all seven distinct artwork URLs returned HTTP 200.
+- Local browser checks opened Rusty Intro, Break from Toronto, and Don't, reached the active Pause state for each preview, and verified Stop and return navigation.
+- Automated coverage includes imported order, duplicate handling, verified metadata preparation, research state, and finite timeline positions for missing years.
+
+## Earlier browser verification
+
+- The home screen displayed Back Track branding, the blue theme, artwork, and the earlier starter selection.
 - Local search and Enter selection opened Gold Digger's complete graph.
 - Gold Digger playback reached the active Pause state with advancing progress; pause, stop, and paired listening worked. Next record changed playback and the detail panel to Ray Charles.
 - Graph zoom, fit, and expansion added the gospel branch.
 - The Gold Digger originality report displayed 40% original, 24% Ray Charles, and 36% Southern Tones, with a lineage breakdown and timeline.
-- The full library displayed all 82 curated starter songs.
-- A live Spotify import of Daft Punk's Discovery populated 14 real album tracks and their discovered ancestry. Disconnect returned to the curated crate.
+- The earlier full-library view displayed all 82 curated starter songs; this view is now replaced by the selected library described above.
+- A live Spotify import of Daft Punk's Discovery populated 14 real album tracks and their discovered ancestry. Disconnect restored the defaults.
 - External search for Massive Attack returned real catalog results. During local verification, opening Teardrop discovered Sometimes I Cry by Les McCann (1973).
 - The contribution form saved that verified relationship locally. The server returned the persisted record after restart, and the browser retained one connection after refresh; repeated contributions do not duplicate the graph edge.
 - Blood on the Leaves reached the active Pause state in the browser using the Deezer fallback.

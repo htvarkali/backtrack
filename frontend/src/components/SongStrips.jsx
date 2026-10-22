@@ -2,9 +2,9 @@ import React from "react";
 import { SAMPLE_LABELS } from "./GraphElements.jsx";
 import { analyzeAncestry } from "../utils/ancestry.js";
 import { sameRecording } from "../services/research.js";
+import { createStripTimeline, libraryTrackStatus } from "../utils/libraryTracks.js";
 
-const STRIP_CURRENT_YEAR = new Date().getFullYear();
-function createSongRows(e, t, n, r) {
+function createSongRows(e, t, n, r = []) {
   const i = (a, u) => {
       const d = (e.sampledBy.get(a) ?? []).find((m) => u.has(m.from)),
         f =
@@ -55,7 +55,7 @@ function createSongRows(e, t, n, r) {
           ancestors: [],
           direct: [],
           open: f,
-          digging: true,
+          ...libraryTrackStatus(e, d, r),
         };
       const p = s(d);
       return {
@@ -63,30 +63,15 @@ function createSongRows(e, t, n, r) {
         key: `${u}-${a.id}`,
         art: p.art ?? a.art,
         open: f,
-        digging: r.includes(d) || (!p.direct.length && !e.byId.get(d).genres.length),
+        ...libraryTrackStatus(e, d, r),
       };
     },
   };
 }
 function SongStrips({ sections: sections, onPick: onPick }) {
-  const n = sections.flatMap((o) => o.rows),
-    r =
-      Math.floor(
-        Math.min(
-          STRIP_CURRENT_YEAR - 40,
-          ...n.map((o) => {
-            var a;
-            return ((a = o.oldest) == null ? undefined : a.year) ?? o.year;
-          }),
-        ) / 20,
-      ) * 20,
-    i = (o) => (STRIP_CURRENT_YEAR - o) / (STRIP_CURRENT_YEAR - r),
-    s = Array.from(
-      {
-        length: Math.floor((STRIP_CURRENT_YEAR - r) / 20) + 1,
-      },
-      (o, a) => Math.floor(STRIP_CURRENT_YEAR / 20) * 20 - a * 20,
-    ).filter((o) => o >= r);
+  const { fraction: i, ticks: s } = createStripTimeline(
+    sections.flatMap((section) => section.rows),
+  );
   let l = 0;
   return (
     <section className={"strips"}>
@@ -106,8 +91,8 @@ function SongStrips({ sections: sections, onPick: onPick }) {
         </span>
       </div>
       {sections.map((o) => (
-        <div className={"strip-section"} key={o.head}>
-          <h2 className={"strip-head"}>{o.head}</h2>
+        <div className={"strip-section"} key={o.id ?? o.head}>
+          {o.head && <h2 className={"strip-head"}>{o.head}</h2>}
           {o.rows.map((a) => (
             <SongStrip r={a} frac={i} i={l++} onPick={onPick} key={a.key} />
           ))}
@@ -269,6 +254,8 @@ function SongStrip({ r: e, frac: frac, i: n, onPick: onPick }) {
           </>
         ) : e.digging ? (
           <span className={"strip-digging"}>{"digging for its samples"}</span>
+        ) : e.unexplored ? (
+          <span className={"muted"}>{"open to explore samples"}</span>
         ) : (
           <span className={"muted"}>{"no samples on record"}</span>
         )}

@@ -1,99 +1,67 @@
 import React from "react";
 import { fetchListening, readListeningSource } from "../services/listening.js";
+import { usePrepareListeningTracks } from "../hooks/useListeningTracks.js";
+import selectedTracks from "../data/libraryTracks.json";
+import { composeLibraryTracks, resolveImportedTracks } from "../utils/libraryTracks.js";
 import { SongStrips, createSongRows } from "./SongStrips.jsx";
-import { leafSongs } from "../utils/ancestry.js";
 import { ListeningSource } from "./ListeningSource.jsx";
 
-function Library({
-  g: graph,
-  onPick: onPick,
-  onPickExternal: onPickExternal,
-  onPrepare: onPrepare,
-  digging: digging,
-  onHome: onHome,
-}) {
-  const l = React.useMemo(readListeningSource, []),
-    [o, a] = React.useState(null),
-    [u, d] = React.useState(null),
-    f = React.useRef(new Set()),
-    p = React.useCallback(
-      (w) => {
-        const N = w.filter((h) => !f.current.has(h.id));
-        N.forEach((h) => f.current.add(h.id));
-        N.length && onPrepare(N);
-      },
-      [onPrepare],
-    ),
-    m = l == null ? undefined : l.from;
+function Library({ g: graph, onPick, onPickExternal, onPrepare, digging, onHome }) {
+  const source = React.useMemo(readListeningSource, []);
+  const [importedTracks, setImportedTracks] = React.useState(null);
+  const [error, setError] = React.useState(null);
+  const preparedTracks = React.useMemo(
+    () => resolveImportedTracks(importedTracks ?? [], selectedTracks),
+    [importedTracks],
+  );
+  usePrepareListeningTracks(preparedTracks, onPrepare);
+
   React.useEffect(() => {
-    m &&
-      fetchListening(m)
-        .then((w) => {
-          a(w.tracks);
-          p(w.tracks);
-        })
-        .catch((w) => d(String(w.message ?? w)));
-  }, [m, p]);
-  const g = React.useMemo(() => {
-    const { rowFor: w, rowForTrack: N } = createSongRows(
-      graph,
-      onPick,
-      onPickExternal,
-      digging,
-    );
-    if (!l) {
-      const y = leafSongs(graph)
-        .filter(
-          (v) =>
-            !v.kind &&
-            !v.external &&
-            !v.listenOf &&
-            (graph.samplesOf.get(v.id) ?? []).length,
-        )
-        .sort((v, x) => x.year - v.year);
-      return [
-        {
-          head: `every song in the crate (${y.length})`,
-          rows: y.map((v) => w(v.id)),
-        },
-      ];
-    }
-    return [
-      {
-        head: l.recent
-          ? `your last ${(o == null ? undefined : o.length) ?? ""} plays`
-          : `${l.name}${o ? ` (${o.length})` : ""}`,
-        rows: (o ?? []).map((y) => N(y, "lib")),
-      },
-    ];
-  }, [graph, l, o, digging, onPick, onPickExternal]);
+    if (!source?.from) return;
+    let cancelled = false;
+    fetchListening(source.from)
+      .then(({ tracks }) => {
+        if (!cancelled) setImportedTracks(tracks);
+      })
+      .catch((failure) => {
+        if (!cancelled) setError(String(failure.message ?? failure));
+      });
+    return () => { cancelled = true; };
+  }, [source?.from]);
+
+  const tracks = React.useMemo(
+    () => composeLibraryTracks(preparedTracks, selectedTracks),
+    [preparedTracks],
+  );
+  const sections = React.useMemo(() => {
+    const { rowForTrack } = createSongRows(graph, onPick, onPickExternal, digging);
+    return [{
+      head: `your library (${tracks.length})`,
+      rows: tracks.map((track) => rowForTrack(track, "library")),
+    }];
+  }, [graph, tracks, digging, onPick, onPickExternal]);
+
   return (
-    <main className={"landing library"}>
-      <header className={"landing-top"}>
-        <button className={"wordmark mark-btn"} onClick={onHome}>
-          {"back track"}
-        </button>
-        <nav className={"landing-nav"}>
-          <ListeningSource />
-        </nav>
+    <main className="landing library">
+      <header className="landing-top">
+        <button className="wordmark mark-btn" onClick={onHome}>back track</button>
+        <nav className="landing-nav"><ListeningSource /></nav>
       </header>
-      <section className={"hero"}>
-        <h1 className={"hero-line small"}>
-          {l ? "your songs, dug up." : "every track at once."}
-        </h1>
-        <p className={"hero-sub"}>
-          {l
-            ? "every one on one timeline. each fills in with what it samples as it gets dug up."
-            : "paste a playlist link or a username to dig up your own songs. until then, here is every song in the crate."}
+      <section className="hero">
+        <h1 className="hero-line small">your songs, dug up.</h1>
+        <p className="hero-sub">
+          {source
+            ? "your imported songs and selected tracks, together on one timeline. open a song to explore what it samples."
+            : "drake, partynextdoor, and bryson tiller, on one timeline. open a song to explore its samples, or add your own playlist."}
         </p>
-        {u && <p className={"muted"}>{u}</p>}
+        {error && <p className="muted">{error}</p>}
+        {source && !importedTracks && !error && (
+          <p className="muted">getting your songs…</p>
+        )}
       </section>
-      {l && !o && !u ? (
-        <p className={"muted"}>{"getting your songs…"}</p>
-      ) : (
-        <SongStrips sections={g} onPick={onPick} />
-      )}
+      <SongStrips sections={sections} onPick={onPick} />
     </main>
   );
 }
+
 export { Library };

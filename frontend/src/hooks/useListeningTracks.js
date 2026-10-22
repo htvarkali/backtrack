@@ -1,21 +1,7 @@
 import React from "react";
 import { fetchListening, readListeningSource } from "../services/listening.js";
 
-const FEATURED_SONG_IDS = [
-    "gold-digger",
-    "stronger",
-    "not-like-us",
-    "paint-the-town-red",
-    "nice-for-what",
-    "super-freaky-girl",
-    "love-again",
-    "break-my-soul",
-    "dont-stop-the-music",
-    "good-feeling",
-    "99-problems",
-    "luther",
-  ],
-  LISTENING_CACHE_KEY = "nn-listening";
+const LISTENING_CACHE_KEY = "nn-listening";
 function useListeningTracks() {
   const [e, t] = React.useState(() => {
     try {
@@ -42,4 +28,16 @@ function useListeningTracks() {
     e
   );
 }
-export { FEATURED_SONG_IDS, useListeningTracks };
+
+// Only imported listening history belongs here. Selected library tracks are
+// researched when opened, keeping the default page free of bulk lookups.
+function usePrepareListeningTracks(tracks, onPrepare) {
+  const prepared = React.useRef(new Set());
+  React.useEffect(() => {
+    const pending = (tracks ?? []).filter((track) => !prepared.current.has(track.id));
+    pending.forEach((track) => prepared.current.add(track.id));
+    if (pending.length) onPrepare(pending);
+  }, [tracks, onPrepare]);
+}
+
+export { useListeningTracks, usePrepareListeningTracks };
